@@ -38,6 +38,13 @@ print("Hello, World!")
 # Hello, World!
 ```
 
+check Python version:
+
+```bs
+python --version
+python -V
+```
+
 </details>
 
 <details>
