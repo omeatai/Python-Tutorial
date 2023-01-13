@@ -70,22 +70,47 @@ Hello
 </details>
 
 <details>
-  <summary>2. sample </summary>
+  <summary>2. Python Comments </summary>
 
-```bs
+Python has commenting capability for the purpose of in-code documentation.<br>
+Comments start with a #, and Python will render the rest of the line as a comment.<br>
+Comments can be used to explain Python code.<br>
+Comments can be used to make the code more readable.<br>
+Comments can be used to prevent execution when testing code.<br>
+Comments can be placed at the end of a line, and Python will ignore the rest of the line.<br>
+A comment does not have to be text that explains the code, it can also be used to prevent Python from executing code.<br>
+Python does not really have a syntax for multiline comments.<br>
+To add a multiline comment you could insert a # for each line.<br>
+Since Python will ignore string literals that are not assigned to a variable, you can add a multiline string (triple quotes) in your code, and place your comment inside it.<br>
 
-```
-
-```bs
-
+```py
+#This is a comment.
+print("Hello, World!")
 ```
 
 ```py
-
+print("Hello, World!") #This is a comment
 ```
 
 ```py
+#print("Hello, World!")
+print("Cheers, Mate!")
+```
 
+```py
+#This is a comment
+#written in
+#more than just one line
+print("Hello, World!")
+```
+
+```py
+"""
+This is a comment
+written in
+more than just one line
+"""
+print("Hello, World!")
 ```
 
 </details>
