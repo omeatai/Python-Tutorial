@@ -437,7 +437,7 @@ x = ["apple", "banana", "cherry"]	    list
 x = list(("apple", "banana", "cherry"))	    list
 
 x = ("apple", "banana", "cherry")	    tuple
-x = tuple(("apple", "banana", "cherry"))tuple
+x = tuple(("apple", "banana", "cherry"))    tuple
 
 x = range(6)	                            range
 ```
