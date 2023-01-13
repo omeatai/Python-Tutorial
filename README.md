@@ -410,15 +410,52 @@ Binary Types:	        bytes, bytearray, memoryview
 None Type:	        NoneType
 ```
 
-```py
+str:
+
+```bs
+x = "Hello World"	str
+```
+
+int, float, complex:
+
+```bs
+x = 20	int
+x = 20.5	float
+```
+
+list, tuple, range:
+
+```bs
 
 ```
 
-```py
+dict:
+
+```bs
 
 ```
 
-```py
+set, frozenset:
+
+```bs
+
+```
+
+bool:
+
+```bs
+
+```
+
+bytes, bytearray, memoryview:
+
+```bs
+
+```
+
+NoneType:
+
+```bs
 
 ```
 
