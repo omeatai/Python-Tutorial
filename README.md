@@ -301,7 +301,8 @@ print(type(y))
 
 Variables that are created outside of a function are known as global variables.<br>
 Global variables can be used by everyone, both inside of functions and outside.<br>
-If you create a variable with the same name inside a function, this variable will be local, and can only be used inside the function. The global variable with the same name will remain as it was, global and with the original value.<br>
+If you create a variable with the same name inside a function, this variable will be local, and can only be used inside the function. <br>
+The global variable with the same name will remain as it was, global and with the original value.<br>
 Normally, when you create a variable inside a function, that variable is local, and can only be used inside that function.<br>
 To create a global variable inside a function, you can use the global keyword.<br>
 Also, use the global keyword if you want to change a global variable inside a function.<br>
@@ -369,10 +370,23 @@ print("Python is " + x)
 </details>
 
 <details>
-  <summary>7. sample </summary>
+  <summary>7. Python DataTypes </summary>
 
-```py
+In programming, data type is an important concept.<br>
 
+Variables can store data of different types, and different types can do different things.<br>
+
+Python has the following data types built-in by default, in these categories.<br>
+
+```bs
+Text Type:	        str
+Numeric Types:	    int, float, complex
+Sequence Types:	    list, tuple, range
+Mapping Type:	    dict
+Set Types:	        set, frozenset
+Boolean Type:	    bool
+Binary Types:	    bytes, bytearray, memoryview
+None Type:	        NoneType
 ```
 
 ```py
