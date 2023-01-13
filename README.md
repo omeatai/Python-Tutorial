@@ -420,13 +420,13 @@ x = str("Hello World")	str
 int, float, complex:
 
 ```bs
-x = 20	int
+x = 20	        int
 x = int(20)	int
 
 x = 20.5	float
 x = float(20.5)	float
 
-x = 1j	complex
+x = 1j	        complex
 x = complex(1j)	complex
 ```
 
