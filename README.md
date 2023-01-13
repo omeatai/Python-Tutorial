@@ -300,11 +300,17 @@ print(type(y))
   <summary>6. Python Global Variables </summary>
 
 Variables that are created outside of a function are known as global variables.<br>
+
 Global variables can be used by everyone, both inside of functions and outside.<br>
+
 If you create a variable with the same name inside a function, this variable will be local, and can only be used inside the function. <br>
+
 The global variable with the same name will remain as it was, global and with the original value.<br>
+
 Normally, when you create a variable inside a function, that variable is local, and can only be used inside that function.<br>
+
 To create a global variable inside a function, you can use the global keyword.<br>
+
 Also, use the global keyword if you want to change a global variable inside a function.<br>
 
 ```py
