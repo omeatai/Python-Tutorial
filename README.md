@@ -489,9 +489,9 @@ x = None	NoneType
 
 There are three numeric types in Python:<br>
 
--int
--float
--complex
+-int<br>
+-float<br>
+-complex<br>
 
 Variables of numeric types are created when you assign a value to them.<br>
 
