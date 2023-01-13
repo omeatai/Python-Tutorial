@@ -45,10 +45,24 @@ python --version
 python -V
 ```
 
-Run Python:
+Run Python File:
 
 ```bs
 python index.py
+```
+
+Run Python Shell:
+
+```bs
+python
+```
+
+```bs
+Python 3.9.12 (main, Apr  5 2022, 01:53:17)
+[Clang 12.0.0 ] :: Anaconda, Inc. on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print("Hello")
+Hello
 ```
 
 </details>
