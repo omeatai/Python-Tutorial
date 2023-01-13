@@ -11,7 +11,7 @@ Python Tutorial by Ifeanyi Omeata
 +INTRODUCTION
 
 <details>
-  <summary>1. What is Python?</summary>
+  <summary>1. Python Introduction</summary>
 
 Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.<br>
 
