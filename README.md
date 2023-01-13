@@ -414,49 +414,72 @@ str:
 
 ```bs
 x = "Hello World"	str
+x = str("Hello World")	str
 ```
 
 int, float, complex:
 
 ```bs
 x = 20	int
+x = int(20)	int
+
 x = 20.5	float
+x = float(20.5)	float
+
+x = 1j	complex
+x = complex(1j)	complex
 ```
 
 list, tuple, range:
 
 ```bs
+x = ["apple", "banana", "cherry"]	list
+x = list(("apple", "banana", "cherry"))	list
 
+x = ("apple", "banana", "cherry")	tuple
+x = tuple(("apple", "banana", "cherry"))	tuple
+
+x = range(6)	range
 ```
 
 dict:
 
 ```bs
-
+x = {"name" : "John", "age" : 36}	dict
+x = dict(name="John", age=36)	dict
 ```
 
 set, frozenset:
 
 ```bs
+x = {"apple", "banana", "cherry"}	set
+x = set(("apple", "banana", "cherry"))	set
 
+x = frozenset({"apple", "banana", "cherry"})	frozenset
 ```
 
 bool:
 
 ```bs
-
+x = True	bool
+x = bool(5)	bool
 ```
 
 bytes, bytearray, memoryview:
 
 ```bs
+x = b"Hello"	bytes
+x = bytes(5)	bytes
 
+x = bytearray(5)	bytearray
+
+x = memoryview(bytes(5))	memoryview
 ```
 
 NoneType:
 
 ```bs
-
+x = None	NoneType
 ```
 
 </details>
