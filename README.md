@@ -608,7 +608,11 @@ print(type(c))
 <class 'complex'>
 ```
 
-Random Number -
+</details>
+
+<details>
+  <summary>9. Python Random Number </summary>
+
 Python does not have a random() function to make a random number, but Python has a built-in module called random that can be used to make random numbers.<br>
 
 ```py
@@ -619,27 +623,6 @@ print(random.randrange(1, 10))
 
 ```py
 # 9
-```
-
-</details>
-
-<details>
-  <summary>9. sample </summary>
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
 ```
 
 </details>
