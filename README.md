@@ -13,20 +13,25 @@ Python Tutorial by Ifeanyi Omeata
 <details>
   <summary>1. What is Python?</summary>
 
-```bs
+Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.<br>
 
-```
+It is used for:<br>
 
-```bs
+web development (server-side),<br>
+software development,<br>
+mathematics,<br>
+system scripting.<br>
 
-```
+What can Python do?<br>
+
+Python can be used on a server to create web applications.<br>
+Python can be used alongside software to create workflows.<br>
+Python can connect to database systems. It can also read and modify files.<br>
+Python can be used to handle big data and perform complex mathematics.<br>
+Python can be used for rapid prototyping, or for production-ready software development.<br>
 
 ```py
-
-```
-
-```py
-
+print("Hello, World!")
 ```
 
 </details>
