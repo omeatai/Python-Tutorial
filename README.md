@@ -106,14 +106,23 @@ Hello
   <summary>2. Python Comments </summary>
 
 Python has commenting capability for the purpose of in-code documentation.<br>
+
 Comments start with a #, and Python will render the rest of the line as a comment.<br>
+
 Comments can be used to explain Python code.<br>
+
 Comments can be used to make the code more readable.<br>
+
 Comments can be used to prevent execution when testing code.<br>
+
 Comments can be placed at the end of a line, and Python will ignore the rest of the line.<br>
+
 A comment does not have to be text that explains the code, it can also be used to prevent Python from executing code.<br>
+
 Python does not really have a syntax for multiline comments.<br>
+
 To add a multiline comment you could insert a # for each line.<br>
+
 Since Python will ignore string literals that are not assigned to a variable, you can add a multiline string (triple quotes) in your code, and place your comment inside it.<br>
 
 ```py
@@ -152,12 +161,18 @@ print("Hello, World!")
   <summary>3. Python Variables </summary>
 
 Python has no command for declaring a variable.<br>
+
 A variable is created the moment you first assign a value to it.<br>
+
 Variable names are case-sensitive.<br>
-A variable can have a short name (like x and y) or a more descriptive name (age, carname, total*volume). Rules for Python variables:<br>
+
+A variable can have a short name (like x and y) or a more descriptive name (age, carname, total\*volume). <br>
+
+Rules for Python variables:<br>
+
 -A variable name must start with a letter or the underscore character<br>
 -A variable name cannot start with a number<br>
--A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and * )<br>
+-A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and \* )<br>
 -Variable names are case-sensitive (age, Age and AGE are three different variables)<br>
 Legal variable names:<br>
 
