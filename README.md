@@ -446,7 +446,7 @@ dict:
 
 ```bs
 x = {"name" : "John", "age" : 36}	dict
-x = dict(name="John", age=36)	dict
+x = dict(name="John", age=36)	        dict
 ```
 
 set, frozenset:
@@ -468,12 +468,12 @@ x = bool(5)	bool
 bytes, bytearray, memoryview:
 
 ```bs
-x = b"Hello"	bytes
-x = bytes(5)	bytes
+x = b"Hello"	            bytes
+x = bytes(5)	            bytes
 
-x = bytearray(5)	bytearray
+x = bytearray(5)	    bytearray
 
-x = memoryview(bytes(5))	memoryview
+x = memoryview(bytes(5))    memoryview
 ```
 
 NoneType:
