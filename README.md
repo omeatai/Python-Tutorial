@@ -63,6 +63,8 @@ Python 3.9.12 (main, Apr  5 2022, 01:53:17)
 Type "help", "copyright", "credits" or "license" for more information.
 >>> print("Hello")
 Hello
+>>> exit()
+%
 ```
 
 </details>
