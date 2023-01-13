@@ -38,6 +38,39 @@ print("Hello, World!")
 # Hello, World!
 ```
 
+```py
+x = "Python is awesome"
+print(x)
+```
+
+```py
+# Python is awesome
+```
+
+```py
+x = "Python"
+y = "is"
+z = "awesome"
+print(x, y, z)
+```
+
+```py
+# Python is awesome
+```
+
+```py
+x = "Python "
+y = "is "
+z = "awesome"
+print(x + y + z)
+```
+
+In the print() function, when you try to combine a string and a number with the + operator, Python will give you an error.
+
+```py
+# Python is awesome
+```
+
 check Python version:
 
 ```bs
@@ -116,64 +149,149 @@ print("Hello, World!")
 </details>
 
 <details>
-  <summary>3. sample </summary>
+  <summary>3. Python Variables </summary>
 
-```bs
+Python has no command for declaring a variable.<br>
+A variable is created the moment you first assign a value to it.<br>
+Variable names are case-sensitive.<br>
+A variable can have a short name (like x and y) or a more descriptive name (age, carname, total*volume). Rules for Python variables:<br>
+-A variable name must start with a letter or the underscore character<br>
+-A variable name cannot start with a number<br>
+-A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and * )<br>
+-Variable names are case-sensitive (age, Age and AGE are three different variables)<br>
+Legal variable names:<br>
 
+```py
+myvar = "John"
+my_var = "John"
+_my_var = "John"
+myVar = "John"
+MYVAR = "John"
+myvar2 = "John"
 ```
 
-```bs
+Camel Case = myVariableName<br>
+Pascal Case = MyVariableName<br>
+Snake Case = my_variable_name<br>
 
+```py
+x = 5
+y = "John"
+print(x)
+print(y)
 ```
 
 ```py
-
+# 5
+# John
 ```
 
 ```py
+x = 4       # x is of type int
+x = "Sally" # x is now of type str
+print(x)
+```
 
+```py
+# Sally
+```
+
+```py
+a = 4
+A = "Sally"
+#A will not overwrite a
+```
+
+Many Values to Multiple Variables-<br>
+Python allows you to assign values to multiple variables in one line:<br>
+
+```py
+x, y, z = "Orange", "Banana", "Cherry"
+print(x)
+print(y)
+print(z)
+```
+
+```py
+# Orange
+# Banana
+# Cherry
+```
+
+One Value to Multiple Variables-<br>
+And you can assign the same value to multiple variables in one line:<br>
+
+```py
+x = y = z = "Orange"
+print(x)
+print(y)
+print(z)
+```
+
+```py
+# Orange
+# Orange
+# Orange
+```
+
+Unpack a Collection-<br>
+If you have a collection of values in a list, tuple etc.<br>
+Python allows you to extract the values into variables. This is called unpacking.<br>
+
+```py
+fruits = ["apple", "banana", "cherry"]
+x, y, z = fruits
+print(x)
+print(y)
+print(z)
+```
+
+```py
+# apple
+# banana
+# cherry
 ```
 
 </details>
 
 <details>
-  <summary>4. sample </summary>
+  <summary>4. Python Type Casting </summary>
 
-```bs
+If you want to specify the data type of a variable, this can be done with casting.
 
-```
+```py
+x = str(3)    # x will be '3'
+y = int(3)    # y will be 3
+z = float(3)  # z will be 3.0
 
-```bs
-
+print(x)
+print(y)
+print(z)
 ```
 
 ```py
-
-```
-
-```py
-
+# 3
+# 3
+# 3.0
 ```
 
 </details>
 
 <details>
-  <summary>5. sample </summary>
+  <summary>5. Python get Type </summary>
 
-```bs
+You can get the data type of a variable with the type() function.
 
-```
-
-```bs
-
+```py
+x = 5
+y = "John"
+print(type(x))
+print(type(y))
 ```
 
 ```py
-
-```
-
-```py
-
+# <class 'int'>
+# <class 'str'>
 ```
 
 </details>
