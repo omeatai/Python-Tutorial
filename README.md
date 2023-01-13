@@ -647,7 +647,7 @@ print(random.randrange(1, 10))
 </details>
 
 <details>
-  <summary>10. sample </summary>
+  <summary>10. Python Strings </summary>
 
 ```py
 
