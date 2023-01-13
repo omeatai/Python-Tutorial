@@ -646,6 +646,8 @@ print(random.randrange(1, 10))
 
 </details>
 
++STRINGS
+
 <details>
   <summary>10. Python Strings </summary>
 
