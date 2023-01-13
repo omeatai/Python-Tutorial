@@ -8,7 +8,7 @@ Python Tutorial by Ifeanyi Omeata
 
 ### [1-PYTHON COURSE - W3SCHOOLS](#)
 
-+ARRAYS
++INTRODUCTION
 
 <details>
   <summary>1. What is Python?</summary>
