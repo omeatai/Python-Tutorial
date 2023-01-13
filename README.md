@@ -34,6 +34,10 @@ Python can be used for rapid prototyping, or for production-ready software devel
 print("Hello, World!")
 ```
 
+```py
+# Hello, World!
+```
+
 </details>
 
 <details>
