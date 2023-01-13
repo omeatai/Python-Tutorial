@@ -45,6 +45,12 @@ python --version
 python -V
 ```
 
+Run Python:
+
+```bs
+python index.py
+```
+
 </details>
 
 <details>
