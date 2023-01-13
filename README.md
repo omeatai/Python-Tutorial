@@ -297,13 +297,24 @@ print(type(y))
 </details>
 
 <details>
-  <summary>6. sample </summary>
+  <summary>6. Python Global Variables </summary>
 
-```bs
+Variables that are created outside of a function are known as global variables.<br>
+Global variables can be used by everyone, both inside of functions and outside.<br>
+
+```py
 
 ```
 
-```bs
+```py
+
+```
+
+```py
+
+```
+
+```py
 
 ```
 
@@ -320,11 +331,11 @@ print(type(y))
 <details>
   <summary>7. sample </summary>
 
-```bs
+```py
 
 ```
 
-```bs
+```py
 
 ```
 
@@ -341,11 +352,11 @@ print(type(y))
 <details>
   <summary>8. sample </summary>
 
-```bs
+```py
 
 ```
 
-```bs
+```py
 
 ```
 
@@ -362,11 +373,11 @@ print(type(y))
 <details>
   <summary>9. sample </summary>
 
-```bs
+```py
 
 ```
 
-```bs
+```py
 
 ```
 
@@ -383,11 +394,11 @@ print(type(y))
 <details>
   <summary>10. sample </summary>
 
-```bs
+```py
 
 ```
 
-```bs
+```py
 
 ```
 
@@ -404,11 +415,11 @@ print(type(y))
 <details>
   <summary>11. sample </summary>
 
-```bs
+```py
 
 ```
 
-```bs
+```py
 
 ```
 
@@ -425,11 +436,11 @@ print(type(y))
 <details>
   <summary>12. sample </summary>
 
-```bs
+```py
 
 ```
 
-```bs
+```py
 
 ```
 
@@ -446,11 +457,11 @@ print(type(y))
 <details>
   <summary>13. sample </summary>
 
-```bs
+```py
 
 ```
 
-```bs
+```py
 
 ```
 
@@ -467,11 +478,11 @@ print(type(y))
 <details>
   <summary>14. sample </summary>
 
-```bs
+```py
 
 ```
 
-```bs
+```py
 
 ```
 
@@ -488,11 +499,11 @@ print(type(y))
 <details>
   <summary>15. sample </summary>
 
-```bs
+```py
 
 ```
 
-```bs
+```py
 
 ```
 
@@ -509,11 +520,11 @@ print(type(y))
 <details>
   <summary>16. sample </summary>
 
-```bs
+```py
 
 ```
 
-```bs
+```py
 
 ```
 
@@ -530,11 +541,11 @@ print(type(y))
 <details>
   <summary>17. sample </summary>
 
-```bs
+```py
 
 ```
 
-```bs
+```py
 
 ```
 
@@ -551,11 +562,11 @@ print(type(y))
 <details>
   <summary>18. sample </summary>
 
-```bs
+```py
 
 ```
 
-```bs
+```py
 
 ```
 
@@ -572,11 +583,11 @@ print(type(y))
 <details>
   <summary>19. sample </summary>
 
-```bs
+```py
 
 ```
 
-```bs
+```py
 
 ```
 
@@ -593,11 +604,11 @@ print(type(y))
 <details>
   <summary>20. sample </summary>
 
-```bs
+```py
 
 ```
 
-```bs
+```py
 
 ```
 
@@ -614,11 +625,11 @@ print(type(y))
 <details>
   <summary>21. sample </summary>
 
-```bs
+```py
 
 ```
 
-```bs
+```py
 
 ```
 
@@ -635,11 +646,11 @@ print(type(y))
 <details>
   <summary>22. sample </summary>
 
-```bs
+```py
 
 ```
 
-```bs
+```py
 
 ```
 
@@ -656,11 +667,11 @@ print(type(y))
 <details>
   <summary>23. sample </summary>
 
-```bs
+```py
 
 ```
 
-```bs
+```py
 
 ```
 
@@ -677,11 +688,11 @@ print(type(y))
 <details>
   <summary>24. sample </summary>
 
-```bs
+```py
 
 ```
 
-```bs
+```py
 
 ```
 
@@ -698,11 +709,11 @@ print(type(y))
 <details>
   <summary>25. sample </summary>
 
-```bs
+```py
 
 ```
 
-```bs
+```py
 
 ```
 
@@ -719,11 +730,11 @@ print(type(y))
 <details>
   <summary>26. sample </summary>
 
-```bs
+```py
 
 ```
 
-```bs
+```py
 
 ```
 
@@ -740,11 +751,11 @@ print(type(y))
 <details>
   <summary>27. sample </summary>
 
-```bs
+```py
 
 ```
 
-```bs
+```py
 
 ```
 
@@ -761,11 +772,11 @@ print(type(y))
 <details>
   <summary>28. sample </summary>
 
-```bs
+```py
 
 ```
 
-```bs
+```py
 
 ```
 
@@ -782,11 +793,11 @@ print(type(y))
 <details>
   <summary>29. sample </summary>
 
-```bs
+```py
 
 ```
 
-```bs
+```py
 
 ```
 
@@ -803,11 +814,11 @@ print(type(y))
 <details>
   <summary>30. sample </summary>
 
-```bs
+```py
 
 ```
 
-```bs
+```py
 
 ```
 
@@ -824,11 +835,11 @@ print(type(y))
 <details>
   <summary>31. sample </summary>
 
-```bs
+```py
 
 ```
 
-```bs
+```py
 
 ```
 
@@ -845,11 +856,11 @@ print(type(y))
 <details>
   <summary>32. sample </summary>
 
-```bs
+```py
 
 ```
 
-```bs
+```py
 
 ```
 
@@ -866,11 +877,11 @@ print(type(y))
 <details>
   <summary>33. sample </summary>
 
-```bs
+```py
 
 ```
 
-```bs
+```py
 
 ```
 
@@ -887,11 +898,11 @@ print(type(y))
 <details>
   <summary>34. sample </summary>
 
-```bs
+```py
 
 ```
 
-```bs
+```py
 
 ```
 
@@ -908,11 +919,11 @@ print(type(y))
 <details>
   <summary>35. sample </summary>
 
-```bs
+```py
 
 ```
 
-```bs
+```py
 
 ```
 
@@ -929,11 +940,11 @@ print(type(y))
 <details>
   <summary>36. sample </summary>
 
-```bs
+```py
 
 ```
 
-```bs
+```py
 
 ```
 
@@ -950,11 +961,11 @@ print(type(y))
 <details>
   <summary>37. sample </summary>
 
-```bs
+```py
 
 ```
 
-```bs
+```py
 
 ```
 
@@ -971,11 +982,11 @@ print(type(y))
 <details>
   <summary>38. sample </summary>
 
-```bs
+```py
 
 ```
 
-```bs
+```py
 
 ```
 
@@ -992,11 +1003,11 @@ print(type(y))
 <details>
   <summary>39. sample </summary>
 
-```bs
+```py
 
 ```
 
-```bs
+```py
 
 ```
 
@@ -1013,11 +1024,11 @@ print(type(y))
 <details>
   <summary>40. sample </summary>
 
-```bs
+```py
 
 ```
 
-```bs
+```py
 
 ```
 
@@ -1034,11 +1045,11 @@ print(type(y))
 <details>
   <summary>41. sample </summary>
 
-```bs
+```py
 
 ```
 
-```bs
+```py
 
 ```
 
@@ -1055,11 +1066,11 @@ print(type(y))
 <details>
   <summary>42. sample </summary>
 
-```bs
+```py
 
 ```
 
-```bs
+```py
 
 ```
 
@@ -1076,11 +1087,11 @@ print(type(y))
 <details>
   <summary>43. sample </summary>
 
-```bs
+```py
 
 ```
 
-```bs
+```py
 
 ```
 
@@ -1097,11 +1108,11 @@ print(type(y))
 <details>
   <summary>44. sample </summary>
 
-```bs
+```py
 
 ```
 
-```bs
+```py
 
 ```
 
@@ -1118,11 +1129,11 @@ print(type(y))
 <details>
   <summary>45. sample </summary>
 
-```bs
+```py
 
 ```
 
-```bs
+```py
 
 ```
 
@@ -1139,11 +1150,11 @@ print(type(y))
 <details>
   <summary>46. sample </summary>
 
-```bs
+```py
 
 ```
 
-```bs
+```py
 
 ```
 
@@ -1160,11 +1171,11 @@ print(type(y))
 <details>
   <summary>47. sample </summary>
 
-```bs
+```py
 
 ```
 
-```bs
+```py
 
 ```
 
@@ -1181,11 +1192,11 @@ print(type(y))
 <details>
   <summary>48. sample </summary>
 
-```bs
+```py
 
 ```
 
-```bs
+```py
 
 ```
 
@@ -1202,11 +1213,11 @@ print(type(y))
 <details>
   <summary>49. sample </summary>
 
-```bs
+```py
 
 ```
 
-```bs
+```py
 
 ```
 
@@ -1223,11 +1234,11 @@ print(type(y))
 <details>
   <summary>50. sample </summary>
 
-```bs
+```py
 
 ```
 
-```bs
+```py
 
 ```
 
