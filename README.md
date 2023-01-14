@@ -152,11 +152,8 @@ print("Hello, World!")
   <summary>3. Python Variables </summary>
 
 - Python has no command for declaring a variable.
-
 - A variable is created the moment you first assign a value to it.
-
 - Variable names are case-sensitive.
-
 - A variable can have a short name (like x and y) or a more descriptive name (age, carname, total\*volume).
 
 Rules for Python variables:
@@ -325,17 +322,12 @@ print(type(y))
 <details>
   <summary>6. Python Global Variables </summary>
 
-Variables that are created outside of a function are known as global variables.
-
-Global variables can be used by everyone, both inside of functions and outside.
-
-If you create a variable with the same name inside a function, this variable will be local, and can only be used inside the function.
-
-The global variable with the same name will remain as it was, global and with the original value.
-
-Normally, when you create a variable inside a function, that variable is local, and can only be used inside that function.
-
-To create a global variable inside a function, you can use the global keyword.
+- Variables that are created outside of a function are known as global variables.
+- Global variables can be used by everyone, both inside of functions and outside.
+- If you create a variable with the same name inside a function, this variable will be local, and can only be used inside the function.
+- The global variable with the same name will remain as it was, global and with the original value.
+- Normally, when you create a variable inside a function, that variable is local, and can only be used inside that function.-
+- To create a global variable inside a function, you can use the global keyword.
 
 Also, use the global keyword if you want to change a global variable inside a function.
 
@@ -404,11 +396,11 @@ print("Python is " + x)
 <details>
   <summary>7. Python DataTypes </summary>
 
-In programming, data type is an important concept.
+- In programming, data type is an important concept.
 
-Variables can store data of different types, and different types can do different things.
+- Variables can store data of different types, and different types can do different things.
 
-Python has the following data types built-in by default, in these categories.
+Python has the following data types built-in by default, in these categories:
 
 ```bs
 Text Type:	        str
@@ -500,23 +492,17 @@ x = None	NoneType
 
 There are three numeric types in Python:
 
--int
--float
--complex
+- int
+- float
+- complex
 
-Variables of numeric types are created when you assign a value to them.
-
-Int, or integer, is a whole number, positive or negative, without decimals, of unlimited length.
-
-Float, or "floating point number" is a number, positive or negative, containing one or more decimals.
-
-Float can also be scientific numbers with an "e" to indicate the power of 10.
-
-Complex numbers are written with a "j" as the imaginary part.
-
-You can convert from one type to another with the int(), float(), and complex() methods.
-
-You cannot convert complex numbers into another number type.
+- Variables of numeric types are created when you assign a value to them.
+- Int, or integer, is a whole number, positive or negative, without decimals, of unlimited length.
+- Float, or "floating point number" is a number, positive or negative, containing one or more decimals.
+- Float can also be scientific numbers with an "e" to indicate the power of 10.
+- Complex numbers are written with a "j" as the imaginary part.
+- You can convert from one type to another with the int(), float(), and complex() methods.
+- You cannot convert complex numbers into another number type.
 
 ```py
 x = 1    # int
