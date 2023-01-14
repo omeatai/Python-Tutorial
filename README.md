@@ -328,8 +328,7 @@ print(type(y))
 - The global variable with the same name will remain as it was, global and with the original value.
 - Normally, when you create a variable inside a function, that variable is local, and can only be used inside that function.-
 - To create a global variable inside a function, you can use the global keyword.
-
-Also, use the global keyword if you want to change a global variable inside a function.
+- Also, use the global keyword if you want to change a global variable inside a function.
 
 ```py
 x = "awesome"
