@@ -106,14 +106,23 @@ Hello
   <summary>2. Python Comments </summary>
 
 - Python has commenting capability for the purpose of in-code documentation.
+
 - Comments start with a #, and Python will render the rest of the line as a comment.
+
 - Comments can be used to explain Python code.
+
 - Comments can be used to make the code more readable.
+
 - Comments can be used to prevent execution when testing code.
+
 - Comments can be placed at the end of a line, and Python will ignore the rest of the line.
+
 - A comment does not have to be text that explains the code, it can also be used to prevent Python from executing code.
+
 - Python does not really have a syntax for multiline comments.
+
 - To add a multiline comment you could insert a # for each line.
+
 - Since Python will ignore string literals that are not assigned to a variable, you can add a multiline string (triple quotes) in your code, and place your comment inside it.
 
 ```py
@@ -152,8 +161,11 @@ print("Hello, World!")
   <summary>3. Python Variables </summary>
 
 - Python has no command for declaring a variable.
+
 - A variable is created the moment you first assign a value to it.
+
 - Variable names are case-sensitive.
+
 - A variable can have a short name (like x and y) or a more descriptive name (age, carname, total\*volume).
 
 Rules for Python variables:
@@ -207,7 +219,8 @@ A = "Sally"
 ```
 
 Many Values to Multiple Variables-
-Python allows you to assign values to multiple variables in one line:
+
+- Python allows you to assign values to multiple variables in one line:
 
 ```py
 x, y, z = "Orange", "Banana", "Cherry"
@@ -223,7 +236,8 @@ print(z)
 ```
 
 One Value to Multiple Variables-
-And you can assign the same value to multiple variables in one line:
+
+- And you can assign the same value to multiple variables in one line:
 
 ```py
 x = y = z = "Orange"
@@ -239,8 +253,9 @@ print(z)
 ```
 
 Unpack a Collection-
-If you have a collection of values in a list, tuple etc.
-Python allows you to extract the values into variables. This is called unpacking.
+
+- If you have a collection of values in a list, tuple etc.
+- Python allows you to extract the values into variables. This is called unpacking.
 
 ```py
 fruits = ["apple", "banana", "cherry"]
@@ -323,11 +338,17 @@ print(type(y))
   <summary>6. Python Global Variables </summary>
 
 - Variables that are created outside of a function are known as global variables.
+
 - Global variables can be used by everyone, both inside of functions and outside.
+
 - If you create a variable with the same name inside a function, this variable will be local, and can only be used inside the function.
+
 - The global variable with the same name will remain as it was, global and with the original value.
-- Normally, when you create a variable inside a function, that variable is local, and can only be used inside that function.-
+
+- Normally, when you create a variable inside a function, that variable is local, and can only be used inside that function.
+
 - To create a global variable inside a function, you can use the global keyword.
+
 - Also, use the global keyword if you want to change a global variable inside a function.
 
 ```py
@@ -496,11 +517,17 @@ There are three numeric types in Python:
 - complex
 
 - Variables of numeric types are created when you assign a value to them.
+
 - Int, or integer, is a whole number, positive or negative, without decimals, of unlimited length.
+
 - Float, or "floating point number" is a number, positive or negative, containing one or more decimals.
+
 - Float can also be scientific numbers with an "e" to indicate the power of 10.
+
 - Complex numbers are written with a "j" as the imaginary part.
+
 - You can convert from one type to another with the int(), float(), and complex() methods.
+
 - You cannot convert complex numbers into another number type.
 
 ```py
