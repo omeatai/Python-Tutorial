@@ -105,25 +105,25 @@ Hello
 <details>
   <summary>2. Python Comments </summary>
 
-Python has commenting capability for the purpose of in-code documentation.<br>
+Python has commenting capability for the purpose of in-code documentation.
 
-Comments start with a #, and Python will render the rest of the line as a comment.<br>
+- Comments start with a #, and Python will render the rest of the line as a comment.
 
-Comments can be used to explain Python code.<br>
+- Comments can be used to explain Python code.
 
-Comments can be used to make the code more readable.<br>
+- Comments can be used to make the code more readable.
 
-Comments can be used to prevent execution when testing code.<br>
+- Comments can be used to prevent execution when testing code.
 
-Comments can be placed at the end of a line, and Python will ignore the rest of the line.<br>
+- Comments can be placed at the end of a line, and Python will ignore the rest of the line.
 
-A comment does not have to be text that explains the code, it can also be used to prevent Python from executing code.<br>
+- A comment does not have to be text that explains the code, it can also be used to prevent Python from executing code.
 
-Python does not really have a syntax for multiline comments.<br>
+- Python does not really have a syntax for multiline comments.
 
-To add a multiline comment you could insert a # for each line.<br>
+- To add a multiline comment you could insert a # for each line.
 
-Since Python will ignore string literals that are not assigned to a variable, you can add a multiline string (triple quotes) in your code, and place your comment inside it.<br>
+- Since Python will ignore string literals that are not assigned to a variable, you can add a multiline string (triple quotes) in your code, and place your comment inside it.
 
 ```py
 #This is a comment.
