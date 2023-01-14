@@ -13,16 +13,16 @@ Python Tutorial by Ifeanyi Omeata
 <details>
   <summary>1. Python Introduction</summary>
 
-Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.<br>
+Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.
 
-It is used for:<br>
+It is used for:
 
 - web development (server-side),
 - software development,
 - mathematics,
 - system scripting.
 
-What can Python do?<br>
+What can Python do?
 
 - Python can be used on a server to create web applications.
 - Python can be used alongside software to create workflows.
@@ -151,21 +151,22 @@ print("Hello, World!")
 <details>
   <summary>3. Python Variables </summary>
 
-Python has no command for declaring a variable.<br>
+- Python has no command for declaring a variable.
 
-A variable is created the moment you first assign a value to it.<br>
+- A variable is created the moment you first assign a value to it.
 
-Variable names are case-sensitive.<br>
+- Variable names are case-sensitive.
 
-A variable can have a short name (like x and y) or a more descriptive name (age, carname, total\*volume). <br>
+- A variable can have a short name (like x and y) or a more descriptive name (age, carname, total\*volume).
 
-Rules for Python variables:<br>
+Rules for Python variables:
 
--A variable name must start with a letter or the underscore character<br>
--A variable name cannot start with a number<br>
--A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and \* )<br>
--Variable names are case-sensitive (age, Age and AGE are three different variables)<br>
-Legal variable names:<br>
+- A variable name must start with a letter or the underscore character
+- A variable name cannot start with a number
+- A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and \* )
+- Variable names are case-sensitive (age, Age and AGE are three different variables)
+
+Legal variable names:
 
 ```py
 myvar = "John"
@@ -176,9 +177,9 @@ MYVAR = "John"
 myvar2 = "John"
 ```
 
-Camel Case = myVariableName<br>
-Pascal Case = MyVariableName<br>
-Snake Case = my_variable_name<br>
+- Camel Case = myVariableName
+- Pascal Case = MyVariableName
+- Snake Case = my_variable_name
 
 ```py
 x = 5
@@ -208,8 +209,8 @@ A = "Sally"
 #A will not overwrite a
 ```
 
-Many Values to Multiple Variables-<br>
-Python allows you to assign values to multiple variables in one line:<br>
+Many Values to Multiple Variables-
+Python allows you to assign values to multiple variables in one line:
 
 ```py
 x, y, z = "Orange", "Banana", "Cherry"
@@ -224,8 +225,8 @@ print(z)
 # Cherry
 ```
 
-One Value to Multiple Variables-<br>
-And you can assign the same value to multiple variables in one line:<br>
+One Value to Multiple Variables-
+And you can assign the same value to multiple variables in one line:
 
 ```py
 x = y = z = "Orange"
@@ -240,9 +241,9 @@ print(z)
 # Orange
 ```
 
-Unpack a Collection-<br>
-If you have a collection of values in a list, tuple etc.<br>
-Python allows you to extract the values into variables. This is called unpacking.<br>
+Unpack a Collection-
+If you have a collection of values in a list, tuple etc.
+Python allows you to extract the values into variables. This is called unpacking.
 
 ```py
 fruits = ["apple", "banana", "cherry"]
@@ -324,19 +325,19 @@ print(type(y))
 <details>
   <summary>6. Python Global Variables </summary>
 
-Variables that are created outside of a function are known as global variables.<br>
+Variables that are created outside of a function are known as global variables.
 
-Global variables can be used by everyone, both inside of functions and outside.<br>
+Global variables can be used by everyone, both inside of functions and outside.
 
-If you create a variable with the same name inside a function, this variable will be local, and can only be used inside the function. <br>
+If you create a variable with the same name inside a function, this variable will be local, and can only be used inside the function.
 
-The global variable with the same name will remain as it was, global and with the original value.<br>
+The global variable with the same name will remain as it was, global and with the original value.
 
-Normally, when you create a variable inside a function, that variable is local, and can only be used inside that function.<br>
+Normally, when you create a variable inside a function, that variable is local, and can only be used inside that function.
 
-To create a global variable inside a function, you can use the global keyword.<br>
+To create a global variable inside a function, you can use the global keyword.
 
-Also, use the global keyword if you want to change a global variable inside a function.<br>
+Also, use the global keyword if you want to change a global variable inside a function.
 
 ```py
 x = "awesome"
@@ -403,11 +404,11 @@ print("Python is " + x)
 <details>
   <summary>7. Python DataTypes </summary>
 
-In programming, data type is an important concept.<br>
+In programming, data type is an important concept.
 
-Variables can store data of different types, and different types can do different things.<br>
+Variables can store data of different types, and different types can do different things.
 
-Python has the following data types built-in by default, in these categories.<br>
+Python has the following data types built-in by default, in these categories.
 
 ```bs
 Text Type:	        str
@@ -497,25 +498,25 @@ x = None	NoneType
 <details>
   <summary>8. Python Numbers </summary>
 
-There are three numeric types in Python:<br>
+There are three numeric types in Python:
 
--int<br>
--float<br>
--complex<br>
+-int
+-float
+-complex
 
-Variables of numeric types are created when you assign a value to them.<br>
+Variables of numeric types are created when you assign a value to them.
 
-Int, or integer, is a whole number, positive or negative, without decimals, of unlimited length.<br>
+Int, or integer, is a whole number, positive or negative, without decimals, of unlimited length.
 
-Float, or "floating point number" is a number, positive or negative, containing one or more decimals.<br>
+Float, or "floating point number" is a number, positive or negative, containing one or more decimals.
 
-Float can also be scientific numbers with an "e" to indicate the power of 10.<br>
+Float can also be scientific numbers with an "e" to indicate the power of 10.
 
-Complex numbers are written with a "j" as the imaginary part.<br>
+Complex numbers are written with a "j" as the imaginary part.
 
-You can convert from one type to another with the int(), float(), and complex() methods.<br>
+You can convert from one type to another with the int(), float(), and complex() methods.
 
-You cannot convert complex numbers into another number type.<br>
+You cannot convert complex numbers into another number type.
 
 ```py
 x = 1    # int
@@ -623,7 +624,7 @@ print(type(c))
 <details>
   <summary>9. Python Random Number </summary>
 
-Python does not have a random() function to make a random number, but Python has a built-in module called random that can be used to make random numbers.<br>
+Python does not have a random() function to make a random number, but Python has a built-in module called random that can be used to make random numbers.
 
 ```py
 import random
