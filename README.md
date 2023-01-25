@@ -1475,7 +1475,44 @@ print(txt.index("q"))
 </details>
 
 <details>
-  <summary>33. sample </summary>
+  <summary>33. Python Strings - isalnum() Method </summary>
+
+- The isalnum() method returns True if all the characters are alphanumeric, meaning alphabet letter (a-z) and numbers (0-9).
+
+- Example of characters that are not alphanumeric: (space)!#%&? etc.
+
+```bs
+string.isalnum()
+```
+
+```py
+txt = "Company12"
+
+x = txt.isalnum()
+
+print(x)
+```
+
+```py
+# True
+```
+
+```py
+txt = "Company 12"
+
+x = txt.isalnum()
+
+print(x)
+```
+
+```py
+# False
+```
+
+</details>
+
+<details>
+  <summary>34. Python Strings - </summary>
 
 ```py
 
@@ -1496,7 +1533,7 @@ print(txt.index("q"))
 </details>
 
 <details>
-  <summary>34. sample </summary>
+  <summary>35. Python Strings - </summary>
 
 ```py
 
@@ -1517,7 +1554,7 @@ print(txt.index("q"))
 </details>
 
 <details>
-  <summary>35. sample </summary>
+  <summary>36. Python Strings - </summary>
 
 ```py
 
@@ -1538,7 +1575,7 @@ print(txt.index("q"))
 </details>
 
 <details>
-  <summary>36. sample </summary>
+  <summary>37. Python Strings - </summary>
 
 ```py
 
@@ -1559,7 +1596,7 @@ print(txt.index("q"))
 </details>
 
 <details>
-  <summary>37. sample </summary>
+  <summary>38. Python Strings - </summary>
 
 ```py
 
@@ -1580,7 +1617,7 @@ print(txt.index("q"))
 </details>
 
 <details>
-  <summary>38. sample </summary>
+  <summary>39. Python Strings - </summary>
 
 ```py
 
@@ -1601,7 +1638,7 @@ print(txt.index("q"))
 </details>
 
 <details>
-  <summary>39. sample </summary>
+  <summary>40. Python Strings - </summary>
 
 ```py
 
@@ -1622,7 +1659,7 @@ print(txt.index("q"))
 </details>
 
 <details>
-  <summary>40. sample </summary>
+  <summary>41. Python Strings - </summary>
 
 ```py
 
@@ -1643,7 +1680,7 @@ print(txt.index("q"))
 </details>
 
 <details>
-  <summary>41. sample </summary>
+  <summary>42. Python Strings - </summary>
 
 ```py
 
@@ -1664,7 +1701,7 @@ print(txt.index("q"))
 </details>
 
 <details>
-  <summary>42. sample </summary>
+  <summary>43. Python Strings - </summary>
 
 ```py
 
@@ -1685,7 +1722,7 @@ print(txt.index("q"))
 </details>
 
 <details>
-  <summary>43. sample </summary>
+  <summary>44. Python Strings - </summary>
 
 ```py
 
@@ -1706,28 +1743,7 @@ print(txt.index("q"))
 </details>
 
 <details>
-  <summary>44. sample </summary>
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-</details>
-
-<details>
-  <summary>45. sample </summary>
+  <summary>45. Python Strings - </summary>
 
 ```py
 
