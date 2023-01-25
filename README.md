@@ -1176,43 +1176,89 @@ print(x)
 </details>
 
 <details>
-  <summary>27. Python Strings - </summary>
+  <summary>27. Python Strings - encode() Method </summary>
 
-```py
+- The encode() method encodes the string, using the specified encoding. If no encoding is specified, UTF-8 will be used.
 
+```bs
+string.encode(encoding=encoding, errors=errors)
 ```
 
 ```py
+txt = "My name is Ståle"
 
+x = txt.encode()
+
+print(x)
 ```
 
 ```py
-
+# b'My name is St\xc3\xe5le'
 ```
 
 ```py
+txt = "My name is Ståle"
 
+print(txt.encode(encoding="ascii",errors="backslashreplace"))
+print(txt.encode(encoding="ascii",errors="ignore"))
+print(txt.encode(encoding="ascii",errors="namereplace"))
+print(txt.encode(encoding="ascii",errors="replace"))
+print(txt.encode(encoding="ascii",errors="xmlcharrefreplace"))
+```
+
+```py
+# b'My name is St\\xe5le'
+# b'My name is Stle'
+# b'My name is St\\N{LATIN SMALL LETTER A WITH RING ABOVE}le'
+# b'My name is St?le'
+# b'My name is Ståle'
 ```
 
 </details>
 
 <details>
-  <summary>28. Python Strings -  </summary>
+  <summary>28. Python Strings - endswith() Method </summary>
 
-```py
+- The endswith() method returns True if the string ends with the specified value, otherwise False.
 
+```bs
+string.endswith(value, start, end)
 ```
 
 ```py
+txt = "Hello, welcome to my world."
 
+x = txt.endswith(".")
+
+print(x)
 ```
 
 ```py
-
+# True
 ```
 
 ```py
+txt = "Hello, welcome to my world."
 
+x = txt.endswith("my world.")
+
+print(x)
+```
+
+```py
+# True
+```
+
+```py
+txt = "Hello, welcome to my world."
+
+x = txt.endswith("my world.", 5, 11)
+
+print(x)
+```
+
+```py
+# False
 ```
 
 </details>
