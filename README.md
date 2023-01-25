@@ -1264,22 +1264,42 @@ print(x)
 </details>
 
 <details>
-  <summary>29. Python Strings - </summary>
+  <summary>29. Python Strings - expandtabs() Method </summary>
 
-```py
+- The expandtabs() method sets the tab size to the specified number of whitespaces.
 
+```bs
+string.expandtabs(tabsize)
 ```
 
 ```py
+txt = "H\te\tl\tl\to"
 
+x =  txt.expandtabs(2)
+
+print(x)
 ```
 
 ```py
-
+# H e l l o
 ```
 
 ```py
+txt = "H\te\tl\tl\to"
 
+print(txt)
+print(txt.expandtabs())
+print(txt.expandtabs(2))
+print(txt.expandtabs(4))
+print(txt.expandtabs(10))
+```
+
+```py
+# H       e       l       l       o
+# H       e       l       l       o
+# H e l l o
+# H   e   l   l   o
+# H         e         l         l         o
 ```
 
 </details>
@@ -1287,62 +1307,169 @@ print(x)
 <details>
   <summary>30. Python Strings - </summary>
 
-```py
+- The find() method finds the first occurrence of the specified value.
 
+- The find() method returns -1 if the value is not found.
+
+- The find() method is almost the same as the index() method, the only difference is that the index() method raises an exception if the value is not found.
+
+```bs
+string.find(value, start, end)
 ```
 
 ```py
+txt = "Hello, welcome to my world."
 
+x = txt.find("welcome")
+
+print(x)
 ```
 
 ```py
-
+# 7
 ```
 
 ```py
+txt = "Hello, welcome to my world."
 
+x = txt.find("e")
+
+print(x)
+```
+
+```py
+# 1
+```
+
+```py
+txt = "Hello, welcome to my world."
+
+x = txt.find("e", 5, 10)
+
+print(x)
+```
+
+```py
+# 8
+```
+
+```py
+txt = "Hello, welcome to my world."
+
+print(txt.find("q"))
+print(txt.index("q"))
+```
+
+```py
+# -1
+# Traceback (most recent call last):
+#   File "demo_ref_string_find_vs_index.py", line 4 in <module>
+#     print(txt.index("q"))
+# ValueError: substring not found
 ```
 
 </details>
 
 <details>
-  <summary>31. Python Strings - </summary>
+  <summary>31. Python Strings - format() Method </summary>
 
-```py
+- The format() method formats the specified value(s) and insert them inside the string's placeholder.
 
+- The placeholder is defined using curly brackets: {}.
+
+- The format() method returns the formatted string.
+
+- The placeholders can be identified using named indexes {price}, numbered indexes {0}, or even empty placeholders {}.
+
+```bs
+string.format(value1, value2...)
 ```
 
 ```py
-
+txt = "For only {price:.2f} dollars!"
+print(txt.format(price = 49))
 ```
 
 ```py
-
+# For only 49.00 dollars!
 ```
 
 ```py
+txt1 = "My name is {fname}, I'm {age}".format(fname = "John", age = 36)
+txt2 = "My name is {0}, I'm {1}".format("John",36)
+txt3 = "My name is {}, I'm {}".format("John",36)
+```
 
+```py
+# My name is John, I'm 36
+# My name is John, I'm 36
+# My name is John, I'm 36
 ```
 
 </details>
 
 <details>
-  <summary>32. Python Strings - </summary>
+  <summary>32. Python Strings - index() Method </summary>
 
-```py
+- The index() method finds the first occurrence of the specified value.
 
+- The index() method raises an exception if the value is not found.
+
+- The index() method is almost the same as the find() method, the only difference is that the find() method returns -1 if the value is not found.
+
+```bs
+string.index(value, start, end)
 ```
 
 ```py
+txt = "Hello, welcome to my world."
 
+x = txt.index("welcome")
+
+print(x)
 ```
 
 ```py
-
+# 7
 ```
 
 ```py
+txt = "Hello, welcome to my world."
 
+x = txt.index("e")
+
+print(x)
+```
+
+```py
+# 1
+```
+
+```py
+txt = "Hello, welcome to my world."
+
+x = txt.index("e", 5, 10)
+
+print(x)
+```
+
+```py
+# 8
+```
+
+```py
+txt = "Hello, welcome to my world."
+
+print(txt.find("q"))
+print(txt.index("q"))
+```
+
+```py
+# -1
+# Traceback (most recent call last):
+#   File "demo_ref_string_find_vs_index.py", line 4 in <module>
+#     print(txt.index("q"))
+# ValueError: substring not found
 ```
 
 </details>
