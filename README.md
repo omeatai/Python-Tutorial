@@ -1038,22 +1038,48 @@ txt = "We are the so-called \"Vikings\" from the north."
 </details>
 
 <details>
-  <summary>23. Python Strings - </summary>
+  <summary>23. Python Strings - capitalize() Method</summary>
 
-```py
+- The capitalize() method returns a string where the first character is upper case, and the rest is lower case.
 
+```bs
+string.capitalize()
 ```
 
 ```py
+txt = "hello, and welcome to my world."
 
+x = txt.capitalize()
+
+print (x)
 ```
 
 ```py
-
+# Hello, and welcome to my world.
 ```
 
 ```py
+txt = "python is FUN!"
 
+x = txt.capitalize()
+
+print (x)
+```
+
+```py
+# Python is fun!
+```
+
+```py
+txt = "36 is my age."
+
+x = txt.capitalize()
+
+print (x)
+```
+
+```py
+# 36 is my age
 ```
 
 </details>
@@ -1143,7 +1169,7 @@ txt = "We are the so-called \"Vikings\" from the north."
 </details>
 
 <details>
-  <summary>28. sample </summary>
+  <summary>28. Python Strings -  </summary>
 
 ```py
 
