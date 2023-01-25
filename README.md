@@ -1305,7 +1305,7 @@ print(txt.expandtabs(10))
 </details>
 
 <details>
-  <summary>30. Python Strings - </summary>
+  <summary>30. Python Strings - find() Method </summary>
 
 - The find() method finds the first occurrence of the specified value.
 
