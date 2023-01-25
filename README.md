@@ -1085,64 +1085,92 @@ print (x)
 </details>
 
 <details>
-  <summary>24. Python Strings - </summary>
+  <summary>24. Python Strings - casefold() Method </summary>
+
+- The casefold() method returns a string where all the characters are lower case.
+
+- This method is similar to the lower() method, but the casefold() method is stronger, more aggressive, meaning that it will convert more characters into lower case, and will find more matches when comparing two strings and both are converted using the casefold() method.
 
 ```py
+txt = "Hello, And Welcome To My World!"
 
+x = txt.casefold()
+
+print(x)
 ```
 
 ```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-</details>
-
-<details>
-  <summary>25. Python Strings - </summary>
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
+# hello, and welcome to my world!
 ```
 
 </details>
 
 <details>
-  <summary>26. Python Strings - </summary>
+  <summary>25. Python Strings - center() Method </summary>
 
-```py
+- The center() method will center align the string, using a specified character (space is default) as the fill character.
 
+```bs
+string.center(length, character)
 ```
 
 ```py
+txt = "banana"
 
+x = txt.center(20)
+
+print(x)
 ```
 
 ```py
-
+# "    banana     "
 ```
 
 ```py
+txt = "banana"
 
+x = txt.center(20, "O")
+
+print(x)
+```
+
+```py
+# OOOOOOObananaOOOOOOO
+```
+
+</details>
+
+<details>
+  <summary>26. Python Strings - count() Method </summary>
+
+- The count() method returns the number of times a specified value appears in the string.
+
+```bs
+string.count(value, start, end)
+```
+
+```py
+txt = "I love apples, apple are my favorite fruit"
+
+x = txt.count("apple")
+
+print(x)
+```
+
+```py
+# 2
+```
+
+```py
+txt = "I love apples, apple are my favorite fruit"
+
+x = txt.count("apple", 10, 24)
+
+print(x)
+```
+
+```py
+# 1
 ```
 
 </details>
