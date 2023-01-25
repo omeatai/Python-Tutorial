@@ -714,72 +714,64 @@ print(a[1])
 </details>
 
 <details>
-  <summary>11. sample </summary>
+  <summary>11. Python Strings - Looping </summary>
+
+- Since strings are arrays, we can loop through the characters in a string, with a for loop.
 
 ```py
-
+for x in "banana":
+  print(x)
 ```
 
 ```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
+# b
+# a
+# n
+# a
+# n
+# a
 ```
 
 </details>
 
 <details>
-  <summary>12. sample </summary>
+  <summary>12. Python Strings - Length </summary>
+
+- To get the length of a string, use the len() function.
 
 ```py
-
+a = "Hello, World!"
+print(len(a))
 ```
 
 ```py
-
-```
-
-```py
-
-```
-
-```py
-
+# 13
 ```
 
 </details>
 
 <details>
-  <summary>13. sample </summary>
+  <summary>13. Python Strings - Check in String </summary>
+
+- To check if a certain phrase or character is present in a string, we can use the keyword in.
 
 ```py
-
+txt = "The best things in life are free!"
+print("free" in txt)
 ```
 
 ```py
-
+# True
 ```
 
 ```py
-
+txt = "The best things in life are free!"
+if "free" in txt:
+  print("Yes, 'free' is present.")
 ```
 
 ```py
-
+# Yes, 'free' is present.
 ```
 
 </details>
