@@ -852,7 +852,193 @@ print(b[-5:-2])
 </details>
 
 <details>
-  <summary>16. Python Strings - </summary>
+  <summary>16. Python Strings - Upper and Lower Case </summary>
+
+- The upper() method returns the string in upper case.
+
+- The lower() method returns the string in lower case.
+
+```py
+a = "Hello, World!"
+print(a.upper())
+```
+
+```py
+# HELLO, WORLD!
+```
+
+```py
+a = "Hello, World!"
+print(a.lower())
+```
+
+```py
+# hello, world!
+```
+
+</details>
+
+<details>
+  <summary>17. Python Strings - Strip (Remove) Whitespace</summary>
+
+- Whitespace is the space before and/or after the actual text, and very often you want to remove this space.
+
+- The strip() method removes any whitespace from the beginning or the end
+
+```py
+a = " Hello, World! "
+print(a.strip()) # returns "Hello, World!"
+```
+
+```py
+# Hello, World!
+```
+
+</details>
+
+<details>
+  <summary>18. Python Strings - Replace String </summary>
+
+- The replace() method replaces a string with another string.
+
+```py
+a = "Hello, World!"
+print(a.replace("H", "J"))
+```
+
+```py
+# Jello, World!
+```
+
+</details>
+
+<details>
+  <summary>19. Python Strings - Split String </summary>
+
+- The split() method returns a list where the text between the specified separator becomes the list items.
+
+- The split() method splits the string into substrings if it finds instances of the separator.
+
+```py
+a = "Hello, World!"
+print(a.split(",")) # returns ['Hello', ' World!']
+```
+
+```py
+# ['Hello', ' World!']
+```
+
+</details>
+
+<details>
+  <summary>20. Python Strings - String Concatenation </summary>
+
+- To concatenate, or combine, two strings you can use the + operator.
+
+```py
+a = "Hello"
+b = "World"
+c = a + b
+print(c)
+```
+
+```py
+# HelloWorld
+```
+
+```py
+a = "Hello"
+b = "World"
+c = a + " " + b
+print(c)
+```
+
+```py
+# Hello World
+```
+
+</details>
+
+<details>
+  <summary>21. Python Strings - Format Strings </summary>
+
+- We can combine strings and numbers by using the format() method!
+
+- The format() method takes the passed arguments, formats them, and places them in the string where the placeholders {} are.
+
+- The format() method takes unlimited number of arguments, and are placed into the respective placeholders.
+
+- You can use index numbers {0} to be sure the arguments are placed in the correct placeholders.
+
+```py
+age = 36
+txt = "My name is John, and I am {}"
+print(txt.format(age))
+```
+
+```py
+# My name is John, and I am 36
+```
+
+```py
+quantity = 3
+itemno = 567
+price = 49.95
+myorder = "I want {} pieces of item {} for {} dollars."
+print(myorder.format(quantity, itemno, price))
+```
+
+```py
+# I want 3 pieces of item 567 for 49.95 dollars.
+```
+
+```py
+quantity = 3
+itemno = 567
+price = 49.95
+myorder = "I want to pay {2} dollars for {0} pieces of item {1}."
+print(myorder.format(quantity, itemno, price))
+```
+
+```py
+# I want to pay 49.95 dollars for 3 pieces of item 567
+```
+
+</details>
+
+<details>
+  <summary>22. Python Strings - Escape Characters </summary>
+
+- To insert characters that are illegal in a string, use an escape character.
+
+- An escape character is a backslash \ followed by the character you want to insert.
+
+- An example of an illegal character is a double quote inside a string that is surrounded by double quotes. To fix this problem, use the escape character \".
+
+```py
+txt = "We are the so-called \"Vikings\" from the north."
+```
+
+```py
+# We are the so-called "Vikings" from the north.
+```
+
+```bs
+\'	  Single Quote
+\\	  Backslash
+\n	  New Line
+\r	  Carriage Return
+\t	  Tab
+\b	  Backspace
+\f	  Form Feed
+\ooo	  Octal value
+\xhh	  Hex value
+```
+
+</details>
+
+<details>
+  <summary>23. Python Strings - </summary>
 
 ```py
 
@@ -873,7 +1059,7 @@ print(b[-5:-2])
 </details>
 
 <details>
-  <summary>17. Python Strings - </summary>
+  <summary>24. Python Strings - </summary>
 
 ```py
 
@@ -894,7 +1080,7 @@ print(b[-5:-2])
 </details>
 
 <details>
-  <summary>18. Python Strings - </summary>
+  <summary>25. Python Strings - </summary>
 
 ```py
 
@@ -915,7 +1101,7 @@ print(b[-5:-2])
 </details>
 
 <details>
-  <summary>19. Python Strings - </summary>
+  <summary>26. Python Strings - </summary>
 
 ```py
 
@@ -936,154 +1122,7 @@ print(b[-5:-2])
 </details>
 
 <details>
-  <summary>20. Python Strings - </summary>
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-</details>
-
-<details>
-  <summary>21. sample </summary>
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-</details>
-
-<details>
-  <summary>22. sample </summary>
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-</details>
-
-<details>
-  <summary>23. sample </summary>
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-</details>
-
-<details>
-  <summary>24. sample </summary>
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-</details>
-
-<details>
-  <summary>25. sample </summary>
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-</details>
-
-<details>
-  <summary>26. sample </summary>
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-</details>
-
-<details>
-  <summary>27. sample </summary>
+  <summary>27. Python Strings - </summary>
 
 ```py
 
@@ -1125,7 +1164,7 @@ print(b[-5:-2])
 </details>
 
 <details>
-  <summary>29. sample </summary>
+  <summary>29. Python Strings - </summary>
 
 ```py
 
@@ -1146,7 +1185,7 @@ print(b[-5:-2])
 </details>
 
 <details>
-  <summary>30. sample </summary>
+  <summary>30. Python Strings - </summary>
 
 ```py
 
@@ -1167,7 +1206,7 @@ print(b[-5:-2])
 </details>
 
 <details>
-  <summary>31. sample </summary>
+  <summary>31. Python Strings - </summary>
 
 ```py
 
@@ -1188,7 +1227,7 @@ print(b[-5:-2])
 </details>
 
 <details>
-  <summary>32. sample </summary>
+  <summary>32. Python Strings - </summary>
 
 ```py
 
