@@ -777,7 +777,82 @@ if "free" in txt:
 </details>
 
 <details>
-  <summary>14. sample </summary>
+  <summary>14. Python Strings - Check not in String </summary>
+
+```py
+txt = "The best things in life are free!"
+print("expensive" not in txt)
+```
+
+```py
+# True
+```
+
+```py
+txt = "The best things in life are free!"
+if "expensive" not in txt:
+  print("No, 'expensive' is NOT present.")
+```
+
+```py
+# No, 'expensive' is NOT present.
+```
+
+</details>
+
+<details>
+  <summary>15. Python Strings - Slicing Strings </summary>
+
+- You can return a range of characters by using the slice syntax.
+
+- Specify the start index and the end index, separated by a colon, to return a part of the string.
+
+- By leaving out the start index, the range will start at the first character.
+
+- By leaving out the end index, the range will go to the end.
+
+- Use negative indexes to start the slice from the end of the string.
+
+```py
+b = "Hello, World!"
+print(b[2:5])
+```
+
+```py
+# llo
+```
+
+```py
+b = "Hello, World!"
+print(b[:5])
+```
+
+```py
+# Hello
+```
+
+```py
+b = "Hello, World!"
+print(b[2:])
+```
+
+```py
+# llo, World!
+```
+
+```py
+b = "Hello, World!"
+print(b[-5:-2])
+```
+
+```py
+# orl
+```
+
+</details>
+
+<details>
+  <summary>16. Python Strings - </summary>
 
 ```py
 
@@ -798,7 +873,7 @@ if "free" in txt:
 </details>
 
 <details>
-  <summary>15. sample </summary>
+  <summary>17. Python Strings - </summary>
 
 ```py
 
@@ -819,7 +894,7 @@ if "free" in txt:
 </details>
 
 <details>
-  <summary>16. sample </summary>
+  <summary>18. Python Strings - </summary>
 
 ```py
 
@@ -840,7 +915,7 @@ if "free" in txt:
 </details>
 
 <details>
-  <summary>17. sample </summary>
+  <summary>19. Python Strings - </summary>
 
 ```py
 
@@ -861,49 +936,7 @@ if "free" in txt:
 </details>
 
 <details>
-  <summary>18. sample </summary>
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-</details>
-
-<details>
-  <summary>19. sample </summary>
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-</details>
-
-<details>
-  <summary>20. sample </summary>
+  <summary>20. Python Strings - </summary>
 
 ```py
 
