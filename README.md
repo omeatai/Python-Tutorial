@@ -2780,215 +2780,322 @@ print(isinstance(x, int))
 
 - Lists are created using square brackets.
 
-```py
+- List items are ordered, changeable, and allow duplicate values.
 
+- List items are indexed, the first item has index [0], the second item has index [1] etc.
+
+- The list is changeable, meaning that we can change, add, and remove items in a list after it has been created.
+
+There are four collection data types in the Python programming language:
+
+- List is a collection which is ordered and changeable. Allows duplicate members.
+- Tuple is a collection which is ordered and unchangeable. Allows duplicate members.
+- Set is a collection which is unordered, unchangeable\*, and unindexed. No duplicate members.
+- Dictionary is a collection which is ordered\*\* and changeable. No duplicate members.
+
+```py
+thislist = ["apple", "banana", "cherry"]
+print(thislist)
 ```
 
 ```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-</details>
-
-<details>
-  <summary>68. Python Lists - </summary>
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
+# ['apple', 'banana', 'cherry']
 ```
 
 </details>
 
 <details>
-  <summary>69. Python Lists - </summary>
+  <summary>68. Python Lists - Length</summary>
+
+To determine how many items a list has, use the len() function.
 
 ```py
-
+thislist = ["apple", "banana", "cherry"]
+print(len(thislist))
 ```
 
 ```py
-
-```
-
-```py
-
-```
-
-```py
-
+# 3
 ```
 
 </details>
 
 <details>
-  <summary>70. Python Lists - </summary>
+  <summary>69. Python Lists - Data type </summary>
 
 ```py
+mylist = ["apple", "banana", "cherry"]
+
+print(type(mylist))
 
 ```
 
 ```py
-
-```
-
-```py
-
-```
-
-```py
-
+# <class 'list'>
 ```
 
 </details>
 
 <details>
-  <summary>71. Python Lists - </summary>
+  <summary>70. Python Lists - list() Constructor </summary>
 
 ```py
+thislist = list(("apple", "banana", "cherry"))
+print(thislist)
 
 ```
 
 ```py
-
-```
-
-```py
-
-```
-
-```py
-
+# ['apple', 'banana', 'cherry']
 ```
 
 </details>
 
 <details>
-  <summary>72. Python Lists - </summary>
+  <summary>71. Python Lists - Access Items</summary>
 
 ```py
+thislist = ["apple", "banana", "cherry"]
+print(thislist[1])
 
 ```
 
 ```py
+# banana
+```
+
+```py
+thislist = ["apple", "banana", "cherry"]
+print(thislist[-1])
 
 ```
 
 ```py
+# cherry
+```
+
+```py
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(thislist[2:5])
+
+#This will return the items from position 2 to 5.
+
+#Remember that the first item is position 0,
+#and note that the item in position 5 is NOT included
 
 ```
 
 ```py
-
-```
-
-</details>
-
-<details>
-  <summary>73. Python Lists - </summary>
-
-```py
-
+# ['cherry', 'orange', 'kiwi']
 ```
 
 ```py
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(thislist[:4])
 
-```
+#This will return the items from index 0 to index 4.
 
-```py
+#Remember that index 0 is the first item, and index 4 is the fifth item
+#Remember that the item in index 4 is NOT included
 
 ```
 
 ```py
-
-```
-
-</details>
-
-<details>
-  <summary>74. Python Lists - </summary>
-
-```py
-
+# ['apple', 'banana', 'cherry', 'orange']
 ```
 
 ```py
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(thislist[2:])
 
+#This will return the items from index 2 to the end.
+
+#Remember that index 0 is the first item, and index 2 is the third
 ```
 
 ```py
-
+# ['cherry', 'orange', 'kiwi', 'melon', 'mango']
 ```
 
 ```py
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(thislist[-4:-1])
 
-```
+#Negative indexing means starting from the end of the list.
 
-</details>
+#This example returns the items from index -4 (included) to index -1 (excluded)
 
-<details>
-  <summary>75. Python Lists - </summary>
-
-```py
+#Remember that the last item has the index -1,
 
 ```
 
 ```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-</details>
-
-<details>
-  <summary>76. Python Lists - </summary>
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
+# ['orange', 'kiwi', 'melon']
 ```
 
 </details>
 
 <details>
-  <summary>77. Python Lists - </summary>
+  <summary>72. Python Lists - Check if Item Exists </summary>
+
+```py
+thislist = ["apple", "banana", "cherry"]
+if "apple" in thislist:
+  print("Yes, 'apple' is in the fruits list")
+```
+
+```py
+# Yes, 'apple' is in the fruits list
+```
+
+</details>
+
+<details>
+  <summary>73. Python Lists - Change Item Value</summary>
+
+```py
+thislist = ["apple", "banana", "cherry"]
+thislist[1] = "blackcurrant"
+
+print(thislist)
+
+```
+
+```py
+# ['apple', 'blackcurrant', 'cherry']
+```
+
+```py
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "mango"]
+
+thislist[1:3] = ["blackcurrant", "watermelon"]
+
+print(thislist)
+
+```
+
+```py
+# ['apple', 'blackcurrant', 'watermelon', 'orange', 'kiwi', 'mango']
+```
+
+```py
+thislist = ["apple", "banana", "cherry"]
+
+thislist[1:2] = ["blackcurrant", "watermelon"]
+
+print(thislist)
+
+```
+
+```py
+# ['apple', 'blackcurrant', 'watermelon', 'cherry']
+```
+
+```py
+thislist = ["apple", "banana", "cherry"]
+
+thislist[1:3] = ["watermelon"]
+
+print(thislist)
+
+```
+
+```py
+# ['apple', 'watermelon']
+```
+
+</details>
+
+<details>
+  <summary>74. Python Lists - Insert() method </summary>
+
+- To insert a new list item, without replacing any of the existing values, we can use the insert() method.
+
+- The insert() method inserts an item at the specified index.
+
+```py
+thislist = ["apple", "banana", "cherry"]
+
+thislist.insert(2, "watermelon")
+
+print(thislist)
+
+```
+
+```py
+# ['apple', 'banana', 'watermelon', 'cherry']
+```
+
+```py
+thislist = ["apple", "banana", "cherry"]
+thislist.insert(1, "orange")
+print(thislist)
+
+```
+
+```py
+# ['apple', 'orange', 'banana', 'cherry']
+```
+
+</details>
+
+<details>
+  <summary>75. Python Lists - Append() method </summary>
+
+To add an item to the end of the list, use the append() method.
+
+```py
+thislist = ["apple", "banana", "cherry"]
+
+thislist.append("orange")
+
+print(thislist)
+
+```
+
+```py
+# ['apple', 'banana', 'cherry', 'orange']
+```
+
+</details>
+
+<details>
+  <summary>76. Python Lists - Extend() method</summary>
+
+To append elements from another list to the current list, use the extend() method.
+
+```py
+thislist = ["apple", "banana", "cherry"]
+tropical = ["mango", "pineapple", "papaya"]
+
+thislist.extend(tropical)
+
+print(thislist)
+
+```
+
+```py
+# ['apple', 'banana', 'cherry', 'mango', 'pineapple', 'papaya']
+```
+
+```py
+thislist = ["apple", "banana", "cherry"]
+thistuple = ("kiwi", "orange")
+
+thislist.extend(thistuple)
+
+print(thislist)
+
+```
+
+```py
+# ['apple', 'banana', 'cherry', 'kiwi', 'orange']
+```
+
+</details>
+
+<details>
+  <summary>77. Python Lists - remove() method </summary>
 
 ```py
 
@@ -3072,7 +3179,7 @@ print(isinstance(x, int))
 </details>
 
 <details>
-  <summary>81. sample </summary>
+  <summary>81. Python Lists - </summary>
 
 ```py
 
@@ -3093,7 +3200,7 @@ print(isinstance(x, int))
 </details>
 
 <details>
-  <summary>82. sample </summary>
+  <summary>82. Python Lists - </summary>
 
 ```py
 
@@ -3114,7 +3221,7 @@ print(isinstance(x, int))
 </details>
 
 <details>
-  <summary>83. sample </summary>
+  <summary>83. Python Lists - </summary>
 
 ```py
 
@@ -3135,7 +3242,7 @@ print(isinstance(x, int))
 </details>
 
 <details>
-  <summary>84. sample </summary>
+  <summary>84. Python Lists - </summary>
 
 ```py
 
@@ -3156,7 +3263,7 @@ print(isinstance(x, int))
 </details>
 
 <details>
-  <summary>85. sample </summary>
+  <summary>85. Python Lists - </summary>
 
 ```py
 
@@ -3177,7 +3284,7 @@ print(isinstance(x, int))
 </details>
 
 <details>
-  <summary>86. sample </summary>
+  <summary>86. Python Lists - </summary>
 
 ```py
 
@@ -3198,7 +3305,7 @@ print(isinstance(x, int))
 </details>
 
 <details>
-  <summary>87. sample </summary>
+  <summary>87. Python Lists - </summary>
 
 ```py
 
@@ -3219,7 +3326,7 @@ print(isinstance(x, int))
 </details>
 
 <details>
-  <summary>88. sample </summary>
+  <summary>88. Python Lists - </summary>
 
 ```py
 
@@ -3240,7 +3347,7 @@ print(isinstance(x, int))
 </details>
 
 <details>
-  <summary>89. sample </summary>
+  <summary>89. Python Lists - </summary>
 
 ```py
 
@@ -3261,7 +3368,7 @@ print(isinstance(x, int))
 </details>
 
 <details>
-  <summary>99. sample </summary>
+  <summary>99. Python Lists - </summary>
 
 ```py
 
