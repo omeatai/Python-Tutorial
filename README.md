@@ -2201,20 +2201,63 @@ print(txt.rindex("q"))
 <details>
   <summary>52. Python Strings - rindex() Method </summary>
 
+- The rindex() method finds the last occurrence of the specified value.
+
+- The rindex() method raises an exception if the value is not found.
+
+- The rindex() method is almost the same as the rfind() method.
+
 ```py
+txt = "Mi casa, su casa."
+
+x = txt.rindex("casa")
+
+print(x)
 
 ```
 
 ```py
+# 12
+```
+
+```py
+txt = "Hello, welcome to my world."
+
+x = txt.rindex("e")
+
+print(x)
 
 ```
 
 ```py
-
+# 13
 ```
 
 ```py
+txt = "Hello, welcome to my world."
 
+x = txt.rindex("e", 5, 10)
+
+print(x)
+```
+
+```py
+# 8
+```
+
+```py
+txt = "Hello, welcome to my world."
+
+print(txt.rfind("q"))
+print(txt.rindex("q"))
+```
+
+```py
+# -1
+# Traceback (most recent call last):
+#   File "demo_ref_string_rfind_vs_rindex.py", line 4 in <module>
+#     print(txt.rindex("q"))
+# ValueError: substring not found
 ```
 
 </details>
@@ -2222,20 +2265,31 @@ print(txt.rindex("q"))
 <details>
   <summary>53. Python Strings - rjust() Method  </summary>
 
+The rjust() method will right align the string, using a specified character (space is default) as the fill character.
+
 ```py
+txt = "banana"
+
+x = txt.rjust(20)
+
+print(x, "is my favorite fruit.")
+```
+
+```py
+#                  banana is my favorite fruit.
+```
+
+```py
+txt = "banana"
+
+x = txt.rjust(20, "O")
+
+print(x)
 
 ```
 
 ```py
-
-```
-
-```py
-
-```
-
-```py
-
+# OOOOOOOOOOOOOObanana
 ```
 
 </details>
@@ -2243,20 +2297,36 @@ print(txt.rindex("q"))
 <details>
   <summary>54. Python Strings - rpartition() Method </summary>
 
-```py
+- The rpartition() method searches for the last occurrence of a specified string, and splits the string into a tuple containing three elements.
 
+- The first element contains the part before the specified string.
+
+- The second element contains the specified string.
+
+- The third element contains the part after the string.
+
+```py
+txt = "I could eat bananas all day, bananas are my favorite fruit"
+
+x = txt.rpartition("bananas")
+
+print(x)
 ```
 
 ```py
-
+# ('I could eat bananas all day, ', 'bananas', ' are my favorite fruit')
 ```
 
 ```py
+txt = "I could eat bananas all day, bananas are my favorite fruit"
 
+x = txt.rpartition("apples")
+
+print(x)
 ```
 
 ```py
-
+# ('', '', 'I could eat bananas all day, bananas are my favorite fruit')
 ```
 
 </details>
@@ -2264,20 +2334,35 @@ print(txt.rindex("q"))
 <details>
   <summary>55. Python Strings - rsplit() Method </summary>
 
-```py
+- The rsplit() method splits a string into a list, starting from the right.
 
+- If no "max" is specified, this method will return the same as the split() method.
+
+```py
+txt = "apple, banana, cherry"
+
+x = txt.rsplit(", ")
+
+print(x)
 ```
 
 ```py
-
+# ['apple', 'banana', 'cherry']
 ```
 
 ```py
+txt = "apple, banana, cherry"
 
+# setting the maxsplit parameter to 1, will return a list with 2 elements!
+x = txt.rsplit(", ", 1)
+
+print(x)
+
+# note that the result has only 2 elements "apple, banana" is the first element, and "cherry" is the last.
 ```
 
 ```py
-
+['apple, banana', 'cherry']
 ```
 
 </details>
@@ -2285,20 +2370,31 @@ print(txt.rindex("q"))
 <details>
   <summary>56. Python Strings - rstrip() Method </summary>
 
+The rstrip() method removes any trailing characters (characters at the end a string), space is the default trailing character to remove.
+
 ```py
+txt = "     banana     "
+
+x = txt.rstrip()
+
+print("of all fruits", x, "is my favorite")
+```
+
+```py
+# of all fruits     banana is my favorite
+```
+
+```py
+txt = "banana,,,,,ssqqqww....."
+
+x = txt.rstrip(",.qsw")
+
+print(x)
 
 ```
 
 ```py
-
-```
-
-```py
-
-```
-
-```py
-
+# banana
 ```
 
 </details>
@@ -2307,19 +2403,53 @@ print(txt.rindex("q"))
   <summary>57. Python Strings - split() Method </summary>
 
 ```py
+txt = "welcome to the jungle"
+
+x = txt.split()
+
+print(x)
+```
+
+```py
+# ['welcome', 'to', 'the', 'jungle']
+```
+
+```py
+txt = "hello, my name is Peter, I am 26 years old"
+
+x = txt.split(", ")
+
+print(x)
+```
+
+```py
+# ['hello', 'my name is Peter', 'I am 26 years old']
+```
+
+```py
+txt = "apple#banana#cherry#orange"
+
+x = txt.split("#")
+
+print(x)
 
 ```
 
 ```py
-
+# ['apple', 'banana', 'cherry', 'orange']
 ```
 
 ```py
+txt = "apple#banana#cherry#orange"
 
+# setting the maxsplit parameter to 1, will return a list with 2 elements!
+x = txt.split("#", 1)
+
+print(x)
 ```
 
 ```py
-
+# ['apple', 'banana#cherry#orange']
 ```
 
 </details>
@@ -2327,20 +2457,32 @@ print(txt.rindex("q"))
 <details>
   <summary>58. Python Strings - splitlines() Method </summary>
 
+The splitlines() method splits a string into a list. The splitting is done at line breaks.
+
 ```py
+txt = "Thank you for the music\nWelcome to the jungle"
+
+x = txt.splitlines()
+
+print(x)
 
 ```
 
 ```py
+# ['Thank you for the music', 'Welcome to the jungle']
+```
+
+```py
+txt = "Thank you for the music\nWelcome to the jungle"
+
+x = txt.splitlines(True)
+
+print(x)
 
 ```
 
 ```py
-
-```
-
-```py
-
+# ['Thank you for the music\n', 'Welcome to the jungle']
 ```
 
 </details>
@@ -2348,20 +2490,32 @@ print(txt.rindex("q"))
 <details>
   <summary>59. Python Strings - startswith() Method </summary>
 
+The startswith() method returns True if the string starts with the specified value, otherwise False.
+
 ```py
+txt = "Hello, welcome to my world."
+
+x = txt.startswith("Hello")
+
+print(x)
 
 ```
 
 ```py
+# True
+```
+
+```py
+txt = "Hello, welcome to my world."
+
+x = txt.startswith("wel", 7, 20)
+
+print(x)
 
 ```
 
 ```py
-
-```
-
-```py
-
+# True
 ```
 
 </details>
@@ -2369,20 +2523,32 @@ print(txt.rindex("q"))
 <details>
   <summary>60. Python Strings - strip() Method </summary>
 
+The strip() method removes any leading (spaces at the beginning) and trailing (spaces at the end) characters (space is the default leading character to remove).
+
 ```py
+txt = "     banana     "
+
+x = txt.strip()
+
+print("of all fruits", x, "is my favorite")
 
 ```
 
 ```py
+# of all fruits banana is my favorite
+```
+
+```py
+txt = ",,,,,rrttgg.....banana....rrr"
+
+x = txt.strip(",.grt")
+
+print(x)
 
 ```
 
 ```py
-
-```
-
-```py
-
+# banana
 ```
 
 </details>
@@ -2390,20 +2556,19 @@ print(txt.rindex("q"))
 <details>
   <summary>61. Python Strings - swapcase() Method </summary>
 
+The swapcase() method returns a string where all the upper case letters are lower case and vice versa.
+
 ```py
+txt = "Hello My Name Is PETER"
+
+x = txt.swapcase()
+
+print(x)
 
 ```
 
 ```py
-
-```
-
-```py
-
-```
-
-```py
-
+# hELLO mY nAME iS peter
 ```
 
 </details>
@@ -2411,20 +2576,33 @@ print(txt.rindex("q"))
 <details>
   <summary>62. Python Strings - title() Method </summary>
 
+- The title() method returns a string where the first character in every word is upper case. Like a header, or a title.
+
+- If the word contains a number or a symbol, the first letter after that will be converted to upper case.
+
 ```py
+txt = "Welcome to my world"
+
+x = txt.title()
+
+print(x)
+```
+
+```py
+# Welcome To My World
+```
+
+```py
+txt = "Welcome to my 2nd world"
+
+x = txt.title()
+
+print(x)
 
 ```
 
 ```py
-
-```
-
-```py
-
-```
-
-```py
-
+# Welcome To My 2Nd World
 ```
 
 </details>
@@ -2432,20 +2610,85 @@ print(txt.rindex("q"))
 <details>
   <summary>63. Python Strings - translate() Method </summary>
 
+- The translate() method returns a string where some specified characters are replaced with the character described in a dictionary, or in a mapping table.
+
+- Use the maketrans() method to create a mapping table.
+
+- If a character is not specified in the dictionary/table, the character will not be replaced.
+
+- If you use a dictionary, you must use ascii codes instead of characters.
+
 ```py
+#use a dictionary with ascii codes to replace 83 (S) with 80 (P):
+mydict = {83:  80}
+
+txt = "Hello Sam!"
+
+print(txt.translate(mydict))
 
 ```
 
 ```py
+# Hello Pam!
+```
+
+```py
+txt = "Hello Sam!"
+
+mytable = txt.maketrans("S", "P")
+
+print(txt.translate(mytable))
 
 ```
 
 ```py
+# Hello Pam!
+```
+
+```py
+txt = "Hi Sam!"
+
+x = "mSa"
+y = "eJo"
+
+mytable = txt.maketrans(x, y)
+
+print(txt.translate(mytable))
 
 ```
 
 ```py
+# Hi Joe!
+```
 
+```py
+txt = "Good night Sam!"
+
+x = "mSa"
+y = "eJo"
+z = "odnght"
+
+mytable = txt.maketrans(x, y, z)
+
+print(txt.translate(mytable))
+
+```
+
+```py
+# G i Joe!
+```
+
+```py
+txt = "Good night Sam!"
+
+mydict = {109: 101, 83: 74, 97: 111, 111: None, 100: None, 110: None, 103: None, 104: None, 116: None}
+
+print(txt.translate(mydict))
+
+```
+
+```py
+# G i Joe!
 ```
 
 </details>
@@ -2453,20 +2696,21 @@ print(txt.rindex("q"))
 <details>
   <summary>64. Python Strings - upper() Method </summary>
 
+- The upper() method returns a string where all characters are in upper case.
+
+- Symbols and Numbers are ignored.
+
 ```py
+txt = "Hello my friends"
+
+x = txt.upper()
+
+print(x)
 
 ```
 
 ```py
-
-```
-
-```py
-
-```
-
-```py
-
+# HELLO MY FRIENDS
 ```
 
 </details>
@@ -2474,20 +2718,37 @@ print(txt.rindex("q"))
 <details>
   <summary>65. Python Strings - zfill() Method </summary>
 
+- The zfill() method adds zeros (0) at the beginning of the string, until it reaches the specified length.
+
+- If the value of the len parameter is less than the length of the string, no filling is done.
+
 ```py
+txt = "50"
+
+x = txt.zfill(10)
+
+print(x)
 
 ```
 
 ```py
-
+# 0000000050
 ```
 
 ```py
+a = "hello"
+b = "welcome to the jungle"
+c = "10.000"
 
+print(a.zfill(10))
+print(b.zfill(10))
+print(c.zfill(10))
 ```
 
 ```py
-
+# 00000hello
+# welcome to the jungle
+# 000010.000
 ```
 
 </details>
