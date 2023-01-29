@@ -3572,7 +3572,7 @@ print(mylist)
 </details>
 
 <details>
-  <summary>100. sample </summary>
+  <summary>100. Python Lists - </summary>
 
 ```py
 
@@ -3593,7 +3593,7 @@ print(mylist)
 </details>
 
 <details>
-  <summary>101. sample </summary>
+  <summary>101. Python Lists - </summary>
 
 ```py
 
@@ -3614,7 +3614,7 @@ print(mylist)
 </details>
 
 <details>
-  <summary>102. sample </summary>
+  <summary>102. Python Lists - </summary>
 
 ```py
 
@@ -3635,7 +3635,7 @@ print(mylist)
 </details>
 
 <details>
-  <summary>103. sample </summary>
+  <summary>103. Python Lists - </summary>
 
 ```py
 
@@ -3656,7 +3656,7 @@ print(mylist)
 </details>
 
 <details>
-  <summary>104. sample </summary>
+  <summary>104. Python Lists - </summary>
 
 ```py
 
@@ -3677,7 +3677,7 @@ print(mylist)
 </details>
 
 <details>
-  <summary>105. sample </summary>
+  <summary>105. Python Lists - </summary>
 
 ```py
 
@@ -3698,7 +3698,7 @@ print(mylist)
 </details>
 
 <details>
-  <summary>106. sample </summary>
+  <summary>106. Python Lists - </summary>
 
 ```py
 
@@ -3719,7 +3719,7 @@ print(mylist)
 </details>
 
 <details>
-  <summary>107. sample </summary>
+  <summary>107. Python Lists - </summary>
 
 ```py
 
@@ -3740,7 +3740,7 @@ print(mylist)
 </details>
 
 <details>
-  <summary>108. sample </summary>
+  <summary>108. Python Lists - </summary>
 
 ```py
 
@@ -3761,7 +3761,7 @@ print(mylist)
 </details>
 
 <details>
-  <summary>109. sample </summary>
+  <summary>109. Python Lists - </summary>
 
 ```py
 
@@ -3782,7 +3782,7 @@ print(mylist)
 </details>
 
 <details>
-  <summary>110. sample </summary>
+  <summary>110. Python Lists - </summary>
 
 ```py
 
