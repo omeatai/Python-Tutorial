@@ -2091,20 +2091,44 @@ print(x)
 <details>
   <summary>50. Python Strings - replace() Method </summary>
 
+The replace() method replaces a specified phrase with another specified phrase.
+
 ```py
+txt = "I like bananas"
+
+x = txt.replace("bananas", "apples")
+
+print(x)
+```
+
+```py
+# I like apples
+```
+
+```py
+txt = "one one was a race horse, two two was one too."
+
+x = txt.replace("one", "three")
+
+print(x)
 
 ```
 
 ```py
+# three three was a race horse, two two was three too."
+```
+
+```py
+txt = "one one was a race horse, two two was one too."
+
+x = txt.replace("one", "three", 2)
+
+print(x)
 
 ```
 
 ```py
-
-```
-
-```py
-
+# three three was a race horse, two two was one too."
 ```
 
 </details>
@@ -2112,20 +2136,64 @@ print(x)
 <details>
   <summary>51. Python Strings - rfind() Method </summary>
 
+- The rfind() method finds the last occurrence of the specified value.
+
+- The rfind() method returns -1 if the value is not found.
+
+- The rfind() method is almost the same as the rindex() method.
+
 ```py
+txt = "Mi casa, su casa."
+
+x = txt.rfind("casa")
+
+print(x)
 
 ```
 
 ```py
+# 12
+```
+
+```py
+txt = "Hello, welcome to my world."
+
+x = txt.rfind("e")
+
+print(x)
 
 ```
 
 ```py
+# 13
+```
+
+```py
+txt = "Hello, welcome to my world."
+
+x = txt.rfind("e", 5, 10)
+
+print(x)
 
 ```
 
 ```py
+# 8
+```
 
+```py
+txt = "Hello, welcome to my world."
+
+print(txt.rfind("q"))
+print(txt.rindex("q"))
+```
+
+```py
+# -1
+# Traceback (most recent call last):
+#   File "demo_ref_string_rfind_vs_rindex.py", line 4 in <module>
+#     print(txt.rindex("q"))
+# ValueError: substring not found
 ```
 
 </details>
