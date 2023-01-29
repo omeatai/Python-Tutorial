@@ -3097,264 +3097,443 @@ print(thislist)
 <details>
   <summary>77. Python Lists - remove() method </summary>
 
+The remove() method removes the specified item.
+
 ```py
+thislist = ["apple", "banana", "cherry"]
+thislist.remove("banana")
+print(thislist)
 
 ```
 
 ```py
-
-```
-
-```py
-
-```
-
-```py
-
+# ['apple', 'cherry']
 ```
 
 </details>
 
 <details>
-  <summary>78. Python Lists - </summary>
+  <summary>78. Python Lists - pop() method </summary>
+
+The pop() method removes the specified index.
 
 ```py
+thislist = ["apple", "banana", "cherry"]
+thislist.pop(1)
+print(thislist)
 
 ```
 
 ```py
+# ['apple', 'cherry']
+```
+
+```py
+thislist = ["apple", "banana", "cherry"]
+thislist.pop()
+print(thislist)
 
 ```
 
 ```py
-
-```
-
-```py
-
-```
-
-</details>
-
-<details>
-  <summary>79. Python Lists - </summary>
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
+# ['apple', 'banana']
 ```
 
 </details>
 
 <details>
-  <summary>80. Python Lists - </summary>
+  <summary>79. Python Lists - del keyword </summary>
+
+The del keyword also removes the specified index.
 
 ```py
+thislist = ["apple", "banana", "cherry"]
+del thislist[0]
+print(thislist)
 
 ```
 
 ```py
-
+# ['banana', 'cherry']
 ```
 
 ```py
-
+thislist = ["apple", "banana", "cherry"]
+del thislist
+print(thislist) #this will cause an error because you have succsesfully deleted "thislist".
 ```
 
 ```py
-
-```
-
-</details>
-
-<details>
-  <summary>81. Python Lists - </summary>
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
+# Traceback (most recent call last):
+#   File "demo_list_del2.py", line 3, in <module>
+#     print(thislist) #this will cause an error because you have succsesfully deleted "thislist".
+# NameError: name 'thislist' is not defined
 ```
 
 </details>
 
 <details>
-  <summary>82. Python Lists - </summary>
+  <summary>80. Python Lists - clear() method </summary>
+
+- The clear() method empties the list.
+
+- The list still remains, but it has no content.
 
 ```py
-
+thislist = ["apple", "banana", "cherry"]
+thislist.clear()
+print(thislist)
 ```
 
 ```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-</details>
-
-<details>
-  <summary>83. Python Lists - </summary>
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
+# []
 ```
 
 </details>
 
 <details>
-  <summary>84. Python Lists - </summary>
+  <summary>81. Python Lists - Loop Through a List </summary>
+
+You can loop through the list items by using a for loop.
 
 ```py
+thislist = ["apple", "banana", "cherry"]
+for x in thislist:
+  print(x)
 
 ```
 
 ```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-</details>
-
-<details>
-  <summary>85. Python Lists - </summary>
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
+# apple
+# banana
+# cherry
 ```
 
 </details>
 
 <details>
-  <summary>86. Python Lists - </summary>
+  <summary>82. Python Lists - Loop Through the Index Numbers</summary>
+
+- You can also loop through the list items by referring to their index number.
+
+- Use the range() and len() functions to create a suitable iterable.
 
 ```py
-
+thislist = ["apple", "banana", "cherry"]
+for i in range(len(thislist)):
+  print(thislist[i])
 ```
 
 ```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-</details>
-
-<details>
-  <summary>87. Python Lists - </summary>
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
+# apple
+# banana
+# cherry
 ```
 
 </details>
 
 <details>
-  <summary>88. Python Lists - </summary>
+  <summary>83. Python Lists - While Loop </summary>
+
+- You can loop through the list items by using a while loop.
+
+- Use the len() function to determine the length of the list, then start at 0 and loop your way through the list items by referring to their indexes.
+
+- Remember to increase the index by 1 after each iteration.
 
 ```py
+thislist = ["apple", "banana", "cherry"]
+i = 0
+while i < len(thislist):
+  print(thislist[i])
+  i = i + 1
 
 ```
 
 ```py
-
-```
-
-```py
-
-```
-
-```py
-
+# apple
+# banana
+# cherry
 ```
 
 </details>
 
 <details>
-  <summary>89. Python Lists - </summary>
+  <summary>84. Python Lists - List Comprehension</summary>
+
+The Syntax:
+
+```bs
+newlist = [expression for item in iterable if condition == True]
+```
+
+List Comprehension offers the shortest syntax for looping through lists.
 
 ```py
+thislist = ["apple", "banana", "cherry"]
+[print(x) for x in thislist]
 
 ```
 
 ```py
+# apple
+# banana
+# cherry
+```
 
+```py
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+newlist = []
+
+for x in fruits:
+  if "a" in x:
+    newlist.append(x)
+
+print(newlist)
+
+```
+
+```py
+# ['apple', 'banana', 'mango']
+```
+
+```py
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+newlist = [x for x in fruits if "a" in x]
+
+print(newlist)
+
+```
+
+```py
+# ['apple', 'banana', 'mango']
+```
+
+```py
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+
+newlist = [x for x in fruits if x != "apple"]
+
+print(newlist)
+
+```
+
+```py
+# ['banana', 'cherry', 'kiwi', 'mango']
+```
+
+```py
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+
+newlist = [x for x in fruits]
+
+print(newlist)
+
+```
+
+```py
+# ['apple', 'banana', 'cherry', 'kiwi', 'mango']
+```
+
+```py
+newlist = [x for x in range(10)]
+
+print(newlist)
+
+```
+
+```py
+# [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+```
+
+```py
+newlist = [x for x in range(10) if x < 5]
+
+print(newlist)
+
+```
+
+```py
+# [0, 1, 2, 3, 4]
+```
+
+```py
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+
+newlist = [x.upper() for x in fruits]
+
+print(newlist)
+
+```
+
+```py
+# ['APPLE', 'BANANA', 'CHERRY', 'KIWI', 'MANGO']
+```
+
+```py
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+
+newlist = ['hello' for x in fruits]
+
+print(newlist)
+
+```
+
+```py
+# ['hello', 'hello', 'hello', 'hello', 'hello']
+```
+
+```py
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+
+newlist = [x if x != "banana" else "orange" for x in fruits]
+
+print(newlist)
+
+```
+
+```py
+# ['apple', 'orange', 'cherry', 'kiwi', 'mango']
+```
+
+</details>
+
+<details>
+  <summary>85. Python Lists - Sort Ascending </summary>
+
+List objects have a sort() method that will sort the list alphanumerically, ascending, by default.
+
+```py
+thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+
+thislist.sort()
+
+print(thislist)
+
+```
+
+```py
+# ['banana', 'kiwi', 'mango', 'orange', 'pineapple']
+```
+
+```py
+thislist = [100, 50, 65, 82, 23]
+
+thislist.sort()
+
+print(thislist)
+
+```
+
+```py
+# [23, 50, 65, 82, 100]
+```
+
+</details>
+
+<details>
+  <summary>86. Python Lists - Sort Descending</summary>
+
+```py
+thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+
+thislist.sort(reverse = True)
+
+print(thislist)
+
+```
+
+```py
+# ['pineapple', 'orange', 'mango', 'kiwi', 'banana']
+```
+
+```py
+thislist = [100, 50, 65, 82, 23]
+
+thislist.sort(reverse = True)
+
+print(thislist)
+
+```
+
+```py
+# [100, 82, 65, 50, 23]
+```
+
+</details>
+
+<details>
+  <summary>87. Python Lists - Customize Sort </summary>
+
+```py
+def myfunc(n):
+  return abs(n - 50)
+
+thislist = [100, 50, 65, 82, 23]
+
+thislist.sort(key = myfunc)
+
+print(thislist)
+
+```
+
+```py
+# [50, 65, 23, 82, 100]
+```
+
+</details>
+
+<details>
+  <summary>88. Python Lists - Case Insensitive </summary>
+
+By default the sort() method is case sensitive, resulting in all capital letters being sorted before lower case letters.
+
+```py
+thislist = ["banana", "Orange", "Kiwi", "cherry"]
+
+thislist.sort()
+
+print(thislist)
+
+```
+
+```py
+# ['Kiwi', 'Orange', 'banana', 'cherry']
+```
+
+```py
+thislist = ["banana", "Orange", "Kiwi", "cherry"]
+
+thislist.sort(key = str.lower)
+
+print(thislist)
+
+```
+
+```py
+# ['banana', 'cherry', 'Kiwi', 'Orange']
+```
+
+</details>
+
+<details>
+  <summary>89. Python Lists - Reverse Order of List </summary>
+
+- What if you want to reverse the order of a list, regardless of the alphabet?
+
+- The reverse() method reverses the current sorting order of the elements.
+
+```py
+thislist = ["banana", "Orange", "Kiwi", "cherry"]
+
+thislist.reverse()
+
+print(thislist)
+
+```
+
+```py
+# ['cherry', 'Kiwi', 'Orange', 'banana']
 ```
 
 ```py
