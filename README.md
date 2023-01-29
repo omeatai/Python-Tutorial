@@ -2754,7 +2754,31 @@ print(c.zfill(10))
 </details>
 
 <details>
-  <summary>66. sample </summary>
+  <summary>66. Python isinstance() </summary>
+
+Python also has many built-in functions that return a boolean value, like the isinstance() function, which can be used to determine if an object is of a certain data type
+
+```py
+x = 200
+print(isinstance(x, int))
+```
+
+```py
+# True
+```
+
+</details>
+
++LISTS
+
+<details>
+  <summary>67. Python Lists - Introduction </summary>
+
+- Lists are used to store multiple items in a single variable.
+
+- Lists are one of 4 built-in data types in Python used to store collections of data, the other 3 are Tuple, Set, and Dictionary, all with different qualities and usage.
+
+- Lists are created using square brackets.
 
 ```py
 
@@ -2775,7 +2799,7 @@ print(c.zfill(10))
 </details>
 
 <details>
-  <summary>67. sample </summary>
+  <summary>68. Python Lists - </summary>
 
 ```py
 
@@ -2796,7 +2820,7 @@ print(c.zfill(10))
 </details>
 
 <details>
-  <summary>68. sample </summary>
+  <summary>69. Python Lists - </summary>
 
 ```py
 
@@ -2817,7 +2841,7 @@ print(c.zfill(10))
 </details>
 
 <details>
-  <summary>69. sample </summary>
+  <summary>70. Python Lists - </summary>
 
 ```py
 
@@ -2838,7 +2862,7 @@ print(c.zfill(10))
 </details>
 
 <details>
-  <summary>70. sample </summary>
+  <summary>71. Python Lists - </summary>
 
 ```py
 
@@ -2859,7 +2883,7 @@ print(c.zfill(10))
 </details>
 
 <details>
-  <summary>71. sample </summary>
+  <summary>72. Python Lists - </summary>
 
 ```py
 
@@ -2880,7 +2904,7 @@ print(c.zfill(10))
 </details>
 
 <details>
-  <summary>72. sample </summary>
+  <summary>73. Python Lists - </summary>
 
 ```py
 
@@ -2901,7 +2925,7 @@ print(c.zfill(10))
 </details>
 
 <details>
-  <summary>73. sample </summary>
+  <summary>74. Python Lists - </summary>
 
 ```py
 
@@ -2922,7 +2946,7 @@ print(c.zfill(10))
 </details>
 
 <details>
-  <summary>74. sample </summary>
+  <summary>75. Python Lists - </summary>
 
 ```py
 
@@ -2943,7 +2967,7 @@ print(c.zfill(10))
 </details>
 
 <details>
-  <summary>75. sample </summary>
+  <summary>76. Python Lists - </summary>
 
 ```py
 
@@ -2964,7 +2988,7 @@ print(c.zfill(10))
 </details>
 
 <details>
-  <summary>76. sample </summary>
+  <summary>77. Python Lists - </summary>
 
 ```py
 
@@ -2985,7 +3009,7 @@ print(c.zfill(10))
 </details>
 
 <details>
-  <summary>77. sample </summary>
+  <summary>78. Python Lists - </summary>
 
 ```py
 
@@ -3006,7 +3030,7 @@ print(c.zfill(10))
 </details>
 
 <details>
-  <summary>78. sample </summary>
+  <summary>79. Python Lists - </summary>
 
 ```py
 
@@ -3027,28 +3051,7 @@ print(c.zfill(10))
 </details>
 
 <details>
-  <summary>79. sample </summary>
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-</details>
-
-<details>
-  <summary>80. sample </summary>
+  <summary>80. Python Lists - </summary>
 
 ```py
 
