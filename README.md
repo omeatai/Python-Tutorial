@@ -1512,7 +1512,7 @@ print(x)
 </details>
 
 <details>
-  <summary>34. Python Strings - </summary>
+  <summary>34. Python Strings - isalpha() Method </summary>
 
 ```py
 
@@ -1533,7 +1533,7 @@ print(x)
 </details>
 
 <details>
-  <summary>35. Python Strings - </summary>
+  <summary>35. Python Strings - isdecimal() Method </summary>
 
 ```py
 
@@ -1554,7 +1554,7 @@ print(x)
 </details>
 
 <details>
-  <summary>36. Python Strings - </summary>
+  <summary>36. Python Strings - isdigit() Method </summary>
 
 ```py
 
@@ -1575,7 +1575,7 @@ print(x)
 </details>
 
 <details>
-  <summary>37. Python Strings - </summary>
+  <summary>37. Python Strings - isidentifier() Method </summary>
 
 ```py
 
@@ -1596,7 +1596,7 @@ print(x)
 </details>
 
 <details>
-  <summary>38. Python Strings - </summary>
+  <summary>38. Python Strings - islower() Method </summary>
 
 ```py
 
@@ -1617,7 +1617,7 @@ print(x)
 </details>
 
 <details>
-  <summary>39. Python Strings - </summary>
+  <summary>39. Python Strings - isnumeric() Method  </summary>
 
 ```py
 
@@ -1638,7 +1638,7 @@ print(x)
 </details>
 
 <details>
-  <summary>40. Python Strings - </summary>
+  <summary>40. Python Strings - isprintable() Method </summary>
 
 ```py
 
@@ -1659,7 +1659,7 @@ print(x)
 </details>
 
 <details>
-  <summary>41. Python Strings - </summary>
+  <summary>41. Python Strings - isspace() Method  </summary>
 
 ```py
 
@@ -1680,7 +1680,7 @@ print(x)
 </details>
 
 <details>
-  <summary>42. Python Strings - </summary>
+  <summary>42. Python Strings - istitle() Method </summary>
 
 ```py
 
@@ -1701,7 +1701,7 @@ print(x)
 </details>
 
 <details>
-  <summary>43. Python Strings - </summary>
+  <summary>43. Python Strings - isupper() Method  </summary>
 
 ```py
 
@@ -1722,7 +1722,7 @@ print(x)
 </details>
 
 <details>
-  <summary>44. Python Strings - </summary>
+  <summary>44. Python Strings - join() Method  </summary>
 
 ```py
 
@@ -1743,7 +1743,7 @@ print(x)
 </details>
 
 <details>
-  <summary>45. Python Strings - </summary>
+  <summary>45. Python Strings - ljust() Method </summary>
 
 ```py
 
@@ -1764,7 +1764,7 @@ print(x)
 </details>
 
 <details>
-  <summary>46. sample </summary>
+  <summary>46. Python Strings - lower() Method </summary>
 
 ```py
 
@@ -1785,7 +1785,7 @@ print(x)
 </details>
 
 <details>
-  <summary>47. sample </summary>
+  <summary>47. Python Strings - lstrip() Method </summary>
 
 ```py
 
@@ -1806,7 +1806,7 @@ print(x)
 </details>
 
 <details>
-  <summary>48. sample </summary>
+  <summary>48. Python Strings - maketrans() Method </summary>
 
 ```py
 
@@ -1827,7 +1827,7 @@ print(x)
 </details>
 
 <details>
-  <summary>49. sample </summary>
+  <summary>49. Python Strings - partition() Method </summary>
 
 ```py
 
@@ -1849,6 +1849,867 @@ print(x)
 
 <details>
   <summary>50. sample </summary>
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>51. sample </summary>
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>52. sample </summary>
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>53. sample </summary>
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>54. sample </summary>
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>55. sample </summary>
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>56. sample </summary>
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>57. sample </summary>
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>58. sample </summary>
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>59. sample </summary>
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>60. sample </summary>
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>61. sample </summary>
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>62. sample </summary>
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>63. sample </summary>
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>64. sample </summary>
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>65. sample </summary>
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>66. sample </summary>
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>67. sample </summary>
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>68. sample </summary>
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>69. sample </summary>
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>70. sample </summary>
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>71. sample </summary>
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>72. sample </summary>
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>73. sample </summary>
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>74. sample </summary>
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>75. sample </summary>
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>76. sample </summary>
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>77. sample </summary>
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>78. sample </summary>
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>79. sample </summary>
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>80. sample </summary>
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>81. sample </summary>
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>82. sample </summary>
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>83. sample </summary>
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>84. sample </summary>
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>85. sample </summary>
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>86. sample </summary>
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>87. sample </summary>
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>88. sample </summary>
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>89. sample </summary>
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>99. sample </summary>
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>100. sample </summary>
 
 ```py
 
