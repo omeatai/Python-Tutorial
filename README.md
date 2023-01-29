@@ -1514,20 +1514,34 @@ print(x)
 <details>
   <summary>34. Python Strings - isalpha() Method </summary>
 
+- The isalpha() method returns True if all the characters are alphabet letters (a-z).
+
+- Example of characters that are not alphabet letters: (space)!#%&? etc.
+
 ```py
+txt = "CompanyX"
+
+x = txt.isalpha()
+
+print(x)
 
 ```
 
 ```py
+# True
+```
+
+```py
+txt = "Company10"
+
+x = txt.isalpha()
+
+print(x)
 
 ```
 
 ```py
-
-```
-
-```py
-
+# False
 ```
 
 </details>
@@ -1535,20 +1549,21 @@ print(x)
 <details>
   <summary>35. Python Strings - isdecimal() Method </summary>
 
-```py
+- The isdecimal() method returns True if all the characters are decimals (0-9).
 
+- This method is used on unicode objects.
+
+```py
+a = "\u0030" #unicode for 0
+b = "\u0047" #unicode for G
+
+print(a.isdecimal())
+print(b.isdecimal())
 ```
 
 ```py
-
-```
-
-```py
-
-```
-
-```py
-
+# True
+# False
 ```
 
 </details>
@@ -1556,20 +1571,33 @@ print(x)
 <details>
   <summary>36. Python Strings - isdigit() Method </summary>
 
-```py
+- The isdigit() method returns True if all the characters are digits, otherwise False.
 
+- Exponents, like ², are also considered to be a digit.
+
+```py
+txt = "50800"
+
+x = txt.isdigit()
+
+print(x)
 ```
 
 ```py
-
+# True
 ```
 
 ```py
+a = "\u0030" #unicode for 0
+b = "\u00B2" #unicode for ²
 
+print(a.isdigit())
+print(b.isdigit())
 ```
 
 ```py
-
+# True
+# True
 ```
 
 </details>
@@ -1577,20 +1605,41 @@ print(x)
 <details>
   <summary>37. Python Strings - isidentifier() Method </summary>
 
-```py
+- The isidentifier() method returns True if the string is a valid identifier, otherwise False.
 
+- A string is considered a valid identifier if it only contains alphanumeric letters (a-z) and (0-9), or underscores (\_).
+
+- A valid identifier cannot start with a number, or contain any spaces.
+
+```py
+txt = "Demo"
+
+x = txt.isidentifier()
+
+print(x)
 ```
 
 ```py
-
+# True
 ```
 
 ```py
+a = "MyFolder"
+b = "Demo002"
+c = "2bring"
+d = "my demo"
 
+print(a.isidentifier())
+print(b.isidentifier())
+print(c.isidentifier())
+print(d.isidentifier())
 ```
 
 ```py
-
+# True
+# True
+# False
+# False
 ```
 
 </details>
@@ -1598,20 +1647,37 @@ print(x)
 <details>
   <summary>38. Python Strings - islower() Method </summary>
 
+- The islower() method returns True if all the characters are in lower case, otherwise False.
+
+- Numbers, symbols and spaces are not checked, only alphabet characters.
+
 ```py
+txt = "hello world!"
+
+x = txt.islower()
+
+print(x)
+```
+
+```py
+# True
+```
+
+```py
+a = "Hello world!"
+b = "hello 123"
+c = "mynameisPeter"
+
+print(a.islower())
+print(b.islower())
+print(c.islower())
 
 ```
 
 ```py
-
-```
-
-```py
-
-```
-
-```py
-
+# False
+# True
+# False
 ```
 
 </details>
@@ -1619,20 +1685,46 @@ print(x)
 <details>
   <summary>39. Python Strings - isnumeric() Method  </summary>
 
+- The isnumeric() method returns True if all the characters are numeric (0-9), otherwise False.
+
+- Exponents, like ² and ¾ are also considered to be numeric values.
+
+- "-1" and "1.5" are NOT considered numeric values, because all the characters in the string must be numeric, and the - and the . are not.
+
 ```py
+txt = "565543"
+
+x = txt.isnumeric()
+
+print(x)
 
 ```
 
 ```py
+# True
+```
+
+```py
+a = "\u0030" #unicode for 0
+b = "\u00B2" #unicode for ²
+c = "10km2"
+d = "-1"
+e = "1.5"
+
+print(a.isnumeric())
+print(b.isnumeric())
+print(c.isnumeric())
+print(d.isnumeric())
+print(e.isnumeric())
 
 ```
 
 ```py
-
-```
-
-```py
-
+# True
+# True
+# False
+# False
+# False
 ```
 
 </details>
@@ -1640,20 +1732,33 @@ print(x)
 <details>
   <summary>40. Python Strings - isprintable() Method </summary>
 
+- The isprintable() method returns True if all the characters are printable, otherwise False.
+
+- Example of none printable character can be carriage return and line feed.
+
 ```py
+txt = "Hello! Are you #1?"
+
+x = txt.isprintable()
+
+print(x)
 
 ```
 
 ```py
-
+# True
 ```
 
 ```py
+txt = "Hello!\nAre you #1?"
 
+x = txt.isprintable()
+
+print(x)
 ```
 
 ```py
-
+# False
 ```
 
 </details>
@@ -1661,20 +1766,31 @@ print(x)
 <details>
   <summary>41. Python Strings - isspace() Method  </summary>
 
+The isspace() method returns True if all the characters in a string are whitespaces, otherwise False.
+
 ```py
+txt = "   "
+
+x = txt.isspace()
+
+print(x)
+```
+
+```py
+# True
+```
+
+```py
+txt = "   s   "
+
+x = txt.isspace()
+
+print(x)
 
 ```
 
 ```py
-
-```
-
-```py
-
-```
-
-```py
-
+# False
 ```
 
 </details>
@@ -1682,20 +1798,41 @@ print(x)
 <details>
   <summary>42. Python Strings - istitle() Method </summary>
 
+- The istitle() method returns True if all words in a text start with a upper case letter, AND the rest of the word are lower case letters, otherwise False.
+
+- Symbols and numbers are ignored.
+
 ```py
+txt = "Hello, And Welcome To My World!"
+
+x = txt.istitle()
+
+print(x)
 
 ```
 
 ```py
+# True
+```
+
+```py
+a = "HELLO, AND WELCOME TO MY WORLD"
+b = "Hello"
+c = "22 Names"
+d = "This Is %'!?"
+
+print(a.istitle())
+print(b.istitle())
+print(c.istitle())
+print(d.istitle())
 
 ```
 
 ```py
-
-```
-
-```py
-
+# False
+# True
+# True
+# True
 ```
 
 </details>
@@ -1703,20 +1840,38 @@ print(x)
 <details>
   <summary>43. Python Strings - isupper() Method  </summary>
 
+- The isupper() method returns True if all the characters are in upper case, otherwise False.
+
+- Numbers, symbols and spaces are not checked, only alphabet characters.
+
 ```py
+txt = "THIS IS NOW!"
+
+x = txt.isupper()
+
+print(x)
 
 ```
 
 ```py
+# True
+```
+
+```py
+a = "Hello World!"
+b = "hello 123"
+c = "MY NAME IS PETER"
+
+print(a.isupper())
+print(b.isupper())
+print(c.isupper())
 
 ```
 
 ```py
-
-```
-
-```py
-
+# False
+# False
+# True
 ```
 
 </details>
@@ -1724,20 +1879,34 @@ print(x)
 <details>
   <summary>44. Python Strings - join() Method  </summary>
 
+- The join() method takes all items in an iterable and joins them into one string.
+
+- A string must be specified as the separator.
+
 ```py
+myTuple = ("John", "Peter", "Vicky")
+
+x = "#".join(myTuple)
+
+print(x)
+```
+
+```py
+# John#Peter#Vicky
+```
+
+```py
+myDict = {"name": "John", "country": "Norway"}
+mySeparator = "TEST"
+
+x = mySeparator.join(myDict)
+
+print(x)
 
 ```
 
 ```py
-
-```
-
-```py
-
-```
-
-```py
-
+# nameTESTcountry
 ```
 
 </details>
@@ -1745,20 +1914,31 @@ print(x)
 <details>
   <summary>45. Python Strings - ljust() Method </summary>
 
+The ljust() method will left align the string, using a specified character (space is default) as the fill character.
+
 ```py
+txt = "banana"
+
+x = txt.ljust(20)
+
+print(x, "is my favorite fruit.")
+```
+
+```py
+# banana              is my favorite fruit.
+```
+
+```py
+txt = "banana"
+
+x = txt.ljust(20, "O")
+
+print(x)
 
 ```
 
 ```py
-
-```
-
-```py
-
-```
-
-```py
-
+# bananaOOOOOOOOOOOOOO
 ```
 
 </details>
@@ -1766,20 +1946,21 @@ print(x)
 <details>
   <summary>46. Python Strings - lower() Method </summary>
 
+- The lower() method returns a string where all characters are lower case.
+
+- Symbols and Numbers are ignored.
+
 ```py
+txt = "Hello my FRIENDS"
+
+x = txt.lower()
+
+print(x)
 
 ```
 
 ```py
-
-```
-
-```py
-
-```
-
-```py
-
+# hello my friends
 ```
 
 </details>
@@ -1787,20 +1968,31 @@ print(x)
 <details>
   <summary>47. Python Strings - lstrip() Method </summary>
 
+The lstrip() method removes any leading characters (space is the default leading character to remove).
+
 ```py
+txt = "     banana     "
+
+x = txt.lstrip()
+
+print("of all fruits", x, "is my favorite")
+```
+
+```py
+# of all fruits banana     is my favorite
+```
+
+```py
+txt = ",,,,,ssaaww.....banana"
+
+x = txt.lstrip(",.asw")
+
+print(x)
 
 ```
 
 ```py
-
-```
-
-```py
-
-```
-
-```py
-
+# banana
 ```
 
 </details>
@@ -1808,20 +2000,51 @@ print(x)
 <details>
   <summary>48. Python Strings - maketrans() Method </summary>
 
+- The maketrans() method returns a mapping table that can be used with the translate() method to replace specified characters.
+
 ```py
+txt = "Hello Sam!"
+
+mytable = txt.maketrans("S", "P")
+
+print(txt.translate(mytable))
 
 ```
 
 ```py
+# Hello Pam!
+```
+
+```py
+txt = "Hi Sam!"
+
+x = "mSa"
+y = "eJo"
+
+mytable = txt.maketrans(x, y)
+
+print(txt.translate(mytable))
 
 ```
 
 ```py
-
+# Hi Joe!
 ```
 
 ```py
+txt = "Good night Sam!"
 
+x = "mSa"
+y = "eJo"
+z = "odnght"
+
+mytable = txt.maketrans(x, y, z)
+
+print(txt.translate(mytable))
+```
+
+```py
+# G i Joe!
 ```
 
 </details>
@@ -1829,68 +2052,44 @@ print(x)
 <details>
   <summary>49. Python Strings - partition() Method </summary>
 
+- The partition() method searches for a specified string, and splits the string into a tuple containing three elements.
+
+- The first element contains the part before the specified string.
+
+- The second element contains the specified string.
+
+- The third element contains the part after the string.
+
 ```py
+txt = "I could eat bananas all day"
+
+x = txt.partition("bananas")
+
+print(x)
 
 ```
 
 ```py
+# ('I could eat ', 'bananas', ' all day')
+```
+
+```py
+txt = "I could eat bananas all day"
+
+x = txt.partition("apples")
+
+print(x)
 
 ```
 
 ```py
-
-```
-
-```py
-
-```
-
-</details>
-
-<details>
-  <summary>50. sample </summary>
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
+# ('I could eat bananas all day', '', '')
 ```
 
 </details>
 
 <details>
-  <summary>51. sample </summary>
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-</details>
-
-<details>
-  <summary>52. sample </summary>
+  <summary>50. Python Strings - replace() Method </summary>
 
 ```py
 
@@ -1911,7 +2110,7 @@ print(x)
 </details>
 
 <details>
-  <summary>53. sample </summary>
+  <summary>51. Python Strings - rfind() Method </summary>
 
 ```py
 
@@ -1932,7 +2131,7 @@ print(x)
 </details>
 
 <details>
-  <summary>54. sample </summary>
+  <summary>52. Python Strings - rindex() Method </summary>
 
 ```py
 
@@ -1953,7 +2152,7 @@ print(x)
 </details>
 
 <details>
-  <summary>55. sample </summary>
+  <summary>53. Python Strings - rjust() Method  </summary>
 
 ```py
 
@@ -1974,7 +2173,7 @@ print(x)
 </details>
 
 <details>
-  <summary>56. sample </summary>
+  <summary>54. Python Strings - rpartition() Method </summary>
 
 ```py
 
@@ -1995,7 +2194,7 @@ print(x)
 </details>
 
 <details>
-  <summary>57. sample </summary>
+  <summary>55. Python Strings - rsplit() Method </summary>
 
 ```py
 
@@ -2016,7 +2215,7 @@ print(x)
 </details>
 
 <details>
-  <summary>58. sample </summary>
+  <summary>56. Python Strings - rstrip() Method </summary>
 
 ```py
 
@@ -2037,7 +2236,7 @@ print(x)
 </details>
 
 <details>
-  <summary>59. sample </summary>
+  <summary>57. Python Strings - split() Method </summary>
 
 ```py
 
@@ -2058,7 +2257,7 @@ print(x)
 </details>
 
 <details>
-  <summary>60. sample </summary>
+  <summary>58. Python Strings - splitlines() Method </summary>
 
 ```py
 
@@ -2079,7 +2278,7 @@ print(x)
 </details>
 
 <details>
-  <summary>61. sample </summary>
+  <summary>59. Python Strings - startswith() Method </summary>
 
 ```py
 
@@ -2100,7 +2299,7 @@ print(x)
 </details>
 
 <details>
-  <summary>62. sample </summary>
+  <summary>60. Python Strings - strip() Method </summary>
 
 ```py
 
@@ -2121,7 +2320,7 @@ print(x)
 </details>
 
 <details>
-  <summary>63. sample </summary>
+  <summary>61. Python Strings - swapcase() Method </summary>
 
 ```py
 
@@ -2142,7 +2341,7 @@ print(x)
 </details>
 
 <details>
-  <summary>64. sample </summary>
+  <summary>62. Python Strings - title() Method </summary>
 
 ```py
 
@@ -2163,7 +2362,49 @@ print(x)
 </details>
 
 <details>
-  <summary>65. sample </summary>
+  <summary>63. Python Strings - translate() Method </summary>
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>64. Python Strings - upper() Method </summary>
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>65. Python Strings - zfill() Method </summary>
 
 ```py
 
