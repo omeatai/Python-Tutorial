@@ -3626,106 +3626,213 @@ print(list1)
 </details>
 
 <details>
-  <summary>101. Python Lists - </summary>
+  <summary>101. Python Lists - count() Method </summary>
+
+The count() method returns the number of elements with the specified value.
 
 ```py
+fruits = ["apple", "banana", "cherry"]
+
+x = fruits.count("cherry")
+
+print(x)
 
 ```
 
 ```py
+# 1
+```
+
+```py
+fruits = [1, 4, 2, 9, 7, 8, 9, 3, 1]
+
+x = fruits.count(9)
+
+print(x)
 
 ```
 
 ```py
-
-```
-
-```py
-
-```
-
-</details>
-
-<details>
-  <summary>102. Python Lists - </summary>
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
+# 2
 ```
 
 </details>
 
 <details>
-  <summary>103. Python Lists - </summary>
+  <summary>102. Python Lists - extend() Method </summary>
+
+The extend() method adds the specified list elements (or any iterable) to the end of the current list.
 
 ```py
+fruits = ['apple', 'banana', 'cherry']
+
+cars = ['Ford', 'BMW', 'Volvo']
+
+fruits.extend(cars)
+
+print(fruits)
+```
+
+```py
+# ['apple', 'banana', 'cherry', 'Ford', 'BMW', 'Volvo']
+```
+
+```py
+fruits = ['apple', 'banana', 'cherry']
+
+points = (1, 4, 5, 9)
+
+fruits.extend(points)
+
+print(fruits)
 
 ```
 
 ```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-</details>
-
-<details>
-  <summary>104. Python Lists - </summary>
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
+# ['apple', 'banana', 'cherry', 1, 4, 5, 9]
 ```
 
 </details>
 
 <details>
-  <summary>105. Python Lists - </summary>
+  <summary>103. Python Lists - index() Method </summary>
+
+The index() method returns the position at the first occurrence of the specified value.
 
 ```py
+fruits = ['apple', 'banana', 'cherry']
+
+x = fruits.index("cherry")
+
+print(x)
 
 ```
 
 ```py
+# 2
+```
+
+```py
+fruits = [4, 55, 64, 32, 16, 32]
+
+x = fruits.index(32)
+
+print(x)
 
 ```
 
 ```py
+# 3
+```
+
+</details>
+
+<details>
+  <summary>104. Python Lists - reverse() Method </summary>
+
+The reverse() method reverses the sorting order of the elements.
+
+```py
+fruits = ['apple', 'banana', 'cherry']
+
+fruits.reverse()
+
+print(fruits)
 
 ```
 
 ```py
+# ['cherry', 'banana', 'apple']
+```
 
+</details>
+
+<details>
+  <summary>105. Python Lists - sort() Method </summary>
+
+- The sort() method sorts the list ascending by default.
+
+- You can also make a function to decide the sorting criteria(s).
+
+```py
+cars = ['Ford', 'BMW', 'Volvo']
+
+cars.sort()
+
+print(cars)
+
+```
+
+```py
+# ['BMW', 'Ford', 'Volvo']
+```
+
+```py
+cars = ['Ford', 'BMW', 'Volvo']
+
+cars.sort(reverse=True)
+
+print(cars)
+
+```
+
+```py
+# ['Volvo', 'Ford', 'BMW']
+```
+
+```py
+# A function that returns the length of the value:
+def myFunc(e):
+  return len(e)
+
+cars = ['Ford', 'Mitsubishi', 'BMW', 'VW']
+
+cars.sort(key=myFunc)
+
+print(cars)
+
+```
+
+```py
+# ['VW', 'BMW', 'Ford', 'Mitsubishi']
+```
+
+```py
+def myFunc(e):
+  return e['year']
+
+cars = [
+  {'car': 'Ford', 'year': 2005},
+  {'car': 'Mitsubishi', 'year': 2000},
+  {'car': 'BMW', 'year': 2019},
+  {'car': 'VW', 'year': 2011}
+]
+
+cars.sort(key=myFunc)
+
+print(cars)
+
+```
+
+```py
+# [{'car': 'Mitsubishi', 'year': 2000}, {'car': 'Ford', 'year': 2005}, {'car': 'VW', 'year': 2011}, {'car': 'BMW', 'year': 2019}]
+```
+
+```py
+# A function that returns the length of the value:
+def myFunc(e):
+  return len(e)
+
+cars = ['Ford', 'Mitsubishi', 'BMW', 'VW']
+
+cars.sort(reverse=True, key=myFunc)
+
+print(cars)
+
+```
+
+```py
+# ['Mitsubishi', 'Ford'', 'BMW', 'VW']
 ```
 
 </details>
