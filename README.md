@@ -3837,6 +3837,8 @@ print(cars)
 
 </details>
 
++TUPLES
+
 <details>
   <summary>106. Python Tuples - </summary>
 
