@@ -3572,7 +3572,7 @@ print(mylist)
 </details>
 
 <details>
-  <summary>100. Python Lists - </summary>
+  <summary>100. Python Lists - Join Lists</summary>
 
 ```py
 
