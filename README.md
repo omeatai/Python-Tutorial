@@ -32,6 +32,16 @@ print(len input ("What is your name?") ) )
 # 3
 ```
 
+```py
+name = input("What is your name?")
+print(name)
+```
+
+```py
+# What is your name? Mark
+# Mark
+```
+
 </details>
 
 <details>
