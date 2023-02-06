@@ -6,7 +6,7 @@ Python Tutorial by Ifeanyi Omeata
 
 ---
 
-### [1-DJANGO & DJANGO REST FRAMEWORK WITH REACT FRONTEND - PARWIZ FOROGH]()
+### [1-100 Days of Code: The Complete Python Pro Bootcamp for 2023 - ANGELA YU]()
 
 <details>
   <summary>1. sample </summary>
