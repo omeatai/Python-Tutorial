@@ -9,7 +9,7 @@ Python Tutorial by Ifeanyi Omeata
 ### [1-100 Days of Code: The Complete Python Pro Bootcamp for 2023 - ANGELA YU]()
 
 <details>
-  <summary>1. Print Function </summary>
+  <summary>1. Introduction - Print Function </summary>
 
 ```py
 # input() will get user input in console
