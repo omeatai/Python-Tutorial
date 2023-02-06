@@ -9,22 +9,27 @@ Python Tutorial by Ifeanyi Omeata
 ### [1-100 Days of Code: The Complete Python Pro Bootcamp for 2023 - ANGELA YU]()
 
 <details>
-  <summary>1. sample </summary>
+  <summary>1. Print Function </summary>
 
 ```py
-
+# input() will get user input in console
+# Then print() will print the word "Hello" and the user input
+print("Hello + input("What is your name?"))
 ```
 
 ```py
-
+# What is your name? Bob
+# Hello Bob
 ```
 
 ```py
-
+#This code prints the number of characters in a user's name.
+print(len input ("What is your name?") ) )
 ```
 
 ```py
-
+# What is your name? Bob
+# 3
 ```
 
 </details>
