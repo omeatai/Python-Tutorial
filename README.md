@@ -160,18 +160,22 @@ print(f"You have {d} days, {w} weeks, and {m} months left.")
 # You have 20075 days, 2860 weeks, and 660 months left.
 ```
 
+Using the Format function:
+
+```py
+format(salesAmount, '.2f')
+```
+
+Using the Format Method:
+
+```py
+"{:.2f}".format(salesAmount)
+```
+
 </details>
 
 <details>
   <summary>4. sample </summary>
-
-```py
-
-```
-
-```py
-
-```
 
 ```py
 
