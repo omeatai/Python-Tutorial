@@ -173,21 +173,23 @@ Using the Format Method:
 ```
 
 ```py
-bill = float(input('What is the bill?\n'))
-people = int(input('How many people will share the bill?\n'))
-tip = int(input('How much percentage is the tip?\n'))
+print("Welcome to the tip calculator!")
+bill = float(input("What was the total bill?\n$"))
+tip = int(input("How much tip would you like to give? 10, 12, or 15?\n"))
+people = int(input("How many people to split the bill?\n"))
 bill_with_tip = (tip/100+1) * bill
 bill_for_each_person = "{:.2f}".format(bill_with_tip/people)
 print(f'Each person should pay: ${bill_for_each_person}.')
 ```
 
 ```py
-# What is the bill?
-# 150.00
-# How many people will share the bill?
-# 5
-# How much percentage is the tip?
+# Welcome to the tip calculator!
+# What was the total bill?
+# $150.00
+# How much tip would you like to give? 10, 12, or 15?
 # 12
+# How many people to split the bill?
+# 5
 # Each person should pay: $33.60.
 ```
 
