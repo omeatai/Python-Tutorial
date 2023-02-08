@@ -67,53 +67,111 @@ print("Your band name could be " + city + " " + pet)
 </details>
 
 <details>
-  <summary>2. sample </summary>
+  <summary>2. Number Manipulation </summary>
+
+Rounding Numbers:
 
 ```py
+print(round(8 / 3, 2))
+```
+
+```py
+# 2.67
+```
+
+Flooring Numbers:
+
+```py
+print(8 // 3)
+```
+
+```py
+# 2
+```
+
+```py
+result = 4 / 2
+result /= 2
+print(result)
+```
+
+```py
+# 1.0
+```
+
+```py
+score = 0
+score += 1
+print(score)
 
 ```
 
 ```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
+# 1
 ```
 
 </details>
 
 <details>
-  <summary>3. sample </summary>
+  <summary>3. Using F Strings </summary>
 
 ```py
-
+score = 0
+print("your score is " + str(score))
 ```
 
 ```py
-
+score = 0
+height = 1.8
+isWinning = True
+#f-String
+print (f"your score is {score}")
 ```
 
 ```py
-
+# your score is 0
 ```
 
 ```py
+score = 0
+height = 1.8
+isWinning = True
+#f-String
+print(f"your score is {score}, your height is {height}, you are winning is {isWinning}")
+```
 
+```py
+# your score is 0, your height is 1.8, you are winning is True
+```
+
+```py
+age = input("What is your current age? ")
+
+rem = (90 - int(age))
+d =  rem * 365
+w = rem * 52
+m = rem * 12
+
+print(f"You have {d} days, {w} weeks, and {m} months left.")
+```
+
+```py
+# What is your current age? 35
+# You have 20075 days, 2860 weeks, and 660 months left.
 ```
 
 </details>
 
 <details>
   <summary>4. sample </summary>
+
+```py
+
+```
+
+```py
+
+```
 
 ```py
 
