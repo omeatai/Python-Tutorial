@@ -172,10 +172,37 @@ Using the Format Method:
 "{:.2f}".format(salesAmount)
 ```
 
+```py
+bill = float(input('What is the bill?\n'))
+people = int(input('How many people will share the bill?\n'))
+tip = int(input('How much percentage is the tip?\n'))
+bill_with_tip = (tip/100+1) * bill
+bill_for_each_person = "{:.2f}".format(bill_with_tip/people)
+print(f'Each person should pay: ${bill_for_each_person}.')
+```
+
+```py
+# What is the bill?
+# 150.00
+# How many people will share the bill?
+# 5
+# How much percentage is the tip?
+# 12
+# Each person should pay: $33.60.
+```
+
 </details>
 
 <details>
   <summary>4. sample </summary>
+
+```py
+
+```
+
+```py
+
+```
 
 ```py
 
