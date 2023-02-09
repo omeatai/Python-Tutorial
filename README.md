@@ -429,7 +429,7 @@ love_score = int(f"{true_count}{love_count}")
 
 if love_score < 10 or love_score > 90:
     print(f"Your score is {love_score}, you go together like coke and mentos.")
-elif love_score > 40 and love_score < 50:
+elif love_score >= 40 and love_score =< 50:
     print(f"Your score is {love_score}, you are alright together.")
 else:
     print(f"Your score is {love_score}.")
@@ -445,11 +445,119 @@ else:
 ```
 
 ```py
+print("Welcome to Tresure Island.")
+print("Your mission is to find the treasure.")
 
+choice1=input('You\'re at a crossroad, where do you want to go? Type "left" or "right". ').lower()
+
+if choice1 == "left":
+	choice2=input('You\'ve come to a lake. There is an island in the middle of the lake. Type "wait" to wait for a boat. Type "swim" to swim across.').lower()
+	if choice2 == "wait":
+		choice3 = input("You arrive at the island unharmed. There is a house with 3 doors.One red, one yellow and one blue. Which colour do you choose?").lower()
+		if choice3 == "red":
+			print("It's a room full of fire. Game Over.")
+		elif choice3 == "yellow":
+			print("You found the treasure! You Win!")
+		elif choice3 == "blue":
+			print("You enter a room of beasts. Game Over.")
+		else:
+			print("You chose a door that doesn't exist. Game Over.")
+	else:
+		print("You got attacked by an angry trout. Game Over.")
+else:
+	print("You fell into a hole. Game Over.")
 ```
 
 ```py
+# Welcome to Tresure Island.
+# Your mission is to find the treasure.
+# You're at a crossroad, where do you want to go? Type "left" or "right". left
+# You've come to a lake. There is an island in the middle of the lake. Type "wait" to wait for a boat. Type "swim" to swim across.wait
+# You arrive at the island unharmed. There is a house with 3 doors.One red, one yellow and one blue. Which colour do you choose?yellow
+# You found the treasure! You Win!
+```
 
+```py
+import random
+
+listofnum = [1, 2, 3, 4, 5]
+# 1
+print(random.choice(listofnum))
+
+# 2
+random.shuffle(listofnum)
+print(listofnum)
+```
+
+```py
+# 4
+# [2, 1, 4, 5, 3]
+```
+
+```py
+import random
+
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.")
+
+start = 'ON'
+
+choices = ['left', 'right']
+random_choice = random.choice(choices)
+# print(random_choice)
+choice = input(
+    "You're at a cross road. Where do you want to go? Type 'left' or 'right'\n"
+).lower().strip()
+if choice == random_choice:
+    print('Great Choice! Way to go. keep going forward....')
+else:
+    print('Fall into a Hole. Game Over.')
+    start = 'OFF'
+
+choices = ['swim', 'wait']
+random_choice = random.choice(choices)
+# print(random_choice)
+if start == 'ON':
+    choice = input(
+        "You come to a lake. There is an island in the middle of the lake. Type 'wait' to wait for a boat. Type 'swim' to swim across.\n"
+    ).lower().strip()
+
+    if choice == random_choice:
+        print('Great Choice! Way to go. keep going forward....')
+    else:
+        print('Attacked by Trout. Game Over.')
+        start = 'OFF'
+
+choices = ['red', 'yellow', 'blue']
+random_choice = random.choice(choices)
+# print(random_choice)
+if start == 'ON':
+    choice = input(
+        "You arrive at the island unharmed. There is a house with 3 doors. One red, one yellow and one blue. Which colour do you choose?\n"
+    ).lower().strip()
+
+    if choice == random_choice:
+        print('Congratulations! You WON the challenge....')
+    elif choice == "red":
+        print('Burned by Fire. Game Over.')
+    elif choice == "blue":
+        print('Eaten by Beasts. Game Over.')
+    else:
+        print('Drowned by Water. Game Over.')
+```
+
+```py
+# Welcome to Treasure Island.
+# Your mission is to find the treasure.
+# You're at a cross road. Where do you want to go? Type 'left' or 'right'
+# left
+# Great Choice! Way to go. keep going forward....
+# You come to a lake. There is an island in the middle of the lake. Type 'wait' to wait for a boat. Type 'swim' to swim across.
+# swim
+# Great Choice! Way to go. keep going forward....
+# You arrive at the island unharmed. There is a house with 3 doors. One red, one yellow and one blue. Which colour do you choose?
+# yellow
+# Congratulations! You WON the challenge....
 ```
 
 </details>
