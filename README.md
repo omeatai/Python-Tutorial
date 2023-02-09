@@ -380,20 +380,22 @@ bill = 0
 pepperoni_bill = 0
 
 if size == "S":
-    bill = 15
-    pepperoni_bill = 2
+  bill += 15
 elif size == "M":
-    bill = 20
-    pepperoni_bill = 3
+  bill += 20
+  pepperoni_bill = 3
 else:
-    bill = 25
-    pepperoni_bill = 3
+  bill += 25
+  pepperoni_bill = 3
 
 if add_pepperoni == "Y":
-    bill += pepperoni_bill
+	if size == "S":
+		bill += 2
+	else:
+		bill += 3
 
 if extra_cheese == "Y":
-    bill += 1
+  bill += 1
 
 print(f"Your final bill is: ${bill}.")
 ```
