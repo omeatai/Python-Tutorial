@@ -409,11 +409,39 @@ print(f"Your final bill is: ${bill}.")
 ```
 
 ```py
+print("Welcome to the Love Calculator!")
+name1 = input("What is your name? \n")
+name2 = input("What is their name? \n")
 
+true = "true"
+love = "love"
+names = (name1 + name2).lower().strip()
+true_count = 0
+love_count = 0
+
+for i in true:
+    true_count += names.count(i)
+
+for j in love:
+    love_count += names.count(j)
+
+love_score = int(f"{true_count}{love_count}")
+
+if love_score < 10 or love_score > 90:
+    print(f"Your score is {love_score}, you go together like coke and mentos.")
+elif love_score > 40 and love_score < 50:
+    print(f"Your score is {love_score}, you are alright together.")
+else:
+    print(f"Your score is {love_score}.")
 ```
 
 ```py
-
+# Welcome to the Love Calculator!
+# What is your name?
+# Kanye West
+# What is their name?
+# Kim Kardashian
+# Your score is 42, you are alright together.
 ```
 
 ```py
