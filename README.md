@@ -947,19 +947,162 @@ print(f"{row1}\n{row2}\n{row3}")
 # ['⬜️️', 'X', '⬜️️']
 ```
 
+RPS Game:
+
 ```py
+import random
+
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+
+#Write your code below this line 👇
+choice = input(
+    "What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors? \n")
+
+print('You chose:')
+
+player_choice = None
+
+if choice == '0':
+    print(rock)
+    player_choice = "rock"
+elif choice == '1':
+    print(paper)
+    player_choice = "paper"
+elif choice == '2':
+    print(scissors)
+    player_choice = "scissors"
+else:
+    print('Wrong Input. Try Again!')
+
+print('Computer chose:')
+
+computer_choice = random.choice(["rock", "paper", "scissors"])
+
+if computer_choice == "rock":
+    print(rock)
+elif computer_choice == "paper":
+    print(paper)
+elif computer_choice == "scissors":
+    print(scissors)
+
+if (player_choice == "rock" and computer_choice == "paper") or (
+        player_choice == "paper"
+        and computer_choice == "scissors") or (player_choice == "scissors"
+                                               and computer_choice == "rock"):
+    print('You Lose.')
+elif (player_choice == "rock" and computer_choice == "scissors") or (
+        player_choice == "paper"
+        and computer_choice == "rock") or (player_choice == "scissors"
+                                           and computer_choice == "paper"):
+    print('You Won! Congrats!')
+elif player_choice == None:
+    print("")
+else:
+    print("It's a Tie!")
 
 ```
 
 ```py
+# What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors?
+# 1
+# You chose:
 
+#     _______
+# ---'   ____)____
+#           ______)
+#           _______)
+#          _______)
+# ---.__________)
+
+# Computer chose:
+
+#     _______
+# ---'   ____)
+#       (_____)
+#       (_____)
+#       (____)
+# ---.__(___)
+
+# You Won! Congrats!
 ```
 
 ```py
+import random
 
-```
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
 
-```py
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+
+game_images = [rock, paper, scissors]
+
+user_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n"))
+
+if user_choice >= 3 or user_choice < 0:
+  print("You typed an invalid number, you lose!")
+else:
+  print(game_images[user_choice])
+  computer_choice = random.randint(0, 2)
+  print("Computer chose:")
+  print(game_images[computer_choice])
+
+  if user_choice == 0 and computer_choice == 2:
+    print("You win!")
+  elif computer_choice == 0 and user_choice == 2:
+    print("You lose")
+  elif computer_choice > user_choice:
+    print("You lose")
+  elif user_choice > computer_choice:
+    print("You win!")
+  elif computer_choice == user_choice:
+    print("It's a draw")
 
 ```
 
