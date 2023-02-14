@@ -735,25 +735,40 @@ print(random.choice(["Heads", "Tails"]))
 ```
 
 ```py
+import random
 
+random_side = random.randint(0, 1)
+
+if random_side == 1:
+    print("Heads")
+else:
+    print("Tails")
 ```
 
 ```py
-
-```
-
-```py
-
-```
-
-```py
-
+# Heads
 ```
 
 </details>
 
 <details>
-  <summary>7. sample </summary>
+  <summary>7. Python Lists </summary>
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
 
 ```py
 
