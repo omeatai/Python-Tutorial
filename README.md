@@ -680,12 +680,46 @@ print(random_float)
 # 0.35402952193969894
 ```
 
-```py
+Random number between 0 and 5:
 
+```py
+import random
+
+#Random number between 1 and 10
+random_integer = random.randint(1, 10)
+# print(random_integer)
+
+#Random number between 0 and 1
+random_float = random.random()
+# print(random_float)
+
+#Random number between 0 and 5
+for i in range(21):
+    print(f"{i}: {format(round(random.random() * 5,2),'.2f')}")
 ```
 
 ```py
-
+# 0: 2.61
+# 1: 1.78
+# 2: 1.57
+# 3: 4.22
+# 4: 0.43
+# 5: 2.41
+# 6: 2.86
+# 7: 3.35
+# 8: 4.37
+# 9: 1.13
+# 10: 0.60
+# 11: 0.66
+# 12: 3.54
+# 13: 3.69
+# 14: 2.81
+# 15: 2.98
+# 16: 3.79
+# 17: 3.87
+# 18: 3.01
+# 19: 3.88
+# 20: 0.95
 ```
 
 ```py
