@@ -563,28 +563,138 @@ if start == 'ON':
 </details>
 
 <details>
-  <summary>5. sample </summary>
+  <summary>5. Importing Modules </summary>
+
+Import from a single module in same folder -
+
+person.py:
 
 ```py
+name = "Ben"
+account_no = "113748919"
+age = 21
+```
+
+main:
+
+```py
+from person import account_no
+
+print(account_no)
+```
+
+```py
+# 113748919
+```
+
+Import from multiple modules in same folder -
+
+person.py:
+
+```py
+name = "Ben"
+account_no = "113748919"
+age = 21
+```
+
+school.py:
+
+```py
+department = "Economics"
+year = 2011
+```
+
+main.py:
+
+```py
+from person import account_no
+from school import year
+
+print(account_no)
+print(year)
 
 ```
 
 ```py
+# 113748919
+# 2011
+```
+
+Import from multiple modules in different folder -
+
+host/init.py:
+
+```py
+__all__ = ["person", "school"]
+```
+
+host/person.py:
+
+```py
+name = "Ben"
+account_no = "113748919"
+age = 21
+```
+
+host/school.py:
+
+```py
+department = "Economics"
+year = 2011
+```
+
+main.py:
+
+```py
+from host import *
+
+print(person.account_no)
+print(school.year)
 
 ```
 
 ```py
-
-```
-
-```py
-
+# 113748919
+# 2011
 ```
 
 </details>
 
 <details>
-  <summary>6. sample </summary>
+  <summary>6. Generating Random Numbers </summary>
+
+```py
+import random
+
+#Random number between 1 and 10
+random_integer = random.randint(1, 10)
+print(random_integer)
+
+#Random number between 0 and 1
+random_float = random.random()
+print(random_float)
+```
+
+```py
+# 4
+# 0.35402952193969894
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
 
 ```py
 
