@@ -868,6 +868,40 @@ print(states_of_america[-5:])
 # ['Alaska', 'Hawaii', 'Angelaland', 'Lagosland', 'Hopeland']
 ```
 
+Randomly selecting items from a List:
+
+```py
+import random
+
+names_string = input("Give me everybody's names, separated by a comma. \n")
+names = names_string.split(", ")
+
+person_to_pay = names[random.randint(0, len(names) - 1)]
+print(f"{person_to_pay} is going to buy the meal today!")
+```
+
+```py
+# Give me everybody's names, separated by a comma.
+# James, John, Luke, Mary, Ashley, Dan
+# Ashley is going to buy the meal today!
+```
+
+```py
+import random
+
+names_string = input("Give me everybody's names, separated by a comma. \n")
+names = names_string.split(", ")
+
+person_to_pay = random.choice(names)
+print(f"{person_to_pay} is going to buy the meal today!")
+```
+
+```py
+# Give me everybody's names, separated by a comma.
+# James, John, Luke, Mary, Ashley, Dan
+# Ashley is going to buy the meal today!
+```
+
 ```py
 
 ```
