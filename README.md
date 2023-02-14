@@ -902,6 +902,30 @@ print(f"{person_to_pay} is going to buy the meal today!")
 # Ashley is going to buy the meal today!
 ```
 
+Nested Lists:
+
+```py
+fruits = ["Strawberries", "Nectarines", "Apples", "Grapes", "Peaches", "Cherries", "Pears"]
+vegetables = ["Spinach", "Kale", "Tomatoes", "Celery", "Potatoes"]
+
+dirty_dozen = [fruits, vegetables]
+
+print(dirty_dozen)
+
+```
+
+```py
+# [['Strawberries', 'Nectarines', 'Apples', 'Grapes', 'Peaches', 'Cherries', 'Pears'], ['Spinach', 'Kale', 'Tomatoes', 'Celery', 'Potatoes']]
+```
+
+```py
+
+```
+
+```py
+
+```
+
 ```py
 
 ```
