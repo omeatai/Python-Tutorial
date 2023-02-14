@@ -722,12 +722,16 @@ for i in range(21):
 # 20: 0.95
 ```
 
-```py
+Select randomly from list of Choices:
 
+```py
+import random
+
+print(random.choice(["Heads", "Tails"]))
 ```
 
 ```py
-
+# Tails
 ```
 
 ```py
