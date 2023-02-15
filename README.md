@@ -1109,7 +1109,29 @@ else:
 </details>
 
 <details>
-  <summary>8. sample </summary>
+  <summary>8. Python Loops </summary>
+
+Looping through Lists:
+
+```py
+fruits = ["Apple", "Peach", "Pear"]
+for fruit in fruits:
+	print(fruit)
+```
+
+```py
+# Apple
+# Peach
+# Pear
+```
+
+```py
+
+```
+
+```py
+
+```
 
 ```py
 
