@@ -1254,6 +1254,38 @@ print(password2)
 # (z96P%T6)
 ```
 
+```py
+#Hard Level - Order of characters randomised:
+#e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P
+password2 = []
+
+for i in range(nr_letters):
+    password2.append(random.choice(letters))
+for j in range(nr_symbols):
+    password2 += random.choice(symbols)
+for k in range(nr_numbers):
+    password2 += random.choice(numbers)
+
+random.shuffle(password2)
+
+mypassword = ""
+for char in password2:
+    mypassword += char
+print(mypassword)
+```
+
+```py
+# Welcome to the PyPassword Generator!
+# How many letters would you like in your password?
+# 3
+# How many symbols would you like?
+# 3
+# How many numbers would you like?
+# 3
+# jgK*+*220
+# e3g6*((m9
+```
+
 </details>
 
 <details>
