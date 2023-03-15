@@ -1126,11 +1126,23 @@ for fruit in fruits:
 ```
 
 ```py
+student_scores = input("Input a list of student scores ").split()
+for n in range(0, len(student_scores)):
+  student_scores[n] = int(student_scores[n])
+print(student_scores)
 
+highest_score=0
+for i in student_scores:
+    if i > highest_score:
+        highest_score = i
+
+print(f"The highest score in the class is: {highest_score}")
 ```
 
 ```py
-
+# Input a list of student scores 10 20 30 40 70 80 40 30
+# [10, 20, 30, 40, 70, 80, 40, 30]
+# The highest score in the class is: 80
 ```
 
 ```py
