@@ -1109,7 +1109,7 @@ else:
 </details>
 
 <details>
-  <summary>8. Python Loops </summary>
+  <summary>8. Python For Loops </summary>
 
 Looping through Lists:
 
@@ -1289,7 +1289,7 @@ print(mypassword)
 </details>
 
 <details>
-  <summary>9. sample </summary>
+  <summary>9. Python While Loops </summary>
 
 ```py
 
