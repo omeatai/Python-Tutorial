@@ -2089,6 +2089,33 @@ paint_calc(height=test_h, width=test_w, cover=coverage)
 ```
 
 ```py
+def prime_checker(number):
+    isPrime = True
+    if number in {0, 1}:
+        print("It's a prime number.")
+        return
+    for i in range(2, number):
+        if number % i == 0:
+            isPrime = False
+            break
+
+    print(
+        "It's not a prime number." if not isPrime else "It's a prime number.")
+
+n = int(input("Check this number: "))
+prime_checker(number=n)
+```
+
+```py
+# Check this number: 7
+# It's a prime number.
+```
+
+```py
+
+```
+
+```py
 
 ```
 
