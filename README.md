@@ -1991,7 +1991,7 @@ while not end_of_game:
 </details>
 
 <details>
-  <summary>12. sample </summary>
+  <summary>12. Caesar Cipher </summary>
 
 ```py
 
