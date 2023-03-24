@@ -1994,6 +1994,105 @@ while not end_of_game:
   <summary>12. Caesar Cipher </summary>
 
 ```py
+# Review:
+# Create a function called greet().
+# Write 3 print statements inside the function.
+# Call the greet() function and run your code.
+
+
+def greet():
+    print("Welcome")
+    print("My Name is Ben.")
+    print("How old are you?")
+
+greet()
+```
+
+```py
+# Welcome
+# My Name is Ben.
+# How old are you?
+```
+
+```py
+#Function that allows for input
+def greet_with_name(name):
+    print(f"Hello {name}")
+    print(f"How do you do {name}?")
+
+greet_with_name("Mike")
+
+```
+
+```py
+# Hello Mike
+# How do you do Mike?
+```
+
+```py
+#Functions with more than 1 input
+def greet_with_inputs(name, location):
+    print(f"Hello {name}")
+    print(f"What is it like in {location}?")
+
+greet_with_inputs("Bob", "London")
+```
+
+```py
+# Hello Bob
+# What is it like in London?
+```
+
+```py
+#Functions with more than 1 input
+def greet_with_inputs(name, location):
+    print(f"Hello {name}")
+    print(f"What is it like in {location}?")
+
+greet_with_inputs(location="London", name="Adam")
+```
+
+```py
+# Hello Adam
+# What is it like in London?
+```
+
+```py
+def paint_calc(height,width,cover):
+    nums_of_cans = round(height*width/cover)
+    print(f"You'll need {nums_of_cans} cans of paint.")
+
+test_h = int(input("Height of wall: "))
+test_w = int(input("Width of wall: "))
+coverage = 5
+paint_calc(height=test_h, width=test_w, cover=coverage)
+```
+
+```py
+import math
+
+def paint_calc(height, width, cover):
+  area = height*width
+  num_of_cans = math.ceil(area / cover)
+  print(f"You'll need {num_of_cans} cans of paint.")
+
+test_h = int(input("Height of wall: "))
+test_w = int(input("Width of wall: "))
+coverage = 5
+paint_calc(height=test_h, width=test_w, cover=coverage)
+```
+
+```py
+# Height of wall: 2
+# Width of wall: 4
+# You'll need 2 cans of paint.
+```
+
+```py
+
+```
+
+```py
 
 ```
 
