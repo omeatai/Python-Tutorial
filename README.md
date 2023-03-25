@@ -2967,20 +2967,93 @@ print(name)
 # You did not provide Inputs.
 ```
 
-```py
+task 1:
 
+```py
+def is_leap(year):
+  if year % 4 == 0:
+    if year % 100 == 0:
+      if year % 400 == 0:
+        return "Leap year."
+      else:
+        return "Not leap year."
+    else:
+      return "Leap year."
+  else:
+    return "Not leap year."
+
+def days_in_month(selected_year, selected_month):
+  month_days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+  if is_leap(selected_year) == "Leap year.":
+      month_days[1] = 29
+  return month_days[selected_month-1]
+
+#🚨 Do NOT change any of the code below
+year = int(input("Enter a year: "))
+month = int(input("Enter a month: "))
+days = days_in_month(year, month)
+print(days)
 ```
 
 ```py
+def is_leap(year):
+  if year % 4 == 0:
+    if year % 100 == 0:
+      if year % 400 == 0:
+        return True
+      else:
+        return False
+    else:
+      return True
+  else:
+    return False
 
+def days_in_month(selected_year, selected_month):
+  if month > 12 or month < 1:
+      return "Invalid month"
+  month_days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+  if is_leap(selected_year):
+      return 29
+  return month_days[selected_month-1]
+
+#🚨 Do NOT change any of the code below
+year = int(input("Enter a year: "))
+month = int(input("Enter a month: "))
+days = days_in_month(year, month)
+print(days)
 ```
 
 ```py
+# Enter a year: 2000
+# Enter a month: 2
+# 29
+```
 
+Example 5:
+
+Using Doc Strings -
+
+```py
+#Return as an early exit
+def format_name(f_name, l_name):
+	"""Take a first and last name and format it to return the title case version of the name."""
+	if not f_name or not l_name:
+		return "You didn't provide valid inputs."
+	formated_f_name = f_name.title()
+	formated_l_name = l_name.title()
+	return f"Result: {formated_f_name} {formated_l_name}"
+
+first = input("What is your first name? ")
+last = input("What is your last name? ")
+
+name = format_name(first, last)
+print(name)
 ```
 
 ```py
-
+# What is your first name? ifeaNYI
+# What is your last name? omeATA
+# Result: Ifeanyi Omeata
 ```
 
 ```py
