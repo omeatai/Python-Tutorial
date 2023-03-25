@@ -2885,6 +2885,40 @@ while not bidding_finished:
 <details>
   <summary>14. Functions with Outputs </summary>
 
+Example 1:
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
 ```py
 
 ```
