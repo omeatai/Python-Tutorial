@@ -2639,41 +2639,147 @@ print(programming_dictionary)
 Example 4:
 
 ```py
+programming_dictionary = {
+    "Bug":
+    "An error in a program that prevents the program from running as expected.",
+    "Function": "A piece of code that you can easily call over and over again."
+}
 
+#Edit an item in a dictionary
+programming_dictionary["Bug"] = "A moth in your computer."
+
+for key in programming_dictionary:
+    print(f"{key}: {programming_dictionary[key]}")
 ```
 
 ```py
+# Bug: A moth in your computer.
+# Function: A piece of code that you can easily call over and over again.
+```
 
+Task 1:
+
+```py
+student_scores = {
+  "Harry": 81,
+  "Ron": 78,
+  "Hermione": 99,
+  "Draco": 74,
+  "Neville": 62,
+}
+
+#TODO-1: Create an empty dictionary called student_grades.
+student_grades = {}
+
+#TODO-2: Write your code below to add the grades to student_grades.👇
+for student in student_scores:
+    score = student_scores[student]
+    if score > 90:
+      student_grades[student] = "Outstanding"
+    elif score > 80:
+      student_grades[student] = "Exceeds Expectations"
+    elif score > 70:
+      student_grades[student] = "Acceptable"
+    else:
+      student_grades[student] = "Fail"
+
+print(student_grades)
+```
+
+```py
+# {'Harry': 'Exceeds Expectations', 'Ron': 'Acceptable', 'Hermione': 'Outstanding', 'Draco': 'Acceptable', 'Neville': 'Fail'}
 ```
 
 Example 5:
 
-```py
-
-```
+Nested Dictionaries -
 
 ```py
+#Nesting
+{
+  Key: [List],
+  Key2:{Dict},
+}
 
+capitals = {
+  "France": "Paris",
+  "Germany": "Berlin",
+}
+
+#Nesting a List in a Dictionary
+
+travel_log = {
+  "France": ["Paris", "Lille", "Dijon"],
+  "Germany": ["Berlin", "Hamburg", "Stuttgart"],
+}
+
+#Nesting Dictionary in a Dictionary
+
+travel_log = {
+  "France": {"cities_visited": ["Paris", "Lille", "Dijon"], "total_visits": 12},
+  "Germany": {"cities_visited": ["Berlin", "Hamburg", "Stuttgart"], "total_visits": 5},
+}
+
+#Nesting Dictionaries in Lists
+
+travel_log = [
+{
+  "country": "France",
+  "cities_visited": ["Paris", "Lille", "Dijon"],
+  "total_visits": 12,
+},
+{
+  "country": "Germany",
+  "cities_visited": ["Berlin", "Hamburg", "Stuttgart"],
+  "total_visits": 5,
+},
+]
 ```
 
 Example 6:
 
 ```py
+#Nesting a List in a Dictionary
 
+travel_log = {
+    "France": {
+        "cities_visited": ["Paris", "Lille", "Dijon"],
+        "total_visits": 12
+    },
+    "Germany": {
+        "cities_visited": ["Berlin", "Hamburg", "Stuttgart"],
+        "total_visits": 6
+    }
+}
+
+print(travel_log["France"]["total_visits"])
 ```
 
 ```py
-
+# 12
 ```
 
 Example 7:
 
 ```py
+travel_log = [
+    {
+        "country": "France",
+        "cities_visited": ["Paris", "Lille", "Dijon"],
+        "total_visits": 12
+    },
+    {
+        "country": "Germany",
+        "cities_visited": ["Berlin", "Hamburg", "Stuttgart"],
+        "total_visits": 5
+    },
+]
 
+print(travel_log[0]["cities_visited"])
 ```
 
 ```py
-
+# ['Paris', 'Lille', 'Dijon']
 ```
 
 Example 8:
