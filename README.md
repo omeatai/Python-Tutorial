@@ -2441,7 +2441,7 @@ while not should_end:
 </details>
 
 <details>
-  <summary>13. sample </summary>
+  <summary>13. Python Dictionaries and Nesting </summary>
 
 ```py
 
