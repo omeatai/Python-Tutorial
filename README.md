@@ -2443,6 +2443,74 @@ while not should_end:
 <details>
   <summary>13. Python Dictionaries and Nesting </summary>
 
+Example 1:
+
+```py
+programming_dictionary = {
+    "Bug": "An error in a program that prevents the program from running as expected.",
+    "Function": "A piece of code that you can easily call over and over again."
+}
+
+#Retrieving items from dictionary.
+print(programming_dictionary["Bug"])
+
+#Adding new items to dictionary.
+programming_dictionary["Loop"] = "The action of doing something over and over again."
+print(programming_dictionary)
+```
+
+```py
+# An error in a program that prevents the program from running as expected.
+
+# {
+#   'Bug': 'An error in a program that prevents the program from running as expected.',
+#   'Function': 'A piece of code that you can easily call over and over again.',
+#   'Loop': 'The action of doing something over and over again.'
+# }
+```
+
+Example 2:
+
+```py
+programming_dictionary = {
+    "Bug": "An error in a program that prevents the program from running as expected.",
+    "Function": "A piece of code that you can easily call over and over again."
+}
+
+#Create an empty dictionary.
+empty_dictionary = {}
+
+#Wipe an existing dictionary
+programming_dictionary = {}
+print (programming_dictionary)
+```
+
+```py
+# {}
+```
+
+Example 3:
+
+```py
+programming_dictionary = {
+    "Bug": "An error in a program that prevents the program from running as expected.",
+    "Function": "A piece of code that you can easily call over and over again."
+}
+
+#Edit an item in a dictionary
+programming_dictionary["Bug"] = "A moth in your computer."
+print(programming_dictionary)
+```
+
+```py
+# {
+#   'Bug': 'A moth in your computer.',
+#   'Function': 'A piece of code that you can easily call over and over again.'
+# }
+```
+
+Example 4:
+
 ```py
 
 ```
@@ -2450,6 +2518,38 @@ while not should_end:
 ```py
 
 ```
+
+Example 5:
+
+```py
+
+```
+
+```py
+
+```
+
+Example 6:
+
+```py
+
+```
+
+```py
+
+```
+
+Example 7:
+
+```py
+
+```
+
+```py
+
+```
+
+Example 8:
 
 ```py
 
