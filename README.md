@@ -2812,14 +2812,72 @@ print(travel_log)
 # [{'country': 'France', 'visits': 12, 'cities': ['Paris', 'Lille', 'Dijon']}, {'country': 'Germany', 'visits': 5, 'cities': ['Berlin', 'Hamburg', 'Stuttgart']}, {'country': 'Russia', 'visits': 2, 'cities': ['Moscow', 'Saint Petersburg']}]
 ```
 
-Example 8:
+Task 3:
 
 ```py
+from replit import clear
+#HINT: You can call clear() to clear the output in the console.
+from art import logo
+
+bidders = {}
+highest_bid = 0
+highest_bidder = None
+should_continue = True
+
+while should_continue:
+	print(logo)
+	name = input("What is your name? ")
+	bid = int(input("What is your bid price? $"))
+	bidders[name] = bid
+	ask_to_continue = input("Is there another bidder? Type 'y' or 'n'?\n")
+	clear()
+	if ask_to_continue.lower() == "n":
+		for bidder in bidders:
+			if bidders[bidder] > highest_bid:
+				highest_bidder = bidder
+				highest_bid = bidders[bidder]
+				print({highest_bidder: highest_bid})
+		should_continue = False
+print(f"The highest bidder is {highest_bidder} at ${highest_bid}.")
 
 ```
 
 ```py
+from replit import clear
+from art import logo
+print(logo)
 
+bids = {}
+bidding_finished = False
+
+def find_highest_bidder(bidding_record):
+  highest_bid = 0
+  winner = ""
+  # bidding_record = {"Angela": 123, "James": 321}
+  for bidder in bidding_record:
+    bid_amount = bidding_record[bidder]
+    if bid_amount > highest_bid:
+      highest_bid = bid_amount
+      winner = bidder
+  print(f"The winner is {winner} with a bid of ${highest_bid}")
+
+while not bidding_finished:
+  name = input("What is your name?: ")
+  price = int(input("What is your bid?: $"))
+  bids[name] = price
+  should_continue = input("Are there any other bidders? Type 'yes or 'no'.\n")
+  if should_continue == "no":
+    bidding_finished = True
+    find_highest_bidder(bids)
+  elif should_continue == "yes":
+    clear()
+
+```
+
+```py
+# {'Ifeanyi': 100}
+# {'James': 200}
+# The highest bidder is James at $200.
 ```
 
 </details>
