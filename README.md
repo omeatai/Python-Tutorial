@@ -2883,7 +2883,7 @@ while not bidding_finished:
 </details>
 
 <details>
-  <summary>14. sample </summary>
+  <summary>14. Functions with Outputs </summary>
 
 ```py
 
