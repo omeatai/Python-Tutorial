@@ -2888,19 +2888,83 @@ while not bidding_finished:
 Example 1:
 
 ```py
+#Functions with Outputs
+def format_name(f_name, l_name):
+    firstname = f_name.title()
+    lastname = l_name.title()
+    print(f"{firstname } {lastname}")
+
+format_name("ifeanyi", "omeata")
+```
+
+```py
+# Ifeanyi Omeata
+```
+
+Example 2:
+
+```py
+#Functions with Outputs
+def format_name(f_name, l_name):
+    firstname = f_name.title()
+    lastname = l_name.title()
+    return f"{firstname } {lastname}"
+
+name = format_name("ifeaNyi", "omeAta")
+print(name)
+```
+
+```py
+# Ifeanyi Omeata
+```
+
+Example 3:
+
+```py
+#Functions with Outputs
+def format_name(f_name, l_name):
+	if not f_name or not l_name:
+		return
+	firstname = f_name.title()
+	lastname = l_name.title()
+	return f"{firstname } {lastname}"
+
+first = input("What is your first name? ")
+last = input("What is your last name? ")
+
+name = format_name(first, last)
+print(name)
 
 ```
 
 ```py
+# What is your first name?
+# What is your last name? omeatA
+# None
+```
 
+Example 4:
+
+```py
+#Functions with Outputs
+def format_name(f_name, l_name):
+	if not f_name or not l_name:
+		return "You did not provide Inputs."
+	firstname = f_name.title()
+	lastname = l_name.title()
+	return f"{firstname } {lastname}"
+
+first = input("What is your first name? ")
+last = input("What is your last name? ")
+
+name = format_name(first, last)
+print(name)
 ```
 
 ```py
-
-```
-
-```py
-
+# What is your first name? ifeANYI
+# What is your last name?
+# You did not provide Inputs.
 ```
 
 ```py
