@@ -11,6 +11,8 @@ Python Tutorial by Ifeanyi Omeata
 <details>
   <summary>1. Introduction - Print Function </summary>
 
+Example 1:
+
 ```py
 # input() will get user input in console
 # Then print() will print the word "Hello" and the user input
@@ -22,6 +24,8 @@ print("Hello + input("What is your name?"))
 # Hello Bob
 ```
 
+Example 2:
+
 ```py
 #This code prints the number of characters in a user's name.
 print(len input ("What is your name?") ) )
@@ -32,6 +36,8 @@ print(len input ("What is your name?") ) )
 # 3
 ```
 
+Example 3:
+
 ```py
 name = input("What is your name?")
 print(name)
@@ -41,6 +47,8 @@ print(name)
 # What is your name? Mark
 # Mark
 ```
+
+Task 1:
 
 ```py
 #1. Create a greeting for your program.
@@ -69,7 +77,9 @@ print("Your band name could be " + city + " " + pet)
 <details>
   <summary>2. Number Manipulation </summary>
 
-Rounding Numbers:
+Example 1:
+
+Rounding Numbers -
 
 ```py
 print(round(8 / 3, 2))
@@ -79,7 +89,9 @@ print(round(8 / 3, 2))
 # 2.67
 ```
 
-Flooring Numbers:
+Example 2:
+
+Flooring Numbers -
 
 ```py
 print(8 // 3)
@@ -88,6 +100,8 @@ print(8 // 3)
 ```py
 # 2
 ```
+
+Example 3:
 
 ```py
 result = 4 / 2
@@ -99,11 +113,12 @@ print(result)
 # 1.0
 ```
 
+Example 4:
+
 ```py
 score = 0
 score += 1
 print(score)
-
 ```
 
 ```py
@@ -114,6 +129,8 @@ print(score)
 
 <details>
   <summary>3. Using F Strings </summary>
+
+Example 1:
 
 ```py
 score = 0
@@ -132,6 +149,8 @@ print (f"your score is {score}")
 # your score is 0
 ```
 
+Example 2:
+
 ```py
 score = 0
 height = 1.8
@@ -143,6 +162,8 @@ print(f"your score is {score}, your height is {height}, you are winning is {isWi
 ```py
 # your score is 0, your height is 1.8, you are winning is True
 ```
+
+Example 3:
 
 ```py
 age = input("What is your current age? ")
@@ -160,7 +181,9 @@ print(f"You have {d} days, {w} weeks, and {m} months left.")
 # You have 20075 days, 2860 weeks, and 660 months left.
 ```
 
-Using the Format function:
+Example 4:
+
+Using the Format function -
 
 ```py
 format(salesAmount, '.2f')
@@ -171,6 +194,8 @@ Using the Format Method:
 ```py
 "{:.2f}".format(salesAmount)
 ```
+
+Task 1:
 
 ```py
 print("Welcome to the tip calculator!")
@@ -198,6 +223,8 @@ print(f'Each person should pay: ${bill_for_each_person}.')
 <details>
   <summary>4. If Else Statements </summary>
 
+Example 1:
+
 ```py
 print("Welcome to the rollercoaster!")
 height = int(input("What is your height in cm? "))
@@ -214,6 +241,8 @@ else:
 # You can ride the rollercoaster!
 ```
 
+Example 2:
+
 ```py
 number = int(input("Which number do you want to check? "))
 
@@ -228,7 +257,9 @@ else:
 # This is an odd number.
 ```
 
-Nested If/Else:
+Example 3:
+
+Nested If/Else -
 
 ```py
 print("Welcome to the rollercoaster!")
@@ -253,7 +284,9 @@ else:
 # Please pay $12.
 ```
 
-Nested If/Elif/Else:
+Example 4:
+
+Nested If/Elif/Else -
 
 ```py
 if condition1:
@@ -290,6 +323,8 @@ else:
 # Please pay $5.
 ```
 
+Example 5:
+
 ```py
 height = float(input("enter your height in m: "))
 weight = float(input("enter your weight in kg: "))
@@ -315,6 +350,8 @@ else:
 # Your BMI is 37, you are clinically obese.
 ```
 
+Example 6:
+
 ```py
 year = int(input("Which year do you want to check? "))
 
@@ -332,7 +369,9 @@ else:
 # Leap year.
 ```
 
-Multiple If statements:
+Example 7:
+
+Multiple If statements -
 
 ```py
 print("Welcome to the rollercoaster!")
@@ -369,6 +408,8 @@ else:
 # Do you want a photo taken? Y or N. Y
 # Your final bill is $15.
 ```
+
+Example 8:
 
 ```py
 print("Welcome to Python Pizza Deliveries!")
@@ -408,6 +449,8 @@ print(f"Your final bill is: ${bill}.")
 # Your final bill is: $16.
 ```
 
+Example 9:
+
 ```py
 print("Welcome to the Love Calculator!")
 name1 = input("What is your name? \n")
@@ -444,6 +487,8 @@ else:
 # Your score is 42, you are alright together.
 ```
 
+Example 10:
+
 ```py
 print("Welcome to Tresure Island.")
 print("Your mission is to find the treasure.")
@@ -477,6 +522,8 @@ else:
 # You found the treasure! You Win!
 ```
 
+Example 11:
+
 ```py
 import random
 
@@ -493,6 +540,8 @@ print(listofnum)
 # 4
 # [2, 1, 4, 5, 3]
 ```
+
+Example 12:
 
 ```py
 import random
