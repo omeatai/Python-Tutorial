@@ -614,6 +614,8 @@ if start == 'ON':
 <details>
   <summary>5. Importing Modules </summary>
 
+Example 1:
+
 Import from a single module in same folder -
 
 person.py:
@@ -624,7 +626,7 @@ account_no = "113748919"
 age = 21
 ```
 
-main:
+main.py:
 
 ```py
 from person import account_no
@@ -635,6 +637,8 @@ print(account_no)
 ```py
 # 113748919
 ```
+
+Example 2:
 
 Import from multiple modules in same folder -
 
@@ -668,6 +672,8 @@ print(year)
 # 113748919
 # 2011
 ```
+
+Example 3:
 
 Import from multiple modules in different folder -
 
@@ -712,6 +718,8 @@ print(school.year)
 <details>
   <summary>6. Generating Random Numbers </summary>
 
+Example 1:
+
 ```py
 import random
 
@@ -728,6 +736,8 @@ print(random_float)
 # 4
 # 0.35402952193969894
 ```
+
+Example 2:
 
 Random number between 0 and 5:
 
@@ -771,6 +781,8 @@ for i in range(21):
 # 20: 0.95
 ```
 
+Example 3:
+
 Select randomly from list of Choices:
 
 ```py
@@ -782,6 +794,8 @@ print(random.choice(["Heads", "Tails"]))
 ```py
 # Tails
 ```
+
+Example 4:
 
 ```py
 import random
@@ -803,7 +817,9 @@ else:
 <details>
   <summary>7. Python Lists </summary>
 
-Get a List Item from the index Position:
+Example 1:
+
+Get a List Item from the index Position -
 
 ```py
 states_of_america = [
@@ -825,7 +841,9 @@ print(states_of_america[0])
 # Delaware
 ```
 
-Get an Item from the end of the list:
+Example 2:
+
+Get an Item from the end of the list -
 
 ```py
 states_of_america = [
@@ -846,6 +864,8 @@ print(states_of_america[-2])
 ```py
 # Alaska
 ```
+
+Example 3:
 
 Changing the value of an item in the List:
 
@@ -870,6 +890,8 @@ print(states_of_america[1])
 # Pencilvania
 ```
 
+Example 4:
+
 Adding Items to a List:
 
 ```py
@@ -893,6 +915,8 @@ print(states_of_america[-1])
 # Angelaland
 ```
 
+Example 5:
+
 Adding more than one item to the List:
 
 ```py
@@ -910,12 +934,13 @@ states_of_america = [
 
 states_of_america.extend(["Angelaland", "Lagosland", "Hopeland"])
 print(states_of_america[-5:])
-
 ```
 
 ```py
 # ['Alaska', 'Hawaii', 'Angelaland', 'Lagosland', 'Hopeland']
 ```
+
+Example 6:
 
 Randomly selecting items from a List:
 
@@ -935,6 +960,8 @@ print(f"{person_to_pay} is going to buy the meal today!")
 # Ashley is going to buy the meal today!
 ```
 
+Example 7:
+
 ```py
 import random
 
@@ -950,6 +977,8 @@ print(f"{person_to_pay} is going to buy the meal today!")
 # James, John, Luke, Mary, Ashley, Dan
 # Ashley is going to buy the meal today!
 ```
+
+Example 8:
 
 Nested Lists:
 
@@ -967,6 +996,8 @@ print(dirty_dozen)
 # [['Strawberries', 'Nectarines', 'Apples', 'Grapes', 'Peaches', 'Cherries', 'Pears'], ['Spinach', 'Kale', 'Tomatoes', 'Celery', 'Potatoes']]
 ```
 
+Example 9:
+
 ```py
 row1 = ["⬜️","️⬜️","️⬜️"]
 row2 = ["⬜️","⬜️","️⬜️"]
@@ -982,7 +1013,6 @@ row_to_index = int(position[1]) - 1
 map[row_to_index][column_to_index] = "X"
 
 print(f"{row1}\n{row2}\n{row3}")
-
 ```
 
 ```py
@@ -996,7 +1026,9 @@ print(f"{row1}\n{row2}\n{row3}")
 # ['⬜️️', 'X', '⬜️️']
 ```
 
-RPS Game:
+Example 10:
+
+RPS Game -
 
 ```py
 import random
@@ -1160,7 +1192,9 @@ else:
 <details>
   <summary>8. Python For Loops </summary>
 
-Looping through Lists:
+Example 1:
+
+Looping through Lists -
 
 ```py
 fruits = ["Apple", "Peach", "Pear"]
@@ -1173,6 +1207,8 @@ for fruit in fruits:
 # Peach
 # Pear
 ```
+
+Example 2:
 
 ```py
 student_scores = input("Input a list of student scores ").split()
@@ -1194,6 +1230,8 @@ print(f"The highest score in the class is: {highest_score}")
 # The highest score in the class is: 80
 ```
 
+Example 3:
+
 ```py
 total = 0
 
@@ -1205,6 +1243,8 @@ print(total)
 ```py
 # 2550
 ```
+
+Example 4:
 
 ```py
 total2 = 0
@@ -1218,6 +1258,8 @@ print(total2)
 ```py
 # 2550
 ```
+
+Example 5:
 
 ```py
 for number in range(1,101):
@@ -1240,6 +1282,8 @@ for number in range(1,101):
 # Fizz
 # 7
 ```
+
+Example 6:
 
 ```py
 #Password Generator Project
@@ -1303,6 +1347,8 @@ print(password2)
 # (z96P%T6)
 ```
 
+Example 7:
+
 ```py
 #Hard Level - Order of characters randomised:
 #e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P
@@ -1340,6 +1386,8 @@ print(mypassword)
 <details>
   <summary>9. Python Functions </summary>
 
+Example 1:
+
 ```py
 def my_function():
   print("Hello")
@@ -1356,6 +1404,8 @@ my_function ()
 
 <details>
   <summary>10. Python While Loops </summary>
+
+Example 1:
 
 ```py
 def turn_right():
@@ -1406,6 +1456,8 @@ while not at_goal():
 <details>
   <summary>11. Hangman </summary>
 
+Task 1:
+
 ```py
 #Step 1
 #TODO-1 - Randomly choose a word from the word_list and assign it to a variable called chosen_word.
@@ -1435,6 +1487,8 @@ for letter in chosen_word:
 # Wrong
 # Wrong
 ```
+
+Task 2:
 
 ```py
 #Step 2
@@ -1490,6 +1544,8 @@ for position in range(word_length):
 # Guess a letter: a
 # ['a', 'a', '_', '_', '_', 'a', '_', '_']
 ```
+
+Task 3:
 
 ```py
 #Step 3
@@ -1569,6 +1625,8 @@ while not end_of_game:
 #  Guessed letter: n
 # ['b', 'a', 'b', 'o', 'o', 'n']
 ```
+
+Task 4:
 
 ```py
 #Step 4
@@ -1867,6 +1925,8 @@ while not end_of_game:
 # =========
 ```
 
+Task 5:
+
 ```py
 #Step 5
 
@@ -2042,6 +2102,8 @@ while not end_of_game:
 <details>
   <summary>12. Caesar Cipher </summary>
 
+Example 1:
+
 ```py
 # Review:
 # Create a function called greet().
@@ -2063,6 +2125,8 @@ greet()
 # How old are you?
 ```
 
+Example 2:
+
 ```py
 #Function that allows for input
 def greet_with_name(name):
@@ -2078,6 +2142,8 @@ greet_with_name("Mike")
 # How do you do Mike?
 ```
 
+Example 3:
+
 ```py
 #Functions with more than 1 input
 def greet_with_inputs(name, location):
@@ -2092,6 +2158,8 @@ greet_with_inputs("Bob", "London")
 # What is it like in London?
 ```
 
+Example 4:
+
 ```py
 #Functions with more than 1 input
 def greet_with_inputs(name, location):
@@ -2105,6 +2173,8 @@ greet_with_inputs(location="London", name="Adam")
 # Hello Adam
 # What is it like in London?
 ```
+
+Example 5:
 
 ```py
 def paint_calc(height,width,cover):
@@ -2137,6 +2207,8 @@ paint_calc(height=test_h, width=test_w, cover=coverage)
 # You'll need 2 cans of paint.
 ```
 
+Example 6:
+
 ```py
 def prime_checker(number):
     isPrime = True
@@ -2159,6 +2231,8 @@ prime_checker(number=n)
 # Check this number: 7
 # It's a prime number.
 ```
+
+Example 7:
 
 ```py
 alphabet = [
@@ -2246,6 +2320,8 @@ encrypt(plain_text=text, shift_amount=shift)
 # The encoded text is n qtaj rzxnh
 ```
 
+Example 8:
+
 ```py
 alphabet = [
     'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o',
@@ -2306,6 +2382,8 @@ else:
 # 4
 # The decoded text is hello
 ```
+
+Example 9:
 
 ```py
 alphabet = [
@@ -2398,7 +2476,7 @@ caesar(start_text=text, shift_amount=shift, cipher_direction=direction)
 # The decoded text is hello
 ```
 
-Task:
+Task 1:
 
 ```py
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
