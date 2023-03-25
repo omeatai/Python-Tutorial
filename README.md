@@ -2249,10 +2249,6 @@ else:
 ```
 
 ```py
-
-```
-
-```py
 # Type 'encode' to encrypt, type 'decode' to decrypt:
 # d
 # Type your message:
@@ -2260,6 +2256,81 @@ else:
 # Type the shift number:
 # 4
 # The decoded text is hello
+```
+
+```py
+alphabet = [
+    'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o',
+    'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'a', 'b', 'c', 'd',
+    'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's',
+    't', 'u', 'v', 'w', 'x', 'y', 'z'
+]
+
+direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
+text = input("Type your message:\n").lower()
+shift = int(input("Type the shift number:\n"))
+
+#TODO-1: Combine the encrypt() and decrypt() functions into a single function called caesar().
+
+
+def caesar(text_type, shift_amount, direction_type):
+    if direction_type[0] == "e":
+        cipher_text = ""
+        for letter in text_type:
+            position = alphabet.index(letter)
+            new_position = position + shift_amount
+            cipher_text += alphabet[new_position]
+        print(f"The encoded text is {cipher_text}")
+    elif direction_type[0] == "d":
+        plain_text = ""
+        for letter in text_type:
+            position = alphabet.index(letter)
+            new_position = position - shift_amount
+            plain_text += alphabet[new_position]
+        print(f"The decoded text is {plain_text}")
+    else:
+        print(
+            "You selected an Invalid option to encrypt or decrypt. Try again.")
+
+
+caesar(text_type=text, shift_amount=shift, direction_type=direction)
+
+#TODO-2: Call the caesar() function, passing over the 'text', 'shift' and 'direction' values.
+
+```
+
+```py
+# Type 'encode' to encrypt, type 'decode' to decrypt:
+# m
+# Type your message:
+# hello
+# Type the shift number:
+# 4
+# You selected an Invalid option to encrypt or decrypt. Try again.
+
+# Type 'encode' to encrypt, type 'decode' to decrypt:
+# e
+# Type your message:
+# hello
+# Type the shift number:
+# 4
+# The encoded text is lipps
+
+# Type 'encode' to encrypt, type 'decode' to decrypt:
+# d
+# Type your message:
+# lipps
+# Type the shift number:
+# 4
+# The decoded text is hello
+```
+
+```py
+
+```
+
+```py
+
 ```
 
 </details>
