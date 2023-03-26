@@ -3242,7 +3242,23 @@ calculator()
 </details>
 
 <details>
-  <summary>15. sample </summary>
+  <summary>15. Blackjack Game </summary>
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
 
 ```py
 
