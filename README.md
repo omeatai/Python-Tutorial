@@ -3560,14 +3560,6 @@ while input("Do you want to play a game of Blackjack? Type 'y' or 'n': ") == "y"
 # Do you want to play again? 'y' or 'n':
 ```
 
-```py
-
-```
-
-```py
-
-```
-
 </details>
 
 <details>
