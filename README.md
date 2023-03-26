@@ -3056,6 +3056,135 @@ print(name)
 # Result: Ifeanyi Omeata
 ```
 
+Example 6:
+
+```py
+#Calculator
+
+#Add
+def add(n1, n2):
+    return n1 + n2
+
+
+#Subtract
+def subtract(n1, n2):
+    return n1 - n2
+
+
+#Multiply
+def multiply(n1, n2):
+    return n1 * n2
+
+
+#Divide
+def divide(n1, n2):
+    return n1 / n2
+
+
+operations = {"+": add, "-": subtract, "*": multiply, "/": divide}
+
+num1 = int(input("What's the first number?: "))
+
+for symbol in operations:
+    print(symbol)
+
+operation_symbol = input("Pick an operation from the line above: ")
+
+num2 = int(input("What's the second number?: "))
+
+calculation_function = operations[operation_symbol]
+answer = calculation_function(num1, num2)
+
+print(f"{num1} {operation_symbol} {num2} = {answer}")
+```
+
+```py
+# What's the first number?: 5
+# +
+# -
+# *
+# /
+# Pick an operation from the line above: *
+# What's the second number?: 6
+# 5 * 6 = 30
+```
+
+Example 7:
+
+```py
+#Calculator
+#Add
+def add(n1, n2):
+    return n1 + n2
+
+
+#Subtract
+def subtract(n1, n2):
+    return n1 - n2
+
+
+#Multiply
+def multiply(n1, n2):
+    return n1 * n2
+
+
+#Divide
+def divide(n1, n2):
+    return n1 / n2
+
+
+operations = {"+": add, "-": subtract, "*": multiply, "/": divide}
+
+num1 = int(input("What's the first number?: "))
+repeat_task = False
+end_task = False
+
+while not end_task:
+    for symbol in operations:
+        print(symbol)
+    operation_symbol = input(
+        f"Pick {'another' if repeat_task else 'an'} operation: ")
+    num2 = int(
+        input(f"What's the {'next' if repeat_task else 'second'} number?: "))
+
+    calculation_function = operations[operation_symbol]
+    answer = calculation_function(num1, num2)
+    print(f"{num1} {operation_symbol} {num2} = {answer}")
+
+    continue_calculation = input(
+        f"Type 'y' to continue calculating with {answer}, or type 'n' to exit.: "
+    )
+    if continue_calculation == "n":
+        end_task = True
+        print("Calculation Ended. Goodbye!")
+    else:
+        num1 = answer
+        repeat_task = True
+
+```
+
+```py
+# What's the first number?: 6
+# +
+# -
+# *
+# /
+# Pick an operation: *
+# What's the second number?: 5
+# 6 * 5 = 30
+# Type 'y' to continue calculating with 30, or type 'n' to exit.: y
+# +
+# -
+# *
+# /
+# Pick another operation: /
+# What's the next number?: 4
+# 30 / 4 = 7.5
+# Type 'y' to continue calculating with 7.5, or type 'n' to exit.: n
+# Calculation Ended. Goodbye!
+
+```
+
 ```py
 
 ```
