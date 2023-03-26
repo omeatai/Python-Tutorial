@@ -3135,31 +3135,36 @@ def divide(n1, n2):
 
 operations = {"+": add, "-": subtract, "*": multiply, "/": divide}
 
-num1 = int(input("What's the first number?: "))
-repeat_task = False
-end_task = False
 
-while not end_task:
-    for symbol in operations:
-        print(symbol)
-    operation_symbol = input(
-        f"Pick {'another' if repeat_task else 'an'} operation: ")
-    num2 = int(
-        input(f"What's the {'next' if repeat_task else 'second'} number?: "))
+def calculator():
+    num1 = int(input("What's the first number?: "))
+    repeat_task = False
+    end_task = False
 
-    calculation_function = operations[operation_symbol]
-    answer = calculation_function(num1, num2)
-    print(f"{num1} {operation_symbol} {num2} = {answer}")
+    while not end_task:
+        for symbol in operations:
+            print(symbol)
+        operation_symbol = input(
+            f"Pick {'another' if repeat_task else 'an'} operation: ")
+        num2 = int(
+            input(
+                f"What's the {'next' if repeat_task else 'second'} number?: "))
 
-    continue_calculation = input(
-        f"Type 'y' to continue calculating with {answer}, or type 'n' to exit.: "
-    )
-    if continue_calculation == "n":
-        end_task = True
-        print("Calculation Ended. Goodbye!")
-    else:
-        num1 = answer
-        repeat_task = True
+        calculation_function = operations[operation_symbol]
+        answer = calculation_function(num1, num2)
+        print(f"{num1} {operation_symbol} {num2} = {answer}")
+
+        continue_calculation = input(
+            f"Type 'y' to continue calculating with {answer}, or type 'n' to exit.: "
+        )
+        if continue_calculation == "n":
+            end_task = True
+            calculator()
+        else:
+            num1 = answer
+            repeat_task = True
+
+calculator()
 
 ```
 
@@ -3181,7 +3186,7 @@ while not end_task:
 # What's the next number?: 4
 # 30 / 4 = 7.5
 # Type 'y' to continue calculating with 7.5, or type 'n' to exit.: n
-# Calculation Ended. Goodbye!
+# What's the first number?:
 
 ```
 
