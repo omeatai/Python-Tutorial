@@ -4558,6 +4558,10 @@ print(pd.__version__)
 <details>
   <summary>A2. Pandas Series </summary>
 
+- A Pandas Series is like a column in a table.
+
+- It is a one-dimensional array holding data of any type.
+
 # Create a simple Pandas Series from a list -
 
 ```py
@@ -4674,6 +4678,10 @@ print(myvar)
 <details>
   <summary>A3. Pandas DataFrames </summary>
 
+- Data sets in Pandas are usually multi-dimensional tables, called DataFrames.
+
+- Series is like a column, a DataFrame is the whole table.
+
 # Creating a DataFrame from two Series -
 
 ```py
@@ -4697,34 +4705,136 @@ print(myvar)
 # 2       390        45
 ```
 
+- DataFrame is like a table with rows and columns.
+
+- Pandas use the loc attribute to return one or more specified row(s)
+
+# Locate Row - return one or more specified row(s)
+
 ```py
+import pandas as pd
+
+data = {
+  "calories": [420, 380, 390],
+  "duration": [50, 40, 45]
+}
+
+#load data into a DataFrame object:
+df = pd.DataFrame(data)
+
+print(df.loc[0])
 
 ```
 
 ```py
+# calories    420
+# duration     50
+# Name: 0, dtype: int64
+```
+
+# Returning Pandas Series - Return row 0 and 1
+
+```py
+import pandas as pd
+
+data = {
+  "calories": [420, 380, 390],
+  "duration": [50, 40, 45]
+}
+
+#load data into a DataFrame object:
+df = pd.DataFrame(data)
+
+print(df.loc[[0, 1]])
 
 ```
 
 ```py
+#  calories  duration
+# 0       420        50
+# 1       380        40
+```
+
+# Named Indexes -
+
+```py
+import pandas as pd
+
+data = {
+  "calories": [420, 380, 390],
+  "duration": [50, 40, 45]
+}
+
+df = pd.DataFrame(data, index = ["day1", "day2", "day3"])
+
+print(df)
+```
+
+```py
+# calories  duration
+#   day1       420        50
+#   day2       380        40
+#   day3       390        45
+```
+
+# Locate Named Indexes -
+
+```py
+import pandas as pd
+
+data = {
+  "calories": [420, 380, 390],
+  "duration": [50, 40, 45]
+}
+
+df = pd.DataFrame(data, index = ["day1", "day2", "day3"])
+
+print(df.loc["day2"])
 
 ```
 
 ```py
+# calories    380
+# duration     40
+# Name: day2, dtype: int64
+```
 
+# Load Files Into a DataFrame -
+
+data.csv:
+
+```csv
+Duration,Pulse,Maxpulse,Calories
+60,110,130,409.1
+60,117,145,479.0
+60,103,135,340.0
+45,109,175,282.4
+45,117,148,406.0
+```
+
+index.py:
+
+```py
+import pandas as pd
+
+df = pd.read_csv('data.csv')
+
+print(df)
 ```
 
 ```py
-
-```
-
-```py
-
+#         Duration  Pulse  Maxpulse  Calories
+#   0          60    110       130     409.1
+#   1          60    117       145     479.0
+#   2          60    103       135     340.0
+#   3          45    109       175     282.4
+#   4          45    117       148     406.0
 ```
 
 </details>
 
 <details>
-  <summary>A4. sample </summary>
+  <summary>A4. Pandas Read CSV</summary>
 
 ```py
 
