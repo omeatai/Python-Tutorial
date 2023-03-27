@@ -4836,41 +4836,195 @@ print(df)
 <details>
   <summary>A4. Pandas Read CSV</summary>
 
+- use to_string() to print the entire DataFrame.
+
+- If you have a large DataFrame with many rows, Pandas will only return the first 5 rows, and the last 5 rows
+
+# Load the CSV into a DataFrame -
+
 ```py
+import pandas as pd
+
+df = pd.read_csv('data.csv')
+
+print(df.to_string())
 
 ```
 
 ```py
+#       Duration  Pulse  Maxpulse  Calories
+# 0          60    110       130     409.1
+# 1          60    117       145     479.0
+# 2          60    103       135     340.0
+# 3          45    109       175     282.4
+# 4          45    117       148     406.0
+# 5          60    102       127     300.5
+# 6          60    110       136     374.0
+# 7          45    104       134     253.3
+# 8          30    109       133     195.1
+# 9          60     98       124     269.0
+# 10         60    103       147     329.3
+```
+
+# Display Pandas max_rows -
+
+- The number of rows returned is defined in Pandas option settings.
+
+- You can check your system's maximum rows with the pd.options.display.max_rows statement.
+
+```py
+import pandas as pd
+
+print(pd.options.display.max_rows)
 
 ```
 
 ```py
+# 60
+```
+
+# Increase Pandas max_rows to display the entire DataFrame -
+
+```py
+import pandas as pd
+
+pd.options.display.max_rows = 9999
+
+df = pd.read_csv('data.csv')
+
+print(df)
 
 ```
 
 ```py
-
+#       Duration  Pulse  Maxpulse  Calories
+# 0          60    110       130     409.1
+# 1          60    117       145     479.0
+# 2          60    103       135     340.0
+# 3          45    109       175     282.4
+# 4          45    117       148     406.0
+# 5          60    102       127     300.5
+# 6          60    110       136     374.0
+# 7          45    104       134     253.3
+# 8          30    109       133     195.1
+# 9          60     98       124     269.0
+# 10         60    103       147     329.3
 ```
 
 </details>
 
 <details>
-  <summary>A5. sample </summary>
+  <summary>A5. Pandas Read JSON </summary>
+
+# Load JSON file into a DataFrame -
 
 ```py
+import pandas as pd
+
+df = pd.read_json('data.json')
+
+print(df.to_string())
 
 ```
 
-```py
-
+```json
+{
+  "Duration": {
+    "0": 60,
+    "1": 60,
+    "2": 60,
+    "3": 45,
+    "4": 45,
+    "5": 60
+  },
+  "Pulse": {
+    "0": 110,
+    "1": 117,
+    "2": 103,
+    "3": 109,
+    "4": 117,
+    "5": 102
+  },
+  "Maxpulse": {
+    "0": 130,
+    "1": 145,
+    "2": 135,
+    "3": 175,
+    "4": 148,
+    "5": 127
+  },
+  "Calories": {
+    "0": 409.1,
+    "1": 479.0,
+    "2": 340.0,
+    "3": 282.4,
+    "4": 406.0,
+    "5": 300.5
+  }
+}
 ```
 
 ```py
+#       Duration  Pulse  Maxpulse  Calories
+# 0        60    110       130     409.1
+# 1        60    117       145     479.0
+# 2        60    103       135     340.0
+# 3        45    109       175     282.4
+# 4        45    117       148     406.0
+# 5        60    102       127     300.5
+```
 
+# Loading Dictionary as JSON -
+
+```py
+data = {
+  "Duration":{
+    "0":60,
+    "1":60,
+    "2":60,
+    "3":45,
+    "4":45,
+    "5":60
+  },
+  "Pulse":{
+    "0":110,
+    "1":117,
+    "2":103,
+    "3":109,
+    "4":117,
+    "5":102
+  },
+  "Maxpulse":{
+    "0":130,
+    "1":145,
+    "2":135,
+    "3":175,
+    "4":148,
+    "5":127
+  },
+  "Calories":{
+    "0":409.1,
+    "1":479.0,
+    "2":340.0,
+    "3":282.4,
+    "4":406.0,
+    "5":300.5
+  }
+}
+
+df = pd.DataFrame(data)
+
+print(df)
 ```
 
 ```py
-
+#       Duration  Pulse  Maxpulse  Calories
+# 0        60    110       130     409.1
+# 1        60    117       145     479.0
+# 2        60    103       135     340.0
+# 3        45    109       175     282.4
+# 4        45    117       148     406.0
+# 5        60    102       127     300.5
 ```
 
 </details>
