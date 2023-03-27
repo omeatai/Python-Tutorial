@@ -4556,35 +4556,145 @@ print(pd.__version__)
 </details>
 
 <details>
-  <summary>A2. sample </summary>
+  <summary>A2. Pandas Series </summary>
+
+# Create a simple Pandas Series from a list -
 
 ```py
+import pandas as pd
+
+a = [1, 7, 2]
+
+myvar = pd.Series(a)
+
+print(myvar)
+```
+
+```py
+# 0    1
+# 1    7
+# 2    2
+# dtype: int64
+```
+
+# Returning the first value of a Series -
+
+```py
+import pandas as pd
+
+a = [1, 7, 2]
+
+myvar = pd.Series(a)
+
+print(myvar[0])
+```
+
+```py
+# 1
+```
+
+# Creating Labels -
+
+```py
+import pandas as pd
+
+a = [1, 7, 2]
+
+myvar = pd.Series(a, index = ["x", "y", "z"])
+
+print(myvar)
 
 ```
 
 ```py
+# x    1
+# y    7
+# z    2
+# dtype: int64
+```
+
+# Access an item by referring to the label -
+
+```py
+import pandas as pd
+
+a = [1, 7, 2]
+
+myvar = pd.Series(a, index = ["x", "y", "z"])
+
+print(myvar["y"])
 
 ```
 
 ```py
+# 7
+```
+
+# Key/Value Objects as Series -
+
+```py
+import pandas as pd
+
+calories = {"day1": 420, "day2": 380, "day3": 390}
+
+myvar = pd.Series(calories)
+
+print(myvar)
 
 ```
 
 ```py
+# day1    420
+# day2    380
+# day3    390
+# dtype: int64
+```
 
+# Create a Series using a selection of data -
+
+```py
+import pandas as pd
+
+calories = {"day1": 420, "day2": 380, "day3": 390}
+
+myvar = pd.Series(calories, index = ["day1", "day2"])
+
+print(myvar)
+
+```
+
+```py
+# day1    420
+# day2    380
+# dtype: int64
 ```
 
 </details>
 
 <details>
-  <summary>A3. sample </summary>
+  <summary>A3. Pandas DataFrames </summary>
+
+# Creating a DataFrame from two Series -
 
 ```py
+import pandas as pd
+
+data = {
+  "calories": [420, 380, 390],
+  "duration": [50, 40, 45]
+}
+
+myvar = pd.DataFrame(data)
+
+print(myvar)
 
 ```
 
 ```py
-
+#   calories  duration
+# 0       420        50
+# 1       380        40
+# 2       390        45
 ```
 
 ```py
