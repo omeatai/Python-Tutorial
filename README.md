@@ -4533,11 +4533,11 @@ myvar = pd.DataFrame(mydataset)
 print(myvar)
 ```
 
-```pybs
-    cars  passings
-0    BMW         3
-1  Volvo         7
-2   Ford         2
+```py
+#     cars  passings
+# 0    BMW         3
+# 1  Volvo         7
+# 2   Ford         2
 ```
 
 # Checking Pandas Version -
@@ -4549,8 +4549,8 @@ print(pd.__version__)
 
 ```
 
-```pybs
-1.0.3
+```py
+# 1.0.3
 ```
 
 </details>
