@@ -5552,7 +5552,80 @@ while input("Do you want to play a game of Blackjack? Type 'y' or 'n': ") == "y"
 </details>
 
 <details>
-  <summary>16. sample </summary>
+  <summary>16. Scope and Number Guessing Game </summary>
+
+# Example 1:
+
+```py
+################### Scope ####################
+
+enemies = 1
+
+def increase_enemies():
+  enemies = 2
+  print(f"enemies inside function: {enemies}")
+
+increase_enemies()
+print(f"enemies outside function: {enemies}")
+```
+
+```py
+# enemies inside function: 2
+# enemies outside function: 1
+```
+
+# Example 2:
+
+```py
+################### Scope ####################
+
+enemies = 1
+
+
+def increase_enemies():
+    global enemies
+    enemies = 2
+    print(f"enemies inside function: {enemies}")
+
+
+increase_enemies()
+print(f"enemies outside function: {enemies}")
+```
+
+```py
+# enemies inside function: 2
+# enemies outside function: 2
+```
+
+# Example 3:
+
+```py
+################### Scope ####################
+
+enemies = 1
+
+def increase_enemies():
+    print(f"enemies inside function: {enemies}")
+    return enemies + 1
+
+enemies = increase_enemies()
+print(f"enemies outside function: {enemies}")
+```
+
+```py
+# enemies inside function: 1
+# enemies outside function: 2
+```
+
+# Example 4:
+
+```py
+
+```
+
+```py
+
+```
 
 ```py
 
