@@ -4510,7 +4510,7 @@ while input("Do you want to play a game of Blackjack? Type 'y' or 'n': ") == "y"
 ### [2-PANDAS TUTORIAL - W3SCHOOLS]()
 
 <details>
-  <summary>A1. Introduction </summary>
+  <summary>B1. Introduction </summary>
 
 # Import Pandas -
 
@@ -4556,7 +4556,7 @@ print(pd.__version__)
 </details>
 
 <details>
-  <summary>A2. Pandas Series </summary>
+  <summary>B2. Pandas Series </summary>
 
 - A Pandas Series is like a column in a table.
 
@@ -4676,7 +4676,7 @@ print(myvar)
 </details>
 
 <details>
-  <summary>A3. Pandas DataFrames </summary>
+  <summary>B3. Pandas DataFrames </summary>
 
 - Data sets in Pandas are usually multi-dimensional tables, called DataFrames.
 
@@ -4834,7 +4834,7 @@ print(df)
 </details>
 
 <details>
-  <summary>A4. Pandas Read CSV</summary>
+  <summary>B4. Pandas Read CSV</summary>
 
 - use to_string() to print the entire DataFrame.
 
@@ -4914,7 +4914,7 @@ print(df)
 </details>
 
 <details>
-  <summary>A5. Pandas Read JSON </summary>
+  <summary>B5. Pandas Read JSON </summary>
 
 # Load JSON file into a DataFrame -
 
@@ -5030,7 +5030,7 @@ print(df)
 </details>
 
 <details>
-  <summary>A6. Pandas - Analyzing DataFrames </summary>
+  <summary>B6. Pandas - Analyzing DataFrames </summary>
 
 # Viewing the Data -
 
@@ -5115,7 +5115,110 @@ print(df.info())
 </details>
 
 <details>
-  <summary>A7. Pandas - Cleaning Data </summary>
+  <summary>B7. Pandas - Cleaning Empty Cells </summary>
+
+- Empty cells can potentially give you a wrong result when you analyze data.
+
+- One way to deal with empty cells is to remove rows that contain empty cells.
+
+- This is usually OK, since data sets can be very big, and removing a few rows will not have a big impact on the result.
+
+# Return a new Data Frame with no empty cells -
+
+data.csv:
+
+```csv
+Duration,Date,Pulse,Maxpulse,Calories
+60,'2020/12/01',110,130,409.1
+60,'2020/12/02',117,145,479.0
+60,'2020/12/03',103,135,340.0
+45,'2020/12/04',109,175,282.4
+45,'2020/12/05',117,148,406.0
+60,'2020/12/06',102,127,300.0
+60,'2020/12/07',110,136,374.0
+450,'2020/12/08',104,134,253.3
+30,'2020/12/09',109,133,195.1
+60,'2020/12/10',98,124,269.0
+60,'2020/12/11',103,147,329.3
+60,'2020/12/12',100,120,250.7
+60,'2020/12/12',100,120,250.7
+60,'2020/12/13',106,128,345.3
+60,'2020/12/14',104,132,379.3
+60,'2020/12/15',98,123,275.0
+60,'2020/12/16',98,120,215.2
+60,'2020/12/17',100,120,300.0
+45,'2020/12/18',90,112,
+60,'2020/12/19',103,123,323.0
+45,'2020/12/20',97,125,243.0
+60,'2020/12/21',108,131,364.2
+45,,100,119,282.0
+60,'2020/12/23',130,101,300.0
+45,'2020/12/24',105,132,246.0
+60,'2020/12/25',102,126,334.5
+60,20201226,100,120,250.0
+60,'2020/12/27',92,118,241.0
+60,'2020/12/28',103,132,
+60,'2020/12/29',100,132,280.0
+60,'2020/12/30',102,129,380.3
+60,'2020/12/31',92,115,243.0
+
+```
+
+```py
+import pandas as pd
+
+df = pd.read_csv('data.csv')
+
+new_df = df.dropna()
+
+print(new_df.to_string())
+
+#Notice in the result that some rows have been removed (row 18, 22 and 28).
+
+#These rows had cells with empty values.
+```
+
+```csv
+    Duration          Date  Pulse  Maxpulse  Calories
+0         60  '2020/12/01'    110       130     409.1
+1         60  '2020/12/02'    117       145     479.0
+2         60  '2020/12/03'    103       135     340.0
+3         45  '2020/12/04'    109       175     282.4
+4         45  '2020/12/05'    117       148     406.0
+5         60  '2020/12/06'    102       127     300.0
+6         60  '2020/12/07'    110       136     374.0
+7        450  '2020/12/08'    104       134     253.3
+8         30  '2020/12/09'    109       133     195.1
+9         60  '2020/12/10'     98       124     269.0
+10        60  '2020/12/11'    103       147     329.3
+11        60  '2020/12/12'    100       120     250.7
+12        60  '2020/12/12'    100       120     250.7
+13        60  '2020/12/13'    106       128     345.3
+14        60  '2020/12/14'    104       132     379.3
+15        60  '2020/12/15'     98       123     275.0
+16        60  '2020/12/16'     98       120     215.2
+17        60  '2020/12/17'    100       120     300.0
+19        60  '2020/12/19'    103       123     323.0
+20        45  '2020/12/20'     97       125     243.0
+21        60  '2020/12/21'    108       131     364.2
+23        60  '2020/12/23'    130       101     300.0
+24        45  '2020/12/24'    105       132     246.0
+25        60  '2020/12/25'    102       126     334.5
+26        60    2020/12/26    100       120     250.0
+27        60  '2020/12/27'     92       118     241.0
+29        60  '2020/12/29'    100       132     280.0
+30        60  '2020/12/30'    102       129     380.3
+31        60  '2020/12/31'     92       115     243.0
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>B8. sample </summary>
 
 ```py
 
@@ -5136,7 +5239,7 @@ print(df.info())
 </details>
 
 <details>
-  <summary>A8. sample </summary>
+  <summary>B9. sample </summary>
 
 ```py
 
@@ -5157,7 +5260,7 @@ print(df.info())
 </details>
 
 <details>
-  <summary>A9. sample </summary>
+  <summary>B10. sample </summary>
 
 ```py
 
@@ -5178,7 +5281,7 @@ print(df.info())
 </details>
 
 <details>
-  <summary>A10. sample </summary>
+  <summary>B11. sample </summary>
 
 ```py
 
@@ -5199,7 +5302,7 @@ print(df.info())
 </details>
 
 <details>
-  <summary>A11. sample </summary>
+  <summary>B12. sample </summary>
 
 ```py
 
@@ -5220,7 +5323,7 @@ print(df.info())
 </details>
 
 <details>
-  <summary>A12. sample </summary>
+  <summary>B13. sample </summary>
 
 ```py
 
@@ -5241,7 +5344,7 @@ print(df.info())
 </details>
 
 <details>
-  <summary>A13. sample </summary>
+  <summary>B14. sample </summary>
 
 ```py
 
@@ -5262,7 +5365,7 @@ print(df.info())
 </details>
 
 <details>
-  <summary>A14. sample </summary>
+  <summary>B15. sample </summary>
 
 ```py
 
@@ -5283,7 +5386,7 @@ print(df.info())
 </details>
 
 <details>
-  <summary>A15. sample </summary>
+  <summary>B16. sample </summary>
 
 ```py
 
@@ -5304,7 +5407,7 @@ print(df.info())
 </details>
 
 <details>
-  <summary>A16. sample </summary>
+  <summary>B17. sample </summary>
 
 ```py
 
@@ -5325,7 +5428,7 @@ print(df.info())
 </details>
 
 <details>
-  <summary>A17. sample </summary>
+  <summary>B18. sample </summary>
 
 ```py
 
@@ -5346,7 +5449,7 @@ print(df.info())
 </details>
 
 <details>
-  <summary>A18. sample </summary>
+  <summary>B19. sample </summary>
 
 ```py
 
@@ -5367,28 +5470,7 @@ print(df.info())
 </details>
 
 <details>
-  <summary>A19. sample </summary>
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-</details>
-
-<details>
-  <summary>A20. sample </summary>
+  <summary>B20. sample </summary>
 
 ```py
 
