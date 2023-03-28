@@ -1996,7 +1996,7 @@ print(df.to_string())
 <details>
   <summary>1. Introduction - Print Function </summary>
 
-Example 1:
+# Example 1:
 
 ```py
 # input() will get user input in console
@@ -2009,7 +2009,7 @@ print("Hello + input("What is your name?"))
 # Hello Bob
 ```
 
-Example 2:
+# Example 2:
 
 ```py
 #This code prints the number of characters in a user's name.
@@ -2021,7 +2021,7 @@ print(len input ("What is your name?") ) )
 # 3
 ```
 
-Example 3:
+# Example 3:
 
 ```py
 name = input("What is your name?")
@@ -2033,7 +2033,7 @@ print(name)
 # Mark
 ```
 
-Task 1:
+# Task 1:
 
 ```py
 #1. Create a greeting for your program.
@@ -2062,7 +2062,7 @@ print("Your band name could be " + city + " " + pet)
 <details>
   <summary>2. Number Manipulation </summary>
 
-Example 1:
+# Example 1:
 
 Rounding Numbers -
 
@@ -2074,7 +2074,7 @@ print(round(8 / 3, 2))
 # 2.67
 ```
 
-Example 2:
+# Example 2:
 
 Flooring Numbers -
 
@@ -2086,7 +2086,7 @@ print(8 // 3)
 # 2
 ```
 
-Example 3:
+# Example 3:
 
 ```py
 result = 4 / 2
@@ -2098,7 +2098,7 @@ print(result)
 # 1.0
 ```
 
-Example 4:
+# Example 4:
 
 ```py
 score = 0
@@ -2115,7 +2115,7 @@ print(score)
 <details>
   <summary>3. Using F Strings </summary>
 
-Example 1:
+# Example 1:
 
 ```py
 score = 0
@@ -2134,7 +2134,7 @@ print (f"your score is {score}")
 # your score is 0
 ```
 
-Example 2:
+# Example 2:
 
 ```py
 score = 0
@@ -2148,7 +2148,7 @@ print(f"your score is {score}, your height is {height}, you are winning is {isWi
 # your score is 0, your height is 1.8, you are winning is True
 ```
 
-Example 3:
+# Example 3:
 
 ```py
 age = input("What is your current age? ")
@@ -2166,7 +2166,7 @@ print(f"You have {d} days, {w} weeks, and {m} months left.")
 # You have 20075 days, 2860 weeks, and 660 months left.
 ```
 
-Example 4:
+# Example 4:
 
 Using the Format function -
 
@@ -2180,7 +2180,7 @@ Using the Format Method:
 "{:.2f}".format(salesAmount)
 ```
 
-Task 1:
+# Task 1:
 
 ```py
 print("Welcome to the tip calculator!")
@@ -2208,7 +2208,7 @@ print(f'Each person should pay: ${bill_for_each_person}.')
 <details>
   <summary>4. If Else Statements </summary>
 
-Example 1:
+# Example 1:
 
 ```py
 print("Welcome to the rollercoaster!")
@@ -2226,7 +2226,7 @@ else:
 # You can ride the rollercoaster!
 ```
 
-Example 2:
+# Example 2:
 
 ```py
 number = int(input("Which number do you want to check? "))
@@ -2242,7 +2242,7 @@ else:
 # This is an odd number.
 ```
 
-Example 3:
+# Example 3:
 
 Nested If/Else -
 
@@ -2269,7 +2269,7 @@ else:
 # Please pay $12.
 ```
 
-Example 4:
+# Example 4:
 
 Nested If/Elif/Else -
 
@@ -2308,7 +2308,7 @@ else:
 # Please pay $5.
 ```
 
-Example 5:
+# Example 5:
 
 ```py
 height = float(input("enter your height in m: "))
@@ -2335,7 +2335,7 @@ else:
 # Your BMI is 37, you are clinically obese.
 ```
 
-Example 6:
+# Example 6:
 
 ```py
 year = int(input("Which year do you want to check? "))
@@ -2354,7 +2354,7 @@ else:
 # Leap year.
 ```
 
-Example 7:
+# Example 7:
 
 Multiple If statements -
 
@@ -2394,7 +2394,7 @@ else:
 # Your final bill is $15.
 ```
 
-Example 8:
+# Example 8:
 
 ```py
 print("Welcome to Python Pizza Deliveries!")
@@ -2434,7 +2434,7 @@ print(f"Your final bill is: ${bill}.")
 # Your final bill is: $16.
 ```
 
-Example 9:
+# Example 9:
 
 ```py
 print("Welcome to the Love Calculator!")
@@ -2472,7 +2472,7 @@ else:
 # Your score is 42, you are alright together.
 ```
 
-Example 10:
+# Example 10:
 
 ```py
 print("Welcome to Tresure Island.")
@@ -2507,7 +2507,7 @@ else:
 # You found the treasure! You Win!
 ```
 
-Example 11:
+# Example 11:
 
 ```py
 import random
@@ -2526,7 +2526,7 @@ print(listofnum)
 # [2, 1, 4, 5, 3]
 ```
 
-Example 12:
+# Example 12:
 
 ```py
 import random
@@ -2599,7 +2599,7 @@ if start == 'ON':
 <details>
   <summary>5. Importing Modules </summary>
 
-Example 1:
+# Example 1:
 
 Import from a single module in same folder -
 
@@ -2623,7 +2623,7 @@ print(account_no)
 # 113748919
 ```
 
-Example 2:
+# Example 2:
 
 Import from multiple modules in same folder -
 
@@ -2658,7 +2658,7 @@ print(year)
 # 2011
 ```
 
-Example 3:
+# Example 3:
 
 Import from multiple modules in different folder -
 
@@ -2703,7 +2703,7 @@ print(school.year)
 <details>
   <summary>6. Generating Random Numbers </summary>
 
-Example 1:
+# Example 1:
 
 ```py
 import random
@@ -2722,7 +2722,7 @@ print(random_float)
 # 0.35402952193969894
 ```
 
-Example 2:
+# Example 2:
 
 Random number between 0 and 5:
 
@@ -2766,7 +2766,7 @@ for i in range(21):
 # 20: 0.95
 ```
 
-Example 3:
+# Example 3:
 
 Select randomly from list of Choices:
 
@@ -2780,7 +2780,7 @@ print(random.choice(["Heads", "Tails"]))
 # Tails
 ```
 
-Example 4:
+# Example 4:
 
 ```py
 import random
@@ -2802,7 +2802,7 @@ else:
 <details>
   <summary>7. Python Lists </summary>
 
-Example 1:
+# Example 1:
 
 Get a List Item from the index Position -
 
@@ -2826,7 +2826,7 @@ print(states_of_america[0])
 # Delaware
 ```
 
-Example 2:
+# Example 2:
 
 Get an Item from the end of the list -
 
@@ -2850,7 +2850,7 @@ print(states_of_america[-2])
 # Alaska
 ```
 
-Example 3:
+# Example 3:
 
 Changing the value of an item in the List:
 
@@ -2875,7 +2875,7 @@ print(states_of_america[1])
 # Pencilvania
 ```
 
-Example 4:
+# Example 4:
 
 Adding Items to a List:
 
@@ -2900,7 +2900,7 @@ print(states_of_america[-1])
 # Angelaland
 ```
 
-Example 5:
+# Example 5:
 
 Adding more than one item to the List:
 
@@ -2925,7 +2925,7 @@ print(states_of_america[-5:])
 # ['Alaska', 'Hawaii', 'Angelaland', 'Lagosland', 'Hopeland']
 ```
 
-Example 6:
+# Example 6:
 
 Randomly selecting items from a List:
 
@@ -2945,7 +2945,7 @@ print(f"{person_to_pay} is going to buy the meal today!")
 # Ashley is going to buy the meal today!
 ```
 
-Example 7:
+# Example 7:
 
 ```py
 import random
@@ -2963,7 +2963,7 @@ print(f"{person_to_pay} is going to buy the meal today!")
 # Ashley is going to buy the meal today!
 ```
 
-Example 8:
+# Example 8:
 
 Nested Lists:
 
@@ -2981,7 +2981,7 @@ print(dirty_dozen)
 # [['Strawberries', 'Nectarines', 'Apples', 'Grapes', 'Peaches', 'Cherries', 'Pears'], ['Spinach', 'Kale', 'Tomatoes', 'Celery', 'Potatoes']]
 ```
 
-Example 9:
+# Example 9:
 
 ```py
 row1 = ["⬜️","️⬜️","️⬜️"]
@@ -3011,7 +3011,7 @@ print(f"{row1}\n{row2}\n{row3}")
 # ['⬜️️', 'X', '⬜️️']
 ```
 
-Example 10:
+# Example 10:
 
 RPS Game -
 
@@ -3177,7 +3177,7 @@ else:
 <details>
   <summary>8. Python For Loops </summary>
 
-Example 1:
+# Example 1:
 
 Looping through Lists -
 
@@ -3193,7 +3193,7 @@ for fruit in fruits:
 # Pear
 ```
 
-Example 2:
+# Example 2:
 
 ```py
 student_scores = input("Input a list of student scores ").split()
@@ -3215,7 +3215,7 @@ print(f"The highest score in the class is: {highest_score}")
 # The highest score in the class is: 80
 ```
 
-Example 3:
+# Example 3:
 
 ```py
 total = 0
@@ -3229,7 +3229,7 @@ print(total)
 # 2550
 ```
 
-Example 4:
+# Example 4:
 
 ```py
 total2 = 0
@@ -3244,7 +3244,7 @@ print(total2)
 # 2550
 ```
 
-Example 5:
+# Example 5:
 
 ```py
 for number in range(1,101):
@@ -3268,7 +3268,7 @@ for number in range(1,101):
 # 7
 ```
 
-Example 6:
+# Example 6:
 
 ```py
 #Password Generator Project
@@ -3332,7 +3332,7 @@ print(password2)
 # (z96P%T6)
 ```
 
-Example 7:
+# Example 7:
 
 ```py
 #Hard Level - Order of characters randomised:
@@ -3371,7 +3371,7 @@ print(mypassword)
 <details>
   <summary>9. Python Functions </summary>
 
-Example 1:
+# Example 1:
 
 ```py
 def my_function():
@@ -3390,7 +3390,7 @@ my_function ()
 <details>
   <summary>10. Python While Loops </summary>
 
-Example 1:
+# Example 1:
 
 ```py
 def turn_right():
@@ -3441,7 +3441,7 @@ while not at_goal():
 <details>
   <summary>11. Hangman </summary>
 
-Task 1:
+# Task 1:
 
 ```py
 #Step 1
@@ -3473,7 +3473,7 @@ for letter in chosen_word:
 # Wrong
 ```
 
-Task 2:
+# Task 2:
 
 ```py
 #Step 2
@@ -3530,7 +3530,7 @@ for position in range(word_length):
 # ['a', 'a', '_', '_', '_', 'a', '_', '_']
 ```
 
-Task 3:
+# Task 3:
 
 ```py
 #Step 3
@@ -3611,7 +3611,7 @@ while not end_of_game:
 # ['b', 'a', 'b', 'o', 'o', 'n']
 ```
 
-Task 4:
+# Task 4:
 
 ```py
 #Step 4
@@ -3910,7 +3910,7 @@ while not end_of_game:
 # =========
 ```
 
-Task 5:
+# Task 5:
 
 ```py
 #Step 5
@@ -4087,7 +4087,7 @@ while not end_of_game:
 <details>
   <summary>12. Caesar Cipher </summary>
 
-Example 1:
+# Example 1:
 
 ```py
 # Review:
@@ -4110,7 +4110,7 @@ greet()
 # How old are you?
 ```
 
-Example 2:
+# Example 2:
 
 ```py
 #Function that allows for input
@@ -4127,7 +4127,7 @@ greet_with_name("Mike")
 # How do you do Mike?
 ```
 
-Example 3:
+# Example 3:
 
 ```py
 #Functions with more than 1 input
@@ -4143,7 +4143,7 @@ greet_with_inputs("Bob", "London")
 # What is it like in London?
 ```
 
-Example 4:
+# Example 4:
 
 ```py
 #Functions with more than 1 input
@@ -4159,7 +4159,7 @@ greet_with_inputs(location="London", name="Adam")
 # What is it like in London?
 ```
 
-Example 5:
+# Example 5:
 
 ```py
 def paint_calc(height,width,cover):
@@ -4192,7 +4192,7 @@ paint_calc(height=test_h, width=test_w, cover=coverage)
 # You'll need 2 cans of paint.
 ```
 
-Example 6:
+# Example 6:
 
 ```py
 def prime_checker(number):
@@ -4217,7 +4217,7 @@ prime_checker(number=n)
 # It's a prime number.
 ```
 
-Example 7:
+# Example 7:
 
 ```py
 alphabet = [
@@ -4305,7 +4305,7 @@ encrypt(plain_text=text, shift_amount=shift)
 # The encoded text is n qtaj rzxnh
 ```
 
-Example 8:
+# Example 8:
 
 ```py
 alphabet = [
@@ -4368,7 +4368,7 @@ else:
 # The decoded text is hello
 ```
 
-Example 9:
+# Example 9:
 
 ```py
 alphabet = [
@@ -4461,7 +4461,7 @@ caesar(start_text=text, shift_amount=shift, cipher_direction=direction)
 # The decoded text is hello
 ```
 
-Task 1:
+# Task 1:
 
 ```py
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
@@ -4555,7 +4555,7 @@ while not should_end:
 <details>
   <summary>13. Python Dictionaries and Nesting </summary>
 
-Example 1:
+# Example 1:
 
 ```py
 programming_dictionary = {
@@ -4581,7 +4581,7 @@ print(programming_dictionary)
 # }
 ```
 
-Example 2:
+# Example 2:
 
 ```py
 programming_dictionary = {
@@ -4601,7 +4601,7 @@ print (programming_dictionary)
 # {}
 ```
 
-Example 3:
+# Example 3:
 
 ```py
 programming_dictionary = {
@@ -4621,7 +4621,7 @@ print(programming_dictionary)
 # }
 ```
 
-Example 4:
+# Example 4:
 
 ```py
 programming_dictionary = {
@@ -4642,7 +4642,7 @@ for key in programming_dictionary:
 # Function: A piece of code that you can easily call over and over again.
 ```
 
-Task 1:
+# Task 1:
 
 ```py
 student_scores = {
@@ -4675,7 +4675,7 @@ print(student_grades)
 # {'Harry': 'Exceeds Expectations', 'Ron': 'Acceptable', 'Hermione': 'Outstanding', 'Draco': 'Acceptable', 'Neville': 'Fail'}
 ```
 
-Example 5:
+# Example 5:
 
 Nested Dictionaries -
 
@@ -4721,7 +4721,7 @@ travel_log = [
 ]
 ```
 
-Example 6:
+# Example 6:
 
 ```py
 #Nesting a List in a Dictionary
@@ -4744,7 +4744,7 @@ print(travel_log["France"]["total_visits"])
 # 12
 ```
 
-Example 7:
+# Example 7:
 
 ```py
 travel_log = [
@@ -4767,7 +4767,7 @@ print(travel_log[0]["cities_visited"])
 # ['Paris', 'Lille', 'Dijon']
 ```
 
-Task 2:
+# Task 2:
 
 ```py
 travel_log = [
@@ -4797,7 +4797,7 @@ print(travel_log)
 # [{'country': 'France', 'visits': 12, 'cities': ['Paris', 'Lille', 'Dijon']}, {'country': 'Germany', 'visits': 5, 'cities': ['Berlin', 'Hamburg', 'Stuttgart']}, {'country': 'Russia', 'visits': 2, 'cities': ['Moscow', 'Saint Petersburg']}]
 ```
 
-Task 3:
+# Task 3:
 
 ```py
 from replit import clear
@@ -4870,7 +4870,7 @@ while not bidding_finished:
 <details>
   <summary>14. Functions with Outputs </summary>
 
-Example 1:
+# Example 1:
 
 ```py
 #Functions with Outputs
@@ -4886,7 +4886,7 @@ format_name("ifeanyi", "omeata")
 # Ifeanyi Omeata
 ```
 
-Example 2:
+# Example 2:
 
 ```py
 #Functions with Outputs
@@ -4903,7 +4903,7 @@ print(name)
 # Ifeanyi Omeata
 ```
 
-Example 3:
+# Example 3:
 
 ```py
 #Functions with Outputs
@@ -4928,7 +4928,7 @@ print(name)
 # None
 ```
 
-Example 4:
+# Example 4:
 
 ```py
 #Functions with Outputs
@@ -4952,7 +4952,7 @@ print(name)
 # You did not provide Inputs.
 ```
 
-task 1:
+# Task 1:
 
 ```py
 def is_leap(year):
@@ -5014,7 +5014,7 @@ print(days)
 # 29
 ```
 
-Example 5:
+# Example 5:
 
 Using Doc Strings -
 
@@ -5041,7 +5041,7 @@ print(name)
 # Result: Ifeanyi Omeata
 ```
 
-Example 6:
+# Example 6:
 
 ```py
 #Calculator
@@ -5094,7 +5094,7 @@ print(f"{num1} {operation_symbol} {num2} = {answer}")
 # 5 * 6 = 30
 ```
 
-Example 7:
+# Example 7:
 
 ```py
 #Calculator
