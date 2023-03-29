@@ -5620,7 +5620,108 @@ print(f"enemies outside function: {enemies}")
 # Example 4:
 
 ```py
+################### Scope ####################
 
+#Global Constants
+
+PI = 3.14159
+URL = "https://www.google.com"
+TWITTER_HANDLE = "@yu_angela"
+
+def get_socials():
+    global TWITTER_HANDLE
+    return TWITTER_HANDLE
+
+print(get_socials())
+```
+
+```py
+# @yu_angela
+```
+
+# Task 1:
+
+```py
+import random
+from art import logo
+
+print(logo)
+print("Welcome to the Number Guessing Game!")
+print("I'm thinking of a number between 1 and 100.")
+
+numbers = [i for i in range(1, 101)]
+chosen_number = random.choice(numbers)
+
+print(f"Pssst, the correct answer is {chosen_number}")
+
+level = 0
+lives = 0
+guess = 0
+end_game = False
+
+while lives in {0, 200}:
+    if lives == 0:
+        level = input("Choose a difficulty. Type 'easy' or 'hard': ")
+    else:
+        print("Wrong Input! Please type 'easy' or 'hard' to make a selection.")
+        level = input("Choose a difficulty: ")
+    lives = 10 if level[0].lower() == 'e' else 5 if level[0].lower() == 'h' else 200
+
+print(f"You have {lives} attempts remaining to guess the number.")
+
+
+def clean_data(data):
+    """Clean the guessed value to ensure it's a number between 1-100."""
+    if not data.isdigit():
+        print("Wrong Input! Value is not a number.")
+    elif not int(data) in numbers:
+        print("Number Boundary Error! Only Numbers between 1-100 are allowed.")
+    else:
+        return True
+
+def is_correct(data):
+  """Checks to see if the guessed value is accurate
+    greater than data: print 'Too high'\n'Guess again.' --> None
+    less than data: print 'Too low.'\n'Guess again.' --> None
+    equals data: print 'You Win!' --> True
+  """
+  data = int(data)
+  if data > chosen_number:
+    print('Too high.\nGuess again.')
+  elif data < chosen_number:
+    print('Too low.\nGuess again.')
+  else:
+    print('You Win!')
+    return True
+
+while not end_game:
+    guess_is_cleaned = False
+
+    while not guess_is_cleaned:
+        guess = input("Make a guess: ")
+        if clean_data(guess):
+            guess_is_cleaned = True
+
+    if not is_correct(guess):
+        lives-=1
+        if not lives:
+          print('Game Over. You Lose!')
+          end_game = True
+        else:
+          print(f'You have {lives} attempts remaining to guess the number.')
+    else:
+        end_game = True
+
+
+#Number Guessing Game Objectives:
+
+# Include an ASCII art logo.
+# Allow the player to submit a guess for a number between 1 and 100.
+# Check user's guess against actual answer. Print "Too high." or "Too low." depending on the user's answer.
+# If they got the answer correct, show the actual answer to the player.
+# Track the number of turns remaining.
+# If they run out of turns, provide feedback to the player.
+# Include two different difficulty levels (e.g., 10 guesses in easy mode, only 5 guesses in hard mode).
 ```
 
 ```py
@@ -5629,18 +5730,24 @@ print(f"enemies outside function: {enemies}")
 
 ```py
 
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
+# <-- WELCOME TO -->
+#   _  _            _                ___
+#  | \| |_  _ _ __ | |__  ___ _ _   / __|__ _ _ __  ___
+#  | .` | || | '  \| '_ \/ -_) '_| | (_ / _` | '  \/ -_)
+#  |_|\_|\_,_|_|_|_|_.__/\___|_|    \___\__,_|_|_|_\___|
+#
+#
+# Welcome to the Number Guessing Game!
+# I'm thinking of a number between 1 and 100.
+# Pssst, the correct answer is 1
+# Choose a difficulty. Type 'easy' or 'hard': e
+# You have 10 attempts remaining to guess the number.
+# Make a guess: 56
+# Too high.
+# Guess again.
+# You have 9 attempts remaining to guess the number.
+# Make a guess: 1
+# You Win!
 ```
 
 </details>
