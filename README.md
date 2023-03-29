@@ -1971,7 +1971,7 @@ print(df.to_string())
 </details>
 
 <details>
-  <summary>B11.  </summary>
+  <summary>  </summary>
 
 ```py
 
