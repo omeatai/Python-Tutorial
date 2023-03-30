@@ -6017,22 +6017,222 @@ game()
 </details>
 
 <details>
-  <summary>18. sample </summary>
+  <summary>18. Coffee Machine Code </summary>
+
+# Task 1:
 
 ```py
+from resources import MENU, resources
+
+
+def get_report(total_cash):
+    """Print report if the user types report"""
+    water = f"Water: {resources['water']}ml\n"
+    milk = f"Milk: {resources['milk']}ml\n"
+    coffee = f"Coffee: {resources['coffee']}g\n"
+    money = f"Money: ${total_cash}"
+    return water + milk + coffee + money
+
+
+def get_coin_amount():
+    """Calculate the total sum of all the coins inserted"""
+    print("Please insert coins. ")
+    quarters = int(input("How many quarters?: "))
+    dimes = int(input("How many dimes?: "))
+    nickles = int(input("How many nickles?: "))
+    pennies = int(input("How many pennies?: "))
+    return quarters*0.25 + dimes*0.10 + nickles*0.05 + pennies*0.01
+
+
+def is_sufficient(choice):
+    """Check if the available resources are sufficient"""
+    result = True
+    for resource in MENU[choice]["ingredients"]:
+        available_resource = resources[resource]
+        needed_resource = MENU[choice]["ingredients"][resource]
+        if available_resource < needed_resource:
+            print(f"Sorry there is not enough {resource}.")
+            result = False
+    return result
+
+
+def amount_to_pay(choice):
+    """Calculate total amount to pay"""
+    return MENU[choice]["cost"]
+
+
+def make_drink(choice):
+    """Use resources to make coffee and deposit cash"""
+    for resource in MENU[choice]["ingredients"]:
+        resources[resource] -= MENU[choice]["ingredients"][resource]
+    return MENU[choice]["cost"]
+
+
+def start_game():
+    total_cash = 0
+
+    while True:
+        # TODO: 1. Ask - What would you like? (espresso/latte/cappuccino): latte
+        coffee_choice = input("What would you like? (espresso/latte/cappuccino): ").lower()
+
+        # TODO: 2. Reply the user based on selection.
+        if coffee_choice == "off":
+            print("Turning Off...")
+            return
+        elif coffee_choice == "report":
+            print(get_report(total_cash))
+            continue
+        elif not coffee_choice in {"espresso", "latte", "cappuccino"}:
+            print("Wrong Input...Try Again!")
+            continue
+
+        # TODO: 3. Check if resources are sufficient
+        if not is_sufficient(coffee_choice):
+            print("Please select another option.")
+            continue
+
+        # TODO: 4. Calculate total amount to pay
+        total_to_pay = amount_to_pay(coffee_choice)
+        print(f"Total to pay: ${total_to_pay}.")
+
+        # TODO: 5. Ask the user to insert coins and Calculate the coins amount
+        total_amount = get_coin_amount()
+        print(f"Amount Inserted: ${total_amount}")
+        if total_amount < total_to_pay:
+            print("Sorry that's not enough money. Money refunded.")
+            continue
+        elif total_amount > total_to_pay:
+            change = total_amount - total_to_pay
+            print(f"Here is ${format(change,'.2f')} in change.")
+
+        # TODO: 6. Make drink and reply user
+        cash_added = make_drink(coffee_choice)
+        total_cash += cash_added
+        print(f"Here is your {coffee_choice} & Enjoy!")
+
+
+start_game()
 
 ```
 
-```py
+# Solution:
 
+```py
+MENU = {
+    "espresso": {
+        "ingredients": {
+            "water": 50,
+            "coffee": 18,
+        },
+        "cost": 1.5,
+    },
+    "latte": {
+        "ingredients": {
+            "water": 200,
+            "milk": 150,
+            "coffee": 24,
+        },
+        "cost": 2.5,
+    },
+    "cappuccino": {
+        "ingredients": {
+            "water": 250,
+            "milk": 100,
+            "coffee": 24,
+        },
+        "cost": 3.0,
+    }
+}
+
+profit = 0
+resources = {
+    "water": 300,
+    "milk": 200,
+    "coffee": 100,
+}
+
+
+def is_resource_sufficient(order_ingredients):
+    """Returns True when order can be made, False if ingredients are insufficient."""
+    for item in order_ingredients:
+        if order_ingredients[item] > resources[item]:
+            print(f"​Sorry there is not enough {item}.")
+            return False
+    return True
+
+
+def process_coins():
+    """Returns the total calculated from coins inserted."""
+    print("Please insert coins.")
+    total = int(input("how many quarters?: ")) * 0.25
+    total += int(input("how many dimes?: ")) * 0.1
+    total += int(input("how many nickles?: ")) * 0.05
+    total += int(input("how many pennies?: ")) * 0.01
+    return total
+
+
+def is_transaction_successful(money_received, drink_cost):
+    """Return True when the payment is accepted, or False if money is insufficient."""
+    if money_received >= drink_cost:
+        change = round(money_received - drink_cost, 2)
+        print(f"Here is ${change} in change.")
+        global profit
+        profit += drink_cost
+        return True
+    else:
+        print("Sorry that's not enough money. Money refunded.")
+        return False
+
+
+def make_coffee(drink_name, order_ingredients):
+    """Deduct the required ingredients from the resources."""
+    for item in order_ingredients:
+        resources[item] -= order_ingredients[item]
+    print(f"Here is your {drink_name} ☕️. Enjoy!")
+
+
+is_on = True
+
+while is_on:
+    choice = input("​What would you like? (espresso/latte/cappuccino): ")
+    if choice == "off":
+        is_on = False
+    elif choice == "report":
+        print(f"Water: {resources['water']}ml")
+        print(f"Milk: {resources['milk']}ml")
+        print(f"Coffee: {resources['coffee']}g")
+        print(f"Money: ${profit}")
+    else:
+        drink = MENU[choice]
+        if is_resource_sufficient(drink["ingredients"]):
+            payment = process_coins()
+            if is_transaction_successful(payment, drink["cost"]):
+                make_coffee(choice, drink["ingredients"])
 ```
 
 ```py
-
-```
-
-```py
-
+# What would you like? (espresso/latte/cappuccino): report
+# Water: 300ml
+# Milk: 200ml
+# Coffee: 100g
+# Money: $0
+# What would you like? (espresso/latte/cappuccino): latte
+# Total to pay: $2.5.
+# Please insert coins.
+# How many quarters?: 10
+# How many dimes?: 5
+# How many nickles?: 5
+# How many pennies?: 5
+# Amount Inserted: $3.3
+# Here is $0.80 in change.
+# Here is your latte & Enjoy!
+# What would you like? (espresso/latte/cappuccino): report
+# Water: 100ml
+# Milk: 50ml
+# Coffee: 76g
+# Money: $2.5
+# What would you like? (espresso/latte/cappuccino): eafd
+# Wrong Input...Try Again!
 ```
 
 </details>
