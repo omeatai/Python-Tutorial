@@ -5805,22 +5805,213 @@ game()
 </details>
 
 <details>
-  <summary>17. sample </summary>
+  <summary>17. Higher-lower-final Game </summary>
+
+# Task 1:
 
 ```py
+import random
+from replit import clear
+from art import logo, vs
+from game_data import data
+
+current_score = 0
+end_game = False
+option_a = {}
+option_b = {}
+message = ""
+
+
+def print_upper_logo():
+    """Print the upper logo"""
+    print(logo)
+
+
+def print_lower_logo():
+    """Print the lower logo"""
+    print(vs)
+
+
+def generate_option_data():
+    """Generate an option with random data from game_data"""
+    new_option = random.choice(data)
+    while new_option == option_a or new_option == option_b:
+        new_option = random.choice(data)
+    return new_option
+
+
+def display_option(option):
+    print(
+        f"{'Compare A' if option == option_a else 'Against B'}: {option['name']}, a {option['description']}, from {option['country']}."
+    )
+
+
+def ask_question():
+    answer = input("Who has more followers? Type 'A' or 'B': ")
+    return answer.upper()
+
+
+def compare(opt_a, opt_b, selection):
+    result = opt_a['follower_count'] > opt_b['follower_count']
+    if result and selection == "B" or not result and selection == "A":
+        print(f"Sorry, that's wrong. Final score: {current_score}")
+        print(
+            f"Option A: {opt_a['follower_count']}, Option B: {opt_b['follower_count']}"
+        )
+        print("Goodbye!")
+    else:
+        return True
+
+
+#start
+while not end_game:
+    clear()
+    #print upper logo
+    print_upper_logo()
+    if message:
+        print(message)
+    #print option_a
+    #Eg. Compare A: Billie Eilish, a Musician, from United States.
+    if current_score == 0:
+        option_a = generate_option_data()
+    else:
+        option_a = option_b
+    display_option(option_a)
+    #print lower logo
+    print_lower_logo()
+    #print option_b
+    #Eg. Against B: Vin Diesel, a Actor, from United States.
+    option_b = generate_option_data()
+    display_option(option_b)
+    #Ask Question
+    #Eg. Who has more followers? Type 'A' or 'B': a
+    answer = ask_question()
+    #If wrong, print Statement and End
+    #Eg. Sorry, that's wrong. Final score: 0 <Current score>
+    #If right, print Statement and Continue with next LOOP
+    #Eg. You're right! Current score: 1.
+    result = compare(option_a, option_b, answer)
+    if result:
+        current_score += 1
+        message = f"You're right! Current score: {current_score}."
+        print(
+            f"Option A: {option_a['follower_count']}, Option B: {option_b['follower_count']}"
+        )
+    else:
+        end_game = True
+
+```
+
+# Solution:
+
+```py
+from game_data import data
+import random
+from art import logo, vs
+from replit import clear
+
+def get_random_account():
+  """Get data from random account"""
+  return random.choice(data)
+
+def format_data(account):
+  """Format account into printable format: name, description and country"""
+  name = account["name"]
+  description = account["description"]
+  country = account["country"]
+  # print(f'{name}: {account["follower_count"]}')
+  return f"{name}, a {description}, from {country}"
+
+def check_answer(guess, a_followers, b_followers):
+  """Checks followers against user's guess
+  and returns True if they got it right.
+  Or False if they got it wrong."""
+  if a_followers > b_followers:
+    return guess == "a"
+  else:
+    return guess == "b"
+
+
+def game():
+  print(logo)
+  score = 0
+  game_should_continue = True
+  account_a = get_random_account()
+  account_b = get_random_account()
+
+  while game_should_continue:
+    account_a = account_b
+    account_b = get_random_account()
+
+    while account_a == account_b:
+      account_b = get_random_account()
+
+    print(f"Compare A: {format_data(account_a)}.")
+    print(vs)
+    print(f"Against B: {format_data(account_b)}.")
+
+    guess = input("Who has more followers? Type 'A' or 'B': ").lower()
+    a_follower_count = account_a["follower_count"]
+    b_follower_count = account_b["follower_count"]
+    is_correct = check_answer(guess, a_follower_count, b_follower_count)
+
+    clear()
+    print(logo)
+    if is_correct:
+      score += 1
+      print(f"You're right! Current score: {score}.")
+    else:
+      game_should_continue = False
+      print(f"Sorry, that's wrong. Final score: {score}")
+
+game()
 
 ```
 
 ```py
+#    / / / (_)___ _/ /_  ___  _____
+#   / /_/ / / __ `/ __ \/ _ \/ ___/
+#  / __  / / /_/ / / / /  __/ /
+# /_/ ///_/\__, /_/ /_/\___/_/
+#    / /  /____/_      _____  _____
+#   / /   / __ \ | /| / / _ \/ ___/
+#  / /___/ /_/ / |/ |/ /  __/ /
+# /_____/\____/|__/|__/\___/_/
 
-```
+# Compare A: Instagram, a Social media platform, from United States.
 
-```py
+#  _    __
+# | |  / /____
+# | | / / ___/
+# | |/ (__  )
+# |___/____(_)
 
-```
+# Against B: UEFA Champions League, a Club football competition, from Europe.
+# Who has more followers? Type 'A' or 'B': a
 
-```py
+#    / / / (_)___ _/ /_  ___  _____
+#   / /_/ / / __ `/ __ \/ _ \/ ___/
+#  / __  / / /_/ / / / /  __/ /
+# /_/ ///_/\__, /_/ /_/\___/_/
+#    / /  /____/_      _____  _____
+#   / /   / __ \ | /| / / _ \/ ___/
+#  / /___/ /_/ / |/ |/ /  __/ /
+# /_____/\____/|__/|__/\___/_/
 
+# You're right! Current score: 1.
+# Compare A: UEFA Champions League, a Club football competition, from Europe.
+
+#  _    __
+# | |  / /____
+# | | / / ___/
+# | |/ (__  )
+# |___/____(_)
+
+# Against B: NBA, a Club Basketball Competition, from United States.
+# Who has more followers? Type 'A' or 'B': b
+# Sorry, that's wrong. Final score: 1
+# Option A: 58, Option B: 47
+# Goodbye!
 ```
 
 </details>
