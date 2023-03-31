@@ -6675,12 +6675,24 @@ print(question.answer)
 # Russia
 ```
 
-```py
+# Example 7:
 
+```py
+from question_model import Question
+from data import question_data
+
+question_bank = []
+for question in question_data:
+    question_text = question["text"]
+    question_answer = question["answer"]
+    instance = Question(text=question_text, answer=question_answer)
+    question_bank.append(instance)
+
+print(question_bank)
 ```
 
 ```py
-
+# [<question_model.Question object at 0x1047b91d0>, <question_model.Question object at 0x1047b9190>, <question_model.Question object at 0x1047b9290>, <question_model.Question object at 0x1047b9510>, <question_model.Question object at 0x1047b9210>, <question_model.Question object at 0x1047b9810>, <question_model.Question object at 0x1047b9850>, <question_model.Question object at 0x1047b9890>, <question_model.Question object at 0x1047b98d0>, <question_model.Question object at 0x1047b9610>, <question_model.Question object at 0x1047b9910>, <question_model.Question object at 0x1047b9950>]
 ```
 
 ```py
