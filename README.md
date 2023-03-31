@@ -6283,20 +6283,237 @@ print(table)
 # +--------------+----------+
 ```
 
+# Example 3:
+
 ```py
+from prettytable import PrettyTable
+
+table = PrettyTable()
+table.add_column("Pokemon Name",["Pikachu","Squirtle","Charmander"])
+table.add_column("Type",["Electric","Water","Fire"])
+table.align = "l"
+print(table)
+```
+
+```py
+# +--------------+----------+
+# | Pokemon Name | Type     |
+# +--------------+----------+
+# | Pikachu      | Electric |
+# | Squirtle     | Water    |
+# | Charmander   | Fire     |
+# +--------------+----------+
+```
+
+# Task 1 -
+
+main.py:
+
+```py
+from menu import Menu, MenuItem
+from coffee_maker import CoffeeMaker
+from money_machine import MoneyMachine
+
+coffee_maker = CoffeeMaker()
+mm = MoneyMachine()
+
+while True:
+    # TODO: 1. GET USER'S CHOICE
+    user_choice = input("What would you like? (espresso/latte/cappuccino): ").lower()
+    # TODO: 2. FIND OUT IF DRINK IS AVAILABLE
+    menu = Menu()
+    if user_choice == "off":
+        break
+    elif user_choice == "report":
+        coffee_maker.report()
+        mm.report()
+        continue
+    elif not menu.find_drink(user_choice):
+        continue
+    item = menu.find_drink(user_choice)
+    item_cost = item.cost
+    # TODO: 3. FIND OUT IF RESOURCES ARE AVAILABLE TO MAKE THE DRINK
+    is_sufficient = coffee_maker.is_resource_sufficient(item)
+    if not is_sufficient:
+        continue
+    # TODO: 4. INSERT COINS INTO MACHINE TO MAKE PAYMENT AND CALCULATE
+    result = mm.make_payment(item_cost)
+    if not result:
+        continue
+    # TODO: 5. MAKE THE COFFEE
+    coffee_maker.make_coffee(item)
+
+```
+
+coffee_maker.py:
+
+```py
+class CoffeeMaker:
+    """Models the machine that makes the coffee"""
+    def __init__(self):
+        self.resources = {
+            "water": 300,
+            "milk": 200,
+            "coffee": 100,
+        }
+
+    def report(self):
+        """Prints a report of all resources."""
+        print(f"Water: {self.resources['water']}ml")
+        print(f"Milk: {self.resources['milk']}ml")
+        print(f"Coffee: {self.resources['coffee']}g")
+
+    def is_resource_sufficient(self, drink):
+        """Returns True when order can be made, False if ingredients are insufficient."""
+        can_make = True
+        for item in drink.ingredients:
+            if drink.ingredients[item] > self.resources[item]:
+                print(f"Sorry there is not enough {item}.")
+                can_make = False
+        return can_make
+
+    def make_coffee(self, order):
+        """Deducts the required ingredients from the resources."""
+        for item in order.ingredients:
+            self.resources[item] -= order.ingredients[item]
+        print(f"Here is your {order.name} ☕️. Enjoy!")
+
+```
+
+menu.py:
+
+```py
+class MenuItem:
+    """Models each Menu Item."""
+    def __init__(self, name, water, milk, coffee, cost):
+        self.name = name
+        self.cost = cost
+        self.ingredients = {
+            "water": water,
+            "milk": milk,
+            "coffee": coffee
+        }
+
+
+class Menu:
+    """Models the Menu with drinks."""
+    def __init__(self):
+        self.menu = [
+            MenuItem(name="latte", water=200, milk=150, coffee=24, cost=2.5),
+            MenuItem(name="espresso", water=50, milk=0, coffee=18, cost=1.5),
+            MenuItem(name="cappuccino", water=250, milk=50, coffee=24, cost=3),
+        ]
+
+    def get_items(self):
+        """Returns all the names of the available menu items"""
+        options = ""
+        for item in self.menu:
+            options += f"{item.name}/"
+        return options
+
+    def find_drink(self, order_name):
+        """Searches the menu for a particular drink by name. Returns that item if it exists, otherwise returns None"""
+        for item in self.menu:
+            if item.name == order_name:
+                return item
+        print("Sorry that item is not available.")
+
+```
+
+money_machine.py:
+
+```py
+class MenuItem:
+    """Models each Menu Item."""
+    def __init__(self, name, water, milk, coffee, cost):
+        self.name = name
+        self.cost = cost
+        self.ingredients = {
+            "water": water,
+            "milk": milk,
+            "coffee": coffee
+        }
+
+
+class Menu:
+    """Models the Menu with drinks."""
+    def __init__(self):
+        self.menu = [
+            MenuItem(name="latte", water=200, milk=150, coffee=24, cost=2.5),
+            MenuItem(name="espresso", water=50, milk=0, coffee=18, cost=1.5),
+            MenuItem(name="cappuccino", water=250, milk=50, coffee=24, cost=3),
+        ]
+
+    def get_items(self):
+        """Returns all the names of the available menu items"""
+        options = ""
+        for item in self.menu:
+            options += f"{item.name}/"
+        return options
+
+    def find_drink(self, order_name):
+        """Searches the menu for a particular drink by name. Returns that item if it exists, otherwise returns None"""
+        for item in self.menu:
+            if item.name == order_name:
+                return item
+        print("Sorry that item is not available.")
+
+```
+
+# Solution -
+
+main.py:
+
+```py
+from menu import Menu
+from coffee_maker import CoffeeMaker
+from money_machine import MoneyMachine
+
+money_machine = MoneyMachine()
+coffee_maker = CoffeeMaker()
+menu = Menu()
+
+is_on = True
+
+while is_on:
+    options = menu.get_items()
+    choice = input(f"What would you like? ({options}): ")
+    if choice == "off":
+        is_on = False
+    elif choice == "report":
+        coffee_maker.report()
+        money_machine.report()
+    else:
+        drink = menu.find_drink(choice)
+
+        if coffee_maker.is_resource_sufficient(drink) and money_machine.make_payment(drink.cost):
+          coffee_maker.make_coffee(drink)
 
 ```
 
 ```py
-
-```
-
-```py
-
-```
-
-```py
-
+# What would you like? (espresso/latte/cappuccino): report
+# Water: 300ml
+# Milk: 200ml
+# Coffee: 100g
+# Money: $0
+# What would you like? (espresso/latte/cappuccino): latte
+# Please insert coins.
+# How many quarters?: 14
+# How many dimes?: 5
+# How many nickles?: 5
+# How many pennies?: 5
+# Here is $1.8 in change.
+# Here is your latte ☕️. Enjoy!
+# What would you like? (espresso/latte/cappuccino): report
+# Water: 100ml
+# Milk: 50ml
+# Coffee: 76g
+# Money: $2.5
+# What would you like? (espresso/latte/cappuccino): latte
+# Sorry there is not enough water.
+# Sorry there is not enough milk.
+# What would you like? (espresso/latte/cappuccino): off
 ```
 
 </details>
