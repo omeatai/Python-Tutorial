@@ -6238,7 +6238,50 @@ while is_on:
 </details>
 
 <details>
-  <summary>19. sample </summary>
+  <summary>19. Object Oriented Programming </summary>
+
+# Example 1:
+
+```py
+from turtle import Turtle, Screen
+
+tim = Turtle()
+print(tim)
+tim.shape("circle")
+tim.color("black", "green")
+tim.forward(100)
+
+
+my_screen = Screen()
+print(my_screen.canvheight)
+my_screen.exitonclick()
+```
+
+```py
+# <turtle.Turtle object at 0x1002ad290>
+# 300
+```
+
+# Example 2:
+
+```py
+from prettytable import PrettyTable
+
+table = PrettyTable()
+table.add_column("Pokemon Name",["Pikachu","Squirtle","Charmander"])
+table.add_column("Type",["Electric","Water","Fire"])
+print(table)
+```
+
+```py
+# +--------------+----------+
+# | Pokemon Name |   Type   |
+# +--------------+----------+
+# |   Pikachu    | Electric |
+# |   Squirtle   |  Water   |
+# |  Charmander  |   Fire   |
+# +--------------+----------+
+```
 
 ```py
 
