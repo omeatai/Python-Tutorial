@@ -6656,6 +6656,25 @@ print(user_2.following)
 # 0
 ```
 
+# Example 6:
+
+```py
+class Question:
+    def __init__(self, text, answer):
+        self.text = text
+        self.answer = answer
+
+
+question = Question("What is the largest country in the world?", "Russia")
+print(question.text)
+print(question.answer)
+```
+
+```py
+# What is the largest country in the world?
+# Russia
+```
+
 ```py
 
 ```
