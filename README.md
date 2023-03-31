@@ -6519,7 +6519,7 @@ while is_on:
 </details>
 
 <details>
-  <summary>20. The Quiz Project </summary>
+  <summary>20. The Quiz OOP Project </summary>
 
 # Example 1:
 
@@ -6547,6 +6547,129 @@ print(car.honk())
 # 200
 # Car has moved 30 steps to the right.
 # HONK! HONK!
+```
+
+# Example 2:
+
+```py
+class User:
+    pass
+
+user_1 = User()
+user_1.id = "001"
+user_1.username = "ifeanyi"
+user_1.lastname = "omeata"
+
+user_2 = User()
+user_2.id = "002"
+user_2.username = "jack"
+user_2.lastname = "buddy"
+
+print(user_1.username)
+print(user_2.username)
+```
+
+```py
+# ifeanyi
+# jack
+```
+
+# Example 3:
+
+```py
+class User:
+    def __init__(self, user_id, username, lastname):
+        self.id = user_id
+        self.username = username
+        self.lastname = lastname
+
+
+user_1 = User("001", "ifeanyi", "omeata")
+user_2 = User("002", "jack", "buddy")
+
+print(user_1.lastname)
+print(user_2.lastname)
+```
+
+```py
+# omeata
+# buddy
+```
+
+# Example 4:
+
+```py
+class User:
+    def __init__(self, user_id, username, lastname):
+        self.id = user_id
+        self.username = username
+        self.lastname = lastname
+        self.followers = 0
+
+
+user_1 = User("001", "ifeanyi", "omeata")
+user_2 = User("002", "jack", "buddy")
+
+print(user_1.lastname)
+print(user_1.followers)
+```
+
+```py
+# omeata
+# 0
+```
+
+# Example 5:
+
+```py
+class User:
+    def __init__(self, user_id, username, lastname):
+        self.id = user_id
+        self.username = username
+        self.lastname = lastname
+        self.followers = 0
+        self.following = 0
+
+    def follow(self, user):
+        user.followers += 1
+        self.following += 1
+
+
+user_1 = User("001", "ifeanyi", "omeata")
+user_2 = User("002", "jack", "buddy")
+
+user_1.follow(user_2)
+print(user_1.username)
+print(user_1.followers)
+print(user_1.following)
+print(user_2.username)
+print(user_2.followers)
+print(user_2.following)
+```
+
+```py
+# ifeanyi
+# 0
+# 1
+# jack
+# 1
+# 0
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
 ```
 
 ```py
