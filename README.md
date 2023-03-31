@@ -6521,12 +6521,32 @@ while is_on:
 <details>
   <summary>20. The Quiz Project </summary>
 
-```py
+# Example 1:
 
+```py
+class Car:
+    def __init__(self):
+        self.color = "blue"
+        self.weight = 200
+        self.speed = 380
+
+    def move(self, steps, direction):
+        return f"Car has moved {steps} steps to the {direction}."
+
+    def honk(self):
+        return "HONK! HONK!"
+
+
+car = Car()
+print(car.weight)
+print(car.move(30, "right"))
+print(car.honk())
 ```
 
 ```py
-
+# 200
+# Car has moved 30 steps to the right.
+# HONK! HONK!
 ```
 
 ```py
