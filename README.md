@@ -6519,7 +6519,7 @@ while is_on:
 </details>
 
 <details>
-  <summary>20. sample </summary>
+  <summary>20. The Quiz Project </summary>
 
 ```py
 
