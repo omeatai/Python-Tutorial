@@ -6695,19 +6695,160 @@ print(question_bank)
 # [<question_model.Question object at 0x1047b91d0>, <question_model.Question object at 0x1047b9190>, <question_model.Question object at 0x1047b9290>, <question_model.Question object at 0x1047b9510>, <question_model.Question object at 0x1047b9210>, <question_model.Question object at 0x1047b9810>, <question_model.Question object at 0x1047b9850>, <question_model.Question object at 0x1047b9890>, <question_model.Question object at 0x1047b98d0>, <question_model.Question object at 0x1047b9610>, <question_model.Question object at 0x1047b9910>, <question_model.Question object at 0x1047b9950>]
 ```
 
+# Task 1 -
+
+main.py:
+
 ```py
+from question_model import Question
+from data import question_data
+from quiz_brain import QuizBrain
+
+question_bank = []
+for question in question_data:
+    question_text = question["text"]
+    question_answer = question["answer"]
+    instance = Question(text=question_text, answer=question_answer)
+    question_bank.append(instance)
+
+quiz = QuizBrain(question_bank)
+
+while quiz.still_has_questions():
+    quiz.next_question()
+
+print("You have completed the Quiz.")
+print(f"Your Final Score is: {quiz.score} out of {quiz.question_number}.")
+
+```
+
+quiz_brain.py:
+
+```py
+class QuizBrain:
+    def __init__(self, question_list):
+        self.score = 0
+        self.question_number = 0
+        self.questions_list = question_list
+
+    def next_question(self):
+        current_question = self.questions_list[self.question_number]
+        self.question_number += 1
+        user_answer = input(f"Q.{self.question_number}: {current_question.text} (True/False)?: ")
+        self.check_answer(user_answer, current_question.answer)
+
+    def still_has_questions(self):
+        quiz_length = len(self.questions_list)
+        return self.question_number < quiz_length
+
+    def check_answer(self, answer, current_answer):
+        if answer.lower() == current_answer.lower():
+            print("You got it right!")
+            self.score += 1
+        else:
+            print("Oops! You got it Wrong!")
+        print(f"The correct answer was: {current_answer}")
+        print(f"Your current score is {self.score}/{self.question_number}")
+        print("\n")
+
+```
+
+question_model:
+
+```py
+class Question:
+    def __init__(self, text, answer):
+        self.text = text
+        self.answer = answer
+
+```
+
+data.py:
+
+```py
+question_data = [
+    {"text": "A slug's blood is green.", "answer": "True"},
+    {"text": "The loudest animal is the African Elephant.", "answer": "False"},
+    {"text": "Approximately one quarter of human bones are in the feet.", "answer": "True"},
+    {"text": "The total surface area of a human lungs is the size of a football pitch.", "answer": "True"},
+    {"text": "In West Virginia, USA, if you accidentally hit an animal with your car, you are free to "
+             "take it home to eat.", "answer": "True"},
+    {"text": "In London, UK, if you happen to die in the House of Parliament, you are entitled to a "
+             "state funeral.", "answer": "False"},
+    {"text": "It is illegal to pee in the Ocean in Portugal.", "answer": "True"},
+    {"text": "You can lead a cow down stairs but not up stairs.", "answer": "False"},
+    {"text": "Google was originally called 'Backrub'.", "answer": "True"},
+    {"text": "Buzz Aldrin's mother's maiden name was 'Moon'.", "answer": "True"},
+    {"text": "No piece of square dry paper can be folded in half more than 7 times.", "answer": "False"},
+    {"text": "A few ounces of chocolate can to kill a small dog.", "answer": "True"}
+]
 
 ```
 
 ```py
+# Q.1: A slug's blood is green. (True/False)?: True
+# You got it right!
+# The correct answer was: True
+# Your current score is 1/1
 
-```
+# Q.2: The loudest animal is the African Elephant. (True/False)?: False
+# You got it right!
+# The correct answer was: False
+# Your current score is 2/2
 
-```py
+# Q.3: Approximately one quarter of human bones are in the feet. (True/False)?: True
+# You got it right!
+# The correct answer was: True
+# Your current score is 3/3
 
-```
+# Q.4: The total surface area of a human lungs is the size of a football pitch. (True/False)?: True
+# You got it right!
+# The correct answer was: True
+# Your current score is 4/4
 
-```py
+# Q.5: In West Virginia, USA, if you accidentally hit an animal with your car, you are free to take it home to eat. (True/False)?: True
+# You got it right!
+# The correct answer was: True
+# Your current score is 5/5
+
+# Q.6: In London, UK, if you happen to die in the House of Parliament, you are entitled to a state funeral. (True/False)?: Flase
+# Oops! You got it Wrong!
+# The correct answer was: False
+# Your current score is 5/6
+
+# Q.7: It is illegal to pee in the Ocean in Portugal. (True/False)?: True
+# You got it right!
+# The correct answer was: True
+# Your current score is 6/7
+
+# Q.8: You can lead a cow down stairs but not up stairs. (True/False)?: False
+# You got it right!
+# The correct answer was: False
+# Your current score is 7/8
+
+# Q.9: Google was originally called 'Backrub'. (True/False)?: True
+# You got it right!
+# The correct answer was: True
+# Your current score is 8/9
+
+# Q.10: Buzz Aldrin's mother's maiden name was 'Moon'. (True/False)?: True
+# You got it right!
+# The correct answer was: True
+# Your current score is 9/10
+
+# Q.11: No piece of square dry paper can be folded in half more than 7 times. (True/False)?: 'False
+# Oops! You got it Wrong!
+# The correct answer was: False
+# Your current score is 9/11
+
+# Q.12: A few ounces of chocolate can to kill a small dog. (True/False)?: True
+# You got it right!
+# The correct answer was: True
+# Your current score is 10/12
+
+# You have completed the Quiz.
+# Your Final Score is: 10 out of 12.
+
+# Process finished with exit code 0
 
 ```
 
