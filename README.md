@@ -6855,7 +6855,42 @@ question_data = [
 </details>
 
 <details>
-  <summary>21. sample </summary>
+  <summary>21. Turtle Graphics </summary>
+
+# Example 1 - Draw a Square
+
+```py
+from turtle import Turtle, Screen
+
+tim = Turtle()
+tim.shape("turtle")
+tim.color("green")
+for _ in range(4):
+    tim.forward(200)
+    tim.right(90)
+
+
+screen = Screen()
+screen.exitonclick()
+```
+
+# Example 2 - Draw a Dashed Line
+
+```py
+from turtle import Turtle, Screen
+
+tim = Turtle()
+tim.shape("turtle")
+tim.color("green")
+for _ in range(10):
+    tim.forward(10)
+    tim.penup()
+    tim.forward(10)
+    tim.pendown()
+
+screen = Screen()
+screen.exitonclick()
+```
 
 ```py
 
