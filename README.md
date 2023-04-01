@@ -6892,8 +6892,27 @@ screen = Screen()
 screen.exitonclick()
 ```
 
-```py
+# Example 3 - Draw from Square to Decagon
 
+```py
+from turtle import Turtle, Screen
+import random
+
+tim = Turtle()
+tim.shape("turtle")
+
+colours = ["CornflowerBlue", "DarkOrchid", "IndianRed", "DeepSkyBlue", "LightSeaGreen",
+           "wheat", "SlateGray", "SeaGreen"]
+
+for i in range(4, 11):
+    angle = 360/i
+    tim.color(random.choice(colours))
+    for _ in range(i):
+        tim.forward(100)
+        tim.right(angle)
+
+screen = Screen()
+screen.exitonclick()
 ```
 
 ```py
