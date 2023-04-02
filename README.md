@@ -8106,19 +8106,19 @@ screen.exitonclick()
 <details>
   <summary>A1. Introduction </summary>
 
-# Check python version -
+# Check python version
 
 ```py
 python --version
 ```
 
-# Print out value -
+# Print out value
 
 ```py
 print("Hello, World!")
 ```
 
-# Python Comments -
+# Python Comments
 
 ```py
 #This is a comment
