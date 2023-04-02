@@ -8188,28 +8188,50 @@ print(type(y))
 # <class 'str'>
 ```
 
-```py
+# Many Values to Multiple Variables
 
+```py
+x, y, z = "Orange", "Banana", "Cherry"
+print(x)
+print(y)
+print(z)
 ```
 
 ```py
+# Orange
+# Banana
+# Cherry
+```
 
+# One Value to Multiple Variables
+
+```py
+x = y = z = "Orange"
+print(x)
+print(y)
+print(z)
 ```
 
 ```py
+# Orange
+# Orange
+# Orange
+```
 
+# Unpack a Collection
+
+```py
+fruits = ["apple", "banana", "cherry"]
+x, y, z = fruits
+print(x)
+print(y)
+print(z)
 ```
 
 ```py
-
-```
-
-```py
-
-```
-
-```py
-
+# apple
+# banana
+# cherry
 ```
 
 </details>
