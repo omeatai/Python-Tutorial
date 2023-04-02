@@ -7004,9 +7004,9 @@ tim.speed("fastest")
 
 def random_color():
     color = random.choice(colors)
-    r = color.rgb[0]
-    g = color.rgb[1]
-    b = color.rgb[2]
+    r = color.rgb.r
+    g = color.rgb.g
+    b = color.rgb.b
     return r, g, b
 
 
@@ -7040,7 +7040,54 @@ screen.exitonclick()
 
 ```
 
+# Solution:
+
 ```py
+import random
+import turtle
+import colorgram
+
+turtle.colormode(255)
+
+num_of_colors = 10
+colors = colorgram.extract("image.jpeg", num_of_colors)
+
+tim = turtle.Turtle()
+tim.shape("turtle")
+tim.speed("fastest")
+
+
+def random_color():
+    color = random.choice(colors)
+    r = color.rgb.r
+    g = color.rgb.g
+    b = color.rgb.b
+    return r, g, b
+
+
+sides = 10
+number_of_dots = sides**2
+tim.up()
+tim.hideturtle()
+tim.setheading(180)
+tim.forward(200)
+tim.setheading(270)
+tim.forward(200)
+tim.setheading(0)
+for dot_count in range(1, number_of_dots+1):
+    tim.down()
+    tim.dot(20, random_color())
+    tim.up()
+    tim.forward(40)
+    if dot_count % sides == 0:
+        tim.setheading(90)
+        tim.forward(40)
+        tim.setheading(180)
+        tim.forward(40*sides)
+        tim.setheading(0)
+
+screen = turtle.Screen()
+screen.exitonclick()
 
 ```
 
