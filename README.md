@@ -7094,7 +7094,7 @@ screen.exitonclick()
 </details>
 
 <details>
-  <summary>22. sample </summary>
+  <summary>22. Turtle Event Listeners </summary>
 
 ```py
 
