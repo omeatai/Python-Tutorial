@@ -8144,9 +8144,49 @@ print("Hello, World!")
 </details>
 
 <details>
-  <summary>A2.  </summary>
+  <summary>A2. Python Variables </summary>
 
-# Example 1 -
+# Example 1
+
+```py
+x = 5
+y = "John"
+print(x)
+print(y)
+```
+
+```py
+# 5
+# John
+```
+
+# Type Casting
+
+```py
+x = str(3)    # x will be '3'
+y = int(3)    # y will be 3
+z = float(3)  # z will be 3.0
+```
+
+```py
+# 3
+# 3
+# 3.0
+```
+
+# Get Data Type
+
+```py
+x = 5
+y = "John"
+print(type(x))
+print(type(y))
+```
+
+```py
+# <class 'int'>
+# <class 'str'>
+```
 
 ```py
 
