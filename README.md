@@ -8106,30 +8106,39 @@ screen.exitonclick()
 <details>
   <summary>A1. Introduction </summary>
 
-# Import Pandas -
+# Check python version -
 
 ```py
+python --version
+```
 
+# Print out value -
+
+```py
+print("Hello, World!")
+```
+
+# Python Comments -
+
+```py
+#This is a comment
+print("Hello, World!")
 ```
 
 ```py
-
+#This is a comment
+#written in
+#more than just one line
+print("Hello, World!")
 ```
 
 ```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
+"""
+This is a comment
+written in
+more than just one line
+"""
+print("Hello, World!")
 ```
 
 </details>
