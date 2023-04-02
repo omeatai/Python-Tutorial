@@ -6981,6 +6981,65 @@ screen.exitonclick()
 
 ```
 
+# Example 6: Draw a Hirst Painting using Colorgram pypi
+
+```py
+import random
+import turtle
+import colorgram
+from PIL import Image, ImageDraw
+
+
+turtle.colormode(255)
+
+myImage = Image.open("image.jpeg");
+# myImage.show();
+num_of_colors = 10
+colors = colorgram.extract(myImage, num_of_colors)
+
+tim = turtle.Turtle()
+tim.shape("turtle")
+tim.speed("fastest")
+
+
+def random_color():
+    color = random.choice(colors)
+    r = color.rgb[0]
+    g = color.rgb[1]
+    b = color.rgb[2]
+    return r, g, b
+
+
+def move_to_next_line(nums):
+    tim.up()
+    tim.setheading(270)
+    tim.forward(30)
+    tim.setheading(180)
+    tim.forward(30 * nums)
+    tim.setheading(0)
+    tim.down()
+
+
+def create_hirst(nums):
+    for _ in range(nums):
+        for _ in range(nums):
+            tim.color(random_color())
+            tim.begin_fill()
+            tim.circle(10)
+            tim.end_fill()
+            tim.up()
+            tim.forward(30)
+            tim.down()
+        move_to_next_line(nums)
+
+
+create_hirst(num_of_colors)
+
+screen = turtle.Screen()
+screen.exitonclick()
+
+```
+
 ```py
 
 ```
