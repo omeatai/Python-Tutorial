@@ -8476,7 +8476,7 @@ x = None
 </details>
 
 <details>
-  <summary>A4.  </summary>
+  <summary>A4. Python Strings </summary>
 
 # Example 1 -
 
