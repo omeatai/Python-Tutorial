@@ -8234,35 +8234,243 @@ print(z)
 # cherry
 ```
 
+# Output Variables
+
+```py
+x = "Python"
+y = "is"
+z = "awesome"
+print(x, y, z)
+```
+
+```py
+# Python is awesome
+```
+
+```py
+x = "Python "
+y = "is "
+z = "awesome"
+print(x + y + z)
+```
+
+```py
+# Python is awesome
+```
+
+# Global Variables
+
+```py
+x = "awesome"
+
+def myfunc():
+  print("Python is " + x)
+
+myfunc()
+```
+
+```py
+# Python is awesome
+```
+
+# Local Variable
+
+```py
+x = "awesome"
+
+def myfunc():
+  x = "fantastic"
+  print("Python is " + x)
+
+myfunc()
+
+print("Python is " + x)
+```
+
+```py
+# Python is fantastic
+# Python is awesome
+```
+
+# The global Keyword
+
+```py
+x = "awesome"
+
+def myfunc():
+  global x
+  x = "fantastic"
+
+myfunc()
+
+print("Python is " + x)
+```
+
+```py
+# Python is fantastic
+```
+
 </details>
 
 <details>
-  <summary>A3.  </summary>
+  <summary>A3. Python Data Types </summary>
 
-# Example 1 -
+# Built-in Data Types
 
 ```py
+Text Type:	    str
+Numeric Types:	int, float, complex
+Sequence Types:	list, tuple, range
+Mapping Type:	  dict
+Set Types:	    set, frozenset
+Boolean Type:	  bool
+Binary Types:	  bytes, bytearray, memoryview
+None Type:	    NoneType
+```
 
+# Get Data Type
+
+```py
+x = 5
+print(type(x))
 ```
 
 ```py
+# <class 'int'>
+```
 
+# Set String Type
+
+```py
+x = "Hello World"
 ```
 
 ```py
+x = str("Hello World")
+```
 
+# Set Integer Type
+
+```py
+x = 20
 ```
 
 ```py
+x = int(20)
+```
 
+# Set Float Type
+
+```py
+x = 20.5
 ```
 
 ```py
+x = float(20.5)
+```
 
+# Set Complex Type
+
+```py
+x = 1j
 ```
 
 ```py
+x = complex(1j)
+```
 
+# Set List Type
+
+```py
+x = ["apple", "banana", "cherry"]
+```
+
+```py
+x = list(("apple", "banana", "cherry"))
+```
+
+# Set Tuple Type
+
+```py
+x = ("apple", "banana", "cherry")
+```
+
+```py
+x = tuple(("apple", "banana", "cherry"))
+```
+
+# Set Range Type
+
+```py
+x = range(6)
+```
+
+# Set Dictionary Type
+
+```py
+x = {"name" : "John", "age" : 36}
+```
+
+```py
+x = dict(name="John", age=36)
+```
+
+# Set Set Type
+
+```py
+x = {"apple", "banana", "cherry"}
+```
+
+```py
+x = set(("apple", "banana", "cherry"))
+```
+
+# Set FrozenSet Type
+
+```py
+x = frozenset({"apple", "banana", "cherry"})
+```
+
+```py
+x = frozenset(("apple", "banana", "cherry"))
+```
+
+# Set Bool Type
+
+```py
+x = True
+```
+
+```py
+x = bool(5)
+```
+
+# Set Bytes Type
+
+```py
+x = b"Hello"
+```
+
+```py
+x = bytes(5)
+```
+
+# Set ByteArray Type
+
+```py
+x = bytearray(5)
+```
+
+# Set Memoryview Type
+
+```py
+x = memoryview(bytes(5))
+```
+
+# Set None Type
+
+```py
+x = None
 ```
 
 </details>
