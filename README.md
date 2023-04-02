@@ -6915,11 +6915,69 @@ screen = Screen()
 screen.exitonclick()
 ```
 
+# Example 4 - Using RGB Colors
+
 ```py
+import random
+import turtle
+turtle.colormode(255)
+
+tim = turtle.Turtle()
+tim.shape("turtle")
+
+
+def random_color():
+    r = random.randint(0, 255)
+    g = random.randint(0, 255)
+    b = random.randint(0, 255)
+    return r, g, b
+
+directions = [0, 90, 180, 270]
+tim.pensize(5)
+tim.speed("fast")
+
+for _ in range(200):
+    tim.color(random_color())
+    tim.forward(30)
+    tim.setheading(random.choice(directions))
+
+screen = turtle.Screen()
+screen.exitonclick()
 
 ```
 
+# Example 5: Draw a Spinograph
+
 ```py
+import random
+import turtle
+turtle.colormode(255)
+
+tim = turtle.Turtle()
+tim.shape("turtle")
+
+
+def random_color():
+    r = random.randint(0, 255)
+    g = random.randint(0, 255)
+    b = random.randint(0, 255)
+    return r, g, b
+
+tim.pensize(2)
+tim.speed("fastest")
+
+
+def draw_spinograph(size_of_gap):
+    for i in range(int(360/size_of_gap)):
+        tim.color(random_color())
+        tim.setheading(tim.heading() + size_of_gap)
+        tim.circle(100)
+
+
+draw_spinograph(1)
+
+screen = turtle.Screen()
+screen.exitonclick()
 
 ```
 
