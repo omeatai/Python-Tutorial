@@ -8081,6 +8081,69 @@ screen.exitonclick()
 
 ```
 
+# The Turtle Race
+
+```py
+from turtle import Turtle, Screen
+import random
+
+screen = Screen()
+screen.setup(width=500, height=400)
+user_bet = screen.textinput(title="Make your bet", prompt="Which turtle will win the race? Enter a color: ")
+colors = ["red", "orange", "yellow", "green", "blue", "purple"]
+winner = ""
+end_game = False
+turtles = []
+
+start = -100
+for color in colors:
+    tim = Turtle(shape="turtle")
+    tim.color(color)
+    tim.speed("fast")
+    tim.penup()
+    tim.goto(x=-230, y=-start)
+    start += 40
+    turtles.append(tim)
+
+while not end_game:
+    count = 0
+    for turtle in turtles:
+        current = turtle.xcor()
+        rand_num = random.choice([10,20,30])
+        new_pos = current + rand_num
+        turtle.setx(230 if new_pos >= 230 else new_pos)
+        if not winner and turtle.xcor() >= 230:
+            winner = turtle.color()
+        if turtle.xcor() >= 230:
+            count += 1
+    if count == len(colors):
+        end_game = True
+
+if winner[0] == user_bet:
+    print("Congratulations! You Won!")
+else:
+    print("Sorry, You lost!")
+    print(f"{winner[0].title()} Won!")
+
+screen.listen()
+# screen.onkey(key="c", fun=clear)
+screen.exitonclick()
+
+```
+
+```py
+# Sorry, You lost!
+# Orange Won!
+```
+
+```py
+
+```
+
+```py
+
+```
+
 ```py
 
 ```
