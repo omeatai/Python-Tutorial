@@ -6,6 +6,907 @@ Python Tutorial by Ifeanyi Omeata
 
 ---
 
+### [A-PYTHON TUTORIAL - W3SCHOOLS]()
+
+<details>
+  <summary>A1. Introduction </summary>
+
+# Check python version
+
+```py
+python --version
+```
+
+# Print out value
+
+```py
+print("Hello, World!")
+```
+
+# Python Comments
+
+```py
+#This is a comment
+print("Hello, World!")
+```
+
+```py
+#This is a comment
+#written in
+#more than just one line
+print("Hello, World!")
+```
+
+```py
+"""
+This is a comment
+written in
+more than just one line
+"""
+print("Hello, World!")
+```
+
+</details>
+
+<details>
+  <summary>A2. Python Variables </summary>
+
+# Example 1
+
+```py
+x = 5
+y = "John"
+print(x)
+print(y)
+```
+
+```py
+# 5
+# John
+```
+
+# Type Casting
+
+```py
+x = str(3)    # x will be '3'
+y = int(3)    # y will be 3
+z = float(3)  # z will be 3.0
+```
+
+```py
+# 3
+# 3
+# 3.0
+```
+
+# Get Data Type
+
+```py
+x = 5
+y = "John"
+print(type(x))
+print(type(y))
+```
+
+```py
+# <class 'int'>
+# <class 'str'>
+```
+
+# Many Values to Multiple Variables
+
+```py
+x, y, z = "Orange", "Banana", "Cherry"
+print(x)
+print(y)
+print(z)
+```
+
+```py
+# Orange
+# Banana
+# Cherry
+```
+
+# One Value to Multiple Variables
+
+```py
+x = y = z = "Orange"
+print(x)
+print(y)
+print(z)
+```
+
+```py
+# Orange
+# Orange
+# Orange
+```
+
+# Unpack a Collection
+
+```py
+fruits = ["apple", "banana", "cherry"]
+x, y, z = fruits
+print(x)
+print(y)
+print(z)
+```
+
+```py
+# apple
+# banana
+# cherry
+```
+
+# Output Variables
+
+```py
+x = "Python"
+y = "is"
+z = "awesome"
+print(x, y, z)
+```
+
+```py
+# Python is awesome
+```
+
+```py
+x = "Python "
+y = "is "
+z = "awesome"
+print(x + y + z)
+```
+
+```py
+# Python is awesome
+```
+
+# Global Variables
+
+```py
+x = "awesome"
+
+def myfunc():
+  print("Python is " + x)
+
+myfunc()
+```
+
+```py
+# Python is awesome
+```
+
+# Local Variable
+
+```py
+x = "awesome"
+
+def myfunc():
+  x = "fantastic"
+  print("Python is " + x)
+
+myfunc()
+
+print("Python is " + x)
+```
+
+```py
+# Python is fantastic
+# Python is awesome
+```
+
+# The global Keyword
+
+```py
+x = "awesome"
+
+def myfunc():
+  global x
+  x = "fantastic"
+
+myfunc()
+
+print("Python is " + x)
+```
+
+```py
+# Python is fantastic
+```
+
+</details>
+
+<details>
+  <summary>A3. Python Data Types </summary>
+
+# Built-in Data Types
+
+```py
+Text Type:	    str
+Numeric Types:	int, float, complex
+Sequence Types:	list, tuple, range
+Mapping Type:	  dict
+Set Types:	    set, frozenset
+Boolean Type:	  bool
+Binary Types:	  bytes, bytearray, memoryview
+None Type:	    NoneType
+```
+
+# Get Data Type
+
+```py
+x = 5
+print(type(x))
+```
+
+```py
+# <class 'int'>
+```
+
+# Set String Type
+
+```py
+x = "Hello World"
+```
+
+```py
+x = str("Hello World")
+```
+
+# Set Integer Type
+
+```py
+x = 20
+```
+
+```py
+x = int(20)
+```
+
+# Set Float Type
+
+```py
+x = 20.5
+```
+
+```py
+x = float(20.5)
+```
+
+# Set Complex Type
+
+```py
+x = 1j
+```
+
+```py
+x = complex(1j)
+```
+
+# Set List Type
+
+```py
+x = ["apple", "banana", "cherry"]
+```
+
+```py
+x = list(("apple", "banana", "cherry"))
+```
+
+# Set Tuple Type
+
+```py
+x = ("apple", "banana", "cherry")
+```
+
+```py
+x = tuple(("apple", "banana", "cherry"))
+```
+
+# Set Range Type
+
+```py
+x = range(6)
+```
+
+# Set Dictionary Type
+
+```py
+x = {"name" : "John", "age" : 36}
+```
+
+```py
+x = dict(name="John", age=36)
+```
+
+# Set Set Type
+
+```py
+x = {"apple", "banana", "cherry"}
+```
+
+```py
+x = set(("apple", "banana", "cherry"))
+```
+
+# Set FrozenSet Type
+
+```py
+x = frozenset({"apple", "banana", "cherry"})
+```
+
+```py
+x = frozenset(("apple", "banana", "cherry"))
+```
+
+# Set Bool Type
+
+```py
+x = True
+```
+
+```py
+x = bool(5)
+```
+
+# Set Bytes Type
+
+```py
+x = b"Hello"
+```
+
+```py
+x = bytes(5)
+```
+
+# Set ByteArray Type
+
+```py
+x = bytearray(5)
+```
+
+# Set Memoryview Type
+
+```py
+x = memoryview(bytes(5))
+```
+
+# Set None Type
+
+```py
+x = None
+```
+
+</details>
+
+<details>
+  <summary>A4. Python Strings </summary>
+
+# Example 1 -
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>A5.  </summary>
+
+# Example 1 -
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>A6.  </summary>
+
+# Example 1 -
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>A7.  </summary>
+
+# Example 1 -
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>A8.  </summary>
+
+# Example 1 -
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>A9.  </summary>
+
+# Example 1 -
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>A10.  </summary>
+
+# Example 1 -
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>A11.  </summary>
+
+# Example 1 -
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>A12.  </summary>
+
+# Example 1 -
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>A13.  </summary>
+
+# Example 1 -
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>A14.  </summary>
+
+# Example 1 -
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>A15.  </summary>
+
+# Example 1 -
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>A16.  </summary>
+
+# Example 1 -
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>A17.  </summary>
+
+# Example 1 -
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>A18.  </summary>
+
+# Example 1 -
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>A19.  </summary>
+
+# Example 1 -
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
+<details>
+  <summary>A20.  </summary>
+
+# Example 1 -
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+</details>
+
 ### [B-PANDAS TUTORIAL - W3SCHOOLS]()
 
 <details>
@@ -8082,907 +8983,6 @@ screen.exitonclick()
 
 <details>
   <summary>69. sample </summary>
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-</details>
-
-### [A-PYTHON TUTORIAL - W3SCHOOLS]()
-
-<details>
-  <summary>A1. Introduction </summary>
-
-# Check python version
-
-```py
-python --version
-```
-
-# Print out value
-
-```py
-print("Hello, World!")
-```
-
-# Python Comments
-
-```py
-#This is a comment
-print("Hello, World!")
-```
-
-```py
-#This is a comment
-#written in
-#more than just one line
-print("Hello, World!")
-```
-
-```py
-"""
-This is a comment
-written in
-more than just one line
-"""
-print("Hello, World!")
-```
-
-</details>
-
-<details>
-  <summary>A2. Python Variables </summary>
-
-# Example 1
-
-```py
-x = 5
-y = "John"
-print(x)
-print(y)
-```
-
-```py
-# 5
-# John
-```
-
-# Type Casting
-
-```py
-x = str(3)    # x will be '3'
-y = int(3)    # y will be 3
-z = float(3)  # z will be 3.0
-```
-
-```py
-# 3
-# 3
-# 3.0
-```
-
-# Get Data Type
-
-```py
-x = 5
-y = "John"
-print(type(x))
-print(type(y))
-```
-
-```py
-# <class 'int'>
-# <class 'str'>
-```
-
-# Many Values to Multiple Variables
-
-```py
-x, y, z = "Orange", "Banana", "Cherry"
-print(x)
-print(y)
-print(z)
-```
-
-```py
-# Orange
-# Banana
-# Cherry
-```
-
-# One Value to Multiple Variables
-
-```py
-x = y = z = "Orange"
-print(x)
-print(y)
-print(z)
-```
-
-```py
-# Orange
-# Orange
-# Orange
-```
-
-# Unpack a Collection
-
-```py
-fruits = ["apple", "banana", "cherry"]
-x, y, z = fruits
-print(x)
-print(y)
-print(z)
-```
-
-```py
-# apple
-# banana
-# cherry
-```
-
-# Output Variables
-
-```py
-x = "Python"
-y = "is"
-z = "awesome"
-print(x, y, z)
-```
-
-```py
-# Python is awesome
-```
-
-```py
-x = "Python "
-y = "is "
-z = "awesome"
-print(x + y + z)
-```
-
-```py
-# Python is awesome
-```
-
-# Global Variables
-
-```py
-x = "awesome"
-
-def myfunc():
-  print("Python is " + x)
-
-myfunc()
-```
-
-```py
-# Python is awesome
-```
-
-# Local Variable
-
-```py
-x = "awesome"
-
-def myfunc():
-  x = "fantastic"
-  print("Python is " + x)
-
-myfunc()
-
-print("Python is " + x)
-```
-
-```py
-# Python is fantastic
-# Python is awesome
-```
-
-# The global Keyword
-
-```py
-x = "awesome"
-
-def myfunc():
-  global x
-  x = "fantastic"
-
-myfunc()
-
-print("Python is " + x)
-```
-
-```py
-# Python is fantastic
-```
-
-</details>
-
-<details>
-  <summary>A3. Python Data Types </summary>
-
-# Built-in Data Types
-
-```py
-Text Type:	    str
-Numeric Types:	int, float, complex
-Sequence Types:	list, tuple, range
-Mapping Type:	  dict
-Set Types:	    set, frozenset
-Boolean Type:	  bool
-Binary Types:	  bytes, bytearray, memoryview
-None Type:	    NoneType
-```
-
-# Get Data Type
-
-```py
-x = 5
-print(type(x))
-```
-
-```py
-# <class 'int'>
-```
-
-# Set String Type
-
-```py
-x = "Hello World"
-```
-
-```py
-x = str("Hello World")
-```
-
-# Set Integer Type
-
-```py
-x = 20
-```
-
-```py
-x = int(20)
-```
-
-# Set Float Type
-
-```py
-x = 20.5
-```
-
-```py
-x = float(20.5)
-```
-
-# Set Complex Type
-
-```py
-x = 1j
-```
-
-```py
-x = complex(1j)
-```
-
-# Set List Type
-
-```py
-x = ["apple", "banana", "cherry"]
-```
-
-```py
-x = list(("apple", "banana", "cherry"))
-```
-
-# Set Tuple Type
-
-```py
-x = ("apple", "banana", "cherry")
-```
-
-```py
-x = tuple(("apple", "banana", "cherry"))
-```
-
-# Set Range Type
-
-```py
-x = range(6)
-```
-
-# Set Dictionary Type
-
-```py
-x = {"name" : "John", "age" : 36}
-```
-
-```py
-x = dict(name="John", age=36)
-```
-
-# Set Set Type
-
-```py
-x = {"apple", "banana", "cherry"}
-```
-
-```py
-x = set(("apple", "banana", "cherry"))
-```
-
-# Set FrozenSet Type
-
-```py
-x = frozenset({"apple", "banana", "cherry"})
-```
-
-```py
-x = frozenset(("apple", "banana", "cherry"))
-```
-
-# Set Bool Type
-
-```py
-x = True
-```
-
-```py
-x = bool(5)
-```
-
-# Set Bytes Type
-
-```py
-x = b"Hello"
-```
-
-```py
-x = bytes(5)
-```
-
-# Set ByteArray Type
-
-```py
-x = bytearray(5)
-```
-
-# Set Memoryview Type
-
-```py
-x = memoryview(bytes(5))
-```
-
-# Set None Type
-
-```py
-x = None
-```
-
-</details>
-
-<details>
-  <summary>A4. Python Strings </summary>
-
-# Example 1 -
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-</details>
-
-<details>
-  <summary>A5.  </summary>
-
-# Example 1 -
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-</details>
-
-<details>
-  <summary>A6.  </summary>
-
-# Example 1 -
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-</details>
-
-<details>
-  <summary>A7.  </summary>
-
-# Example 1 -
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-</details>
-
-<details>
-  <summary>A8.  </summary>
-
-# Example 1 -
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-</details>
-
-<details>
-  <summary>A9.  </summary>
-
-# Example 1 -
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-</details>
-
-<details>
-  <summary>A10.  </summary>
-
-# Example 1 -
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-</details>
-
-<details>
-  <summary>A11.  </summary>
-
-# Example 1 -
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-</details>
-
-<details>
-  <summary>A12.  </summary>
-
-# Example 1 -
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-</details>
-
-<details>
-  <summary>A13.  </summary>
-
-# Example 1 -
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-</details>
-
-<details>
-  <summary>A14.  </summary>
-
-# Example 1 -
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-</details>
-
-<details>
-  <summary>A15.  </summary>
-
-# Example 1 -
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-</details>
-
-<details>
-  <summary>A16.  </summary>
-
-# Example 1 -
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-</details>
-
-<details>
-  <summary>A17.  </summary>
-
-# Example 1 -
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-</details>
-
-<details>
-  <summary>A18.  </summary>
-
-# Example 1 -
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-</details>
-
-<details>
-  <summary>A19.  </summary>
-
-# Example 1 -
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-
-</details>
-
-<details>
-  <summary>A20.  </summary>
-
-# Example 1 -
-
-```py
-
-```
-
-```py
-
-```
 
 ```py
 
