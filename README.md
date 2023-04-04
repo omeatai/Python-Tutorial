@@ -8176,21 +8176,125 @@ screen.exitonclick()
 </details>
 
 <details>
-  <summary>23. sample </summary>
+  <summary>23. Snake Game </summary>
+
+# Procedual Setup
 
 ```py
+from turtle import Screen, Turtle
+import time
+
+screen = Screen()
+screen.setup(width=600, height=600)
+screen.bgcolor("black")
+screen.title("My Snake Game")
+screen.tracer(0)
+starting_pos = [(0, 0), (-20, 0), (-40, 0)]
+snake = []
+
+for cord in starting_pos:
+    block = Turtle(shape="square")
+    block.penup()
+    block.color("white")
+    block.goto(cord)
+    snake.append(block)
+
+game_on = True
+while game_on:
+    screen.update()
+    time.sleep(0.5)
+    for num in range(len(snake)-1, 0, -1):
+        new_x = snake[num - 1].xcor()
+        new_y = snake[num - 1].ycor()
+        snake[num].goto(new_x, new_y)
+    snake[0].forward(20)
+
+
+screen.exitonclick()
 
 ```
 
+# Object Oriented Programming Setup
+
+main.py:
+
 ```py
+from turtle import Screen
+from snake import Snake
+import time
+
+screen = Screen()
+screen.setup(width=600, height=600)
+screen.bgcolor("black")
+screen.title("My Snake Game")
+screen.tracer(0)
+
+snake = Snake()
+
+screen.listen()
+screen.onkey(key="Up", fun=snake.move_up)
+screen.onkey(key="Down", fun=snake.move_down)
+screen.onkey(key="Left", fun=snake.turn_left)
+screen.onkey(key="Right", fun=snake.turn_right)
+
+game_on = True
+while game_on:
+    screen.update()
+    time.sleep(0.5)
+    snake.move()
+
+screen.exitonclick()
 
 ```
 
-```py
-
-```
+snake.py:
 
 ```py
+from turtle import Turtle
+START = [(0, 0), (-20, 0), (-40, 0)]
+MOVE_DISTANCE = 20
+UP = 90
+DOWN = 270
+LEFT = 180
+RIGHT = 0
+
+
+class Snake:
+    def __init__(self):
+        self.snake = []
+        self.create_snake()
+        self.head = self.snake[0]
+
+    def create_snake(self):
+        for cord in START:
+            block = Turtle(shape="square")
+            block.penup()
+            block.color("white")
+            block.goto(cord)
+            self.snake.append(block)
+
+    def move(self):
+        for num in range(len(self.snake) - 1, 0, -1):
+            new_x = self.snake[num - 1].xcor()
+            new_y = self.snake[num - 1].ycor()
+            self.snake[num].goto(new_x, new_y)
+        self.snake[0].forward(MOVE_DISTANCE)
+
+    def move_up(self):
+        if not self.head.heading() == DOWN:
+            self.head.setheading(UP)
+
+    def move_down(self):
+        if not self.head.heading() == UP:
+            self.head.setheading(DOWN)
+
+    def turn_left(self):
+        if not self.head.heading() == RIGHT:
+            self.head.setheading(LEFT)
+
+    def turn_right(self):
+        if not self.head.heading() == LEFT:
+            self.head.setheading(RIGHT)
 
 ```
 
