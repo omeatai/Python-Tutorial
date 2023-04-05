@@ -8454,22 +8454,64 @@ snake.py:
 
 ```py
 from turtle import Turtle
-import random
+START = [(0, 0), (-20, 0), (-40, 0)]
+MOVE_DISTANCE = 20
+UP = 90
+DOWN = 270
+LEFT = 180
+RIGHT = 0
 
-class Food(Turtle):
+
+class Snake:
     def __init__(self):
-        super().__init__()
-        self.shape("circle")
-        self.penup()
-        self.shapesize(stretch_len=0.5, stretch_wid=0.5)
-        self.color("blue")
-        self.speed("fastest")
-        self.refresh()
+        self.segments = []
+        self.create_snake()
+        self.head = self.segments[0]
 
-    def refresh(self):
-        random_x = random.randint(-280, 280)
-        random_y = random.randint(-280, 280)
-        self.goto(random_x, random_y)
+    def create_snake(self):
+        for position in START:
+            self.add_block(position)
+
+    def add_block(self, position):
+        block = Turtle(shape="square") if self.segments else Turtle(shape="turtle")
+        block.color("white" if self.segments else "green")
+        block.penup()
+        block.goto(position)
+        self.segments.append(block)
+
+    def extend(self):
+        self.add_block(self.segments[-1].position())
+
+    # def create_snake(self):
+    #     for cord in START:
+    #         block = Turtle(shape="square")
+    #         block.penup()
+    #         block.color("white")
+    #         block.goto(cord)
+    #         self.snake.append(block)
+
+    def move(self):
+        for num in range(len(self.segments) - 1, 0, -1):
+            new_x = self.segments[num - 1].xcor()
+            new_y = self.segments[num - 1].ycor()
+            self.segments[num].goto(new_x, new_y)
+        self.segments[0].forward(MOVE_DISTANCE)
+
+    def move_up(self):
+        if not self.head.heading() == DOWN:
+            self.head.setheading(UP)
+
+    def move_down(self):
+        if not self.head.heading() == UP:
+            self.head.setheading(DOWN)
+
+    def turn_left(self):
+        if not self.head.heading() == RIGHT:
+            self.head.setheading(LEFT)
+
+    def turn_right(self):
+        if not self.head.heading() == LEFT:
+            self.head.setheading(RIGHT)
 
 ```
 
