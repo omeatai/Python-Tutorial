@@ -8518,7 +8518,23 @@ class Snake:
 </details>
 
 <details>
-  <summary>25. sample </summary>
+  <summary>25. Ping Pong Game </summary>
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
+
+```py
+
+```
 
 ```py
 
