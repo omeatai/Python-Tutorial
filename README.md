@@ -8176,7 +8176,7 @@ screen.exitonclick()
 </details>
 
 <details>
-  <summary>23. Snake Game </summary>
+  <summary>23. Snake Game 1 </summary>
 
 # Procedual Setup
 
@@ -8301,21 +8301,175 @@ class Snake:
 </details>
 
 <details>
-  <summary>24. sample </summary>
+  <summary>24. Snake Game 2 - Class Inheritance </summary>
+
+# Example 1:
 
 ```py
+class Animal:
+    def __init__(self):
+        self.num_eyes = 2
 
+    def breathe(self):
+        print("Inhale, exhale.")
+
+
+class Fish(Animal):
+    def __init__(self):
+        super().__init__()
+
+    def breathe(self):
+        super().breathe()
+        print("It's a Fish!")
+
+    def swim(self):
+        print("moving in water.")
+
+
+nemo = Fish()
+nemo.swim()
+nemo.breathe()
+print(nemo.num_eyes)
 ```
 
 ```py
+# moving in water.
+# Inhale, exhale.
+# It's a Fish!
+# 2
+```
+
+# Task 1 -
+
+main.py:
+
+```py
+from turtle import Screen
+from snake import Snake
+from food import Food
+from scoreboard import ScoreBoard
+import time
+
+screen = Screen()
+screen.setup(width=600, height=600)
+screen.bgcolor("black")
+screen.title("My Snake Game")
+screen.tracer(0)
+
+snake = Snake()
+food = Food()
+scoreboard = ScoreBoard()
+
+screen.listen()
+screen.onkey(key="Up", fun=snake.move_up)
+screen.onkey(key="Down", fun=snake.move_down)
+screen.onkey(key="Left", fun=snake.turn_left)
+screen.onkey(key="Right", fun=snake.turn_right)
+
+game_on = True
+while game_on:
+    screen.update()
+    time.sleep(0.2)
+    snake.move()
+
+    # Detect collision with food.
+    if snake.head.distance(food) < 15:
+        food.refresh()
+        snake.extend()
+        scoreboard.add_score()
+
+    # Detect collision with wall.
+    if snake.head.xcor() > 280 or snake.head.xcor() < -280 or snake.head.ycor() > 280 or snake.head.ycor() < -280:
+        game_on = False
+        scoreboard.game_over()
+
+    # Detect collision with tail.
+    for segment in snake.segments[1:]:
+        if snake.head.distance(segment) < 10:
+            game_on = False
+            scoreboard.game_over()
+
+screen.exitonclick()
 
 ```
 
+scoreboard.py:
+
 ```py
+from turtle import Turtle
+ALIGNMENT = "center"
+FONT = ("Courier", 24, "normal")
+
+
+class ScoreBoard(Turtle):
+
+    def __init__(self):
+        super().__init__()
+        self.score = 0
+        self.penup()
+        self.color("white")
+        self.goto(0, 270)
+        self.hideturtle()
+        self.width(30)
+        self.show_score()
+
+    def show_score(self):
+        self.clear()
+        self.write(f"Score: {self.score}", move=False, align=ALIGNMENT, font=FONT)
+
+    def game_over(self):
+        self.goto(0, 0)
+        self.write("GAME OVER", align=ALIGNMENT, font=FONT)
+
+    def add_score(self):
+        self.score += 1
+        self.show_score()
 
 ```
 
+food.py:
+
 ```py
+from turtle import Turtle
+import random
+
+class Food(Turtle):
+    def __init__(self):
+        super().__init__()
+        self.shape("circle")
+        self.penup()
+        self.shapesize(stretch_len=0.5, stretch_wid=0.5)
+        self.color("blue")
+        self.speed("fastest")
+        self.refresh()
+
+    def refresh(self):
+        random_x = random.randint(-280, 280)
+        random_y = random.randint(-280, 280)
+        self.goto(random_x, random_y)
+
+```
+
+snake.py:
+
+```py
+from turtle import Turtle
+import random
+
+class Food(Turtle):
+    def __init__(self):
+        super().__init__()
+        self.shape("circle")
+        self.penup()
+        self.shapesize(stretch_len=0.5, stretch_wid=0.5)
+        self.color("blue")
+        self.speed("fastest")
+        self.refresh()
+
+    def refresh(self):
+        random_x = random.randint(-280, 280)
+        random_y = random.randint(-280, 280)
+        self.goto(random_x, random_y)
 
 ```
 
