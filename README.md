@@ -6,7 +6,7 @@ Python Tutorial by Ifeanyi Omeata
 
 ---
 
-### [A-PYTHON TUTORIAL - W3SCHOOLS]()
+### [A1-PYTHON TUTORIAL - W3SCHOOLS](/courses/A1.md)
 
 <details>
   <summary>A1. Introduction </summary>
