@@ -12,10 +12,10 @@ Python Tutorial by Ifeanyi Omeata
 
 ### [A3-DJANGO TUTORIAL - W3SCHOOLS](/courses/A3.md)
 
-### [1-100 Days of Code: The Complete Python Pro Bootcamp for 2023 - ANGELA YU](/courses/1.md)
+### [B1-DJANGO COURSE FOR ABSOLUTE BEGINNERS - SSALI JONATHAN](/courses/B1.md)
 
-### [2-Complete Python Developer in 2023 - Zero to Mastery](/courses/2.md)
+### [1-100 DAYS OF CODE: THE COMPLETE PYTHON PRO BOOTCAMP FOR 2023 - ANGELA YU](/courses/1.md)
 
-### [3-DJANGO COURSE FOR ABSOLUTE BEGINNERS - SSALI JONATHAN](/courses/3.md)
+### [2-COMPLETE PYTHON DEVELOPER IN 2023 - ZERO TO MASTERY](/courses/2.md)
 
 ### [4-DJANGO & DJANGO REST FRAMEWORK WITH REACT FRONTEND - PARWIZ FOROGH](/courses/4.md)
